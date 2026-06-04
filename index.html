@@ -69,10 +69,8 @@
         <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
         Xem trước
       </button>
-      <select id="paper-select" style="padding:7px 10px;border:1px solid var(--border);border-radius:8px;font-size:13px;font-weight:600;background:#fff;outline:none;cursor:pointer">
-        <option value="a4">In khổ A4 (2 phiếu ngang/trang)</option>
-        <option value="a5">In khổ A5 (1 phiếu ngang/trang)</option>
-      </select>
+      <span style="font-size: 13px; font-weight: 600; padding: 7px 10px; color: var(--muted); background: var(--bg); border-radius: 8px;">Khổ in: A4 dọc</span>
+      <input type="hidden" id="paper-select" value="a4">
       <button class="btn btn-green" onclick="doPrint()">
         <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
         In phiếu
@@ -145,6 +143,9 @@
 <div class="toaster" id="toaster"></div>
 
 <script src="js/qrcode.min.js"></script> 
+<script src="js/config.js"></script> 
+<script src="js/data.js"></script> 
+<script src="js/print.js"></script> 
 <script src="js/app.js"></script>
 </body>
 </html>
