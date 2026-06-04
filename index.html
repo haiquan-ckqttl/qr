@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>QR Hải Quan Tà Lùng</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="app-header no-print">
+  <div class="header-logos">
+    <div class="logo-box">
+      <img src="./images/logo-hq.png" alt="HQVN"
+        onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'logo-fb\'>HẢI<br>QUAN</div>'">
+    </div>
+  </div>
+  <div class="header-info">
+    <h1>Hệ Thống Tạo Phiếu Đăng Ký PTVT Chở Hàng Xuất Khẩu QR</h1>
+    <p>Chi Cục Hải Quan Khu Vực XVI · Hải Quan Cửa Khẩu Tà Lùng</p>
+    <div>
+      <span class="lib-badge" id="lib-badge">
+        <span class="dot"></span>
+        <span id="lib-text">Đang kiểm tra...</span>
+      </span>
+    </div>
+  </div>
+  <div class="header-logos" style="width: 44px;"></div>
+</header>
+
+<div class="main no-print">
+  <div class="toolbar">
+    <div class="toolbar-left">
+      <span class="section-title">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        Danh sách phiếu
+        <span class="cnt-badge" id="cnt">0</span>
+      </span>
+      <button class="btn btn-ghost btn-sm" onclick="collapseAll()">
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 15l7-7 7 7"/></svg>
+        Thu gọn
+      </button>
+      <button class="btn btn-ghost btn-sm" id="btn-clearall" style="display:none" onclick="clearAll()">
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+        Xóa tất cả
+      </button>
+    </div>
+    <div class="toolbar-right">
+      <button class="btn btn-primary" onclick="addPhieu()">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+        Thêm phiếu
+      </button>
+    </div>
+  </div>
+
+  <div class="phieu-list" id="phieu-list"></div>
+
+  <div class="print-bar" id="print-bar" style="display:none">
+    <div class="print-bar-info">
+      <h3 id="pb-title">0 phiếu sẵn sàng</h3>
+      <p id="pb-sub">Nhập đủ thông tin bắt buộc để in</p>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <button class="btn btn-ghost" onclick="openPreview()">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+        Xem trước
+      </button>
+      <select id="paper-select" style="padding:7px 10px;border:1px solid var(--border);border-radius:8px;font-size:13px;font-weight:600;background:#fff;outline:none;cursor:pointer">
+        <option value="a4">In khổ A4 (2 phiếu ngang/trang)</option>
+        <option value="a5">In khổ A5 (1 phiếu ngang/trang)</option>
+      </select>
+      <button class="btn btn-green" onclick="doPrint()">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+        In phiếu
+      </button>
+    </div>
+  </div>
+</div>
+
+<footer class="app-footer no-print">
+  <div class="footer-content">
+    <div class="footer-logo">
+        <img src="./images/logo-hq.png" alt="HQVN" onerror="this.style.display='none'">
+    </div>
+    <div class="footer-text">
+      <strong style="color: var(--text); font-size: 14px;">CHI CỤC HẢI QUAN KHU VỰC XVI</strong>
+      <strong style="color: var(--text); font-size: 13px; font-weight: normal;">HẢI QUAN CỬA KHẨU QUỐC TẾ TÀ LÙNG</strong>
+      <p>Bản quyền © 2026. Hệ thống được phát triển bởi Hải quan Cửa khẩu quốc tế Tà Lùng.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-bg" id="modal-preview">
+  <div class="modal" style="max-width:560px">
+    <h3>Xem trước danh sách in</h3>
+    <div class="modal-body" id="modal-body"></div>
+    <div class="modal-foot">
+      <button class="btn btn-ghost" onclick="closeModal()">Đóng</button>
+      <button class="btn btn-green" onclick="doPrint()">In ngay</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-bg" id="print-loading" style="z-index: 9999;">
+  <div class="loading-print">
+    <span class="spin" style="font-size: 20px; color: var(--accent);">↻</span>
+    <span>Đang tạo mã QR và chuẩn bị dữ liệu in, vui lòng đợi...</span>
+  </div>
+</div>
+
+<div id="print-output" class="print-only"></div>
+<div class="toaster" id="toaster"></div>
+
+<script src="js/qrcode.min.js"></script> 
+<script src="js/app.js"></script>
+
+</body>
+</html>
