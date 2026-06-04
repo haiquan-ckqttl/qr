@@ -1,3 +1,8 @@
+/* ============================================================
+   FILE: js/config.js
+   CHỨC NĂNG: Cấu hình danh sách và vị trí đổ dữ liệu vào QR
+   ============================================================ */
+
 // Danh sách Loại hình tự động đổ vào Dropdown trên giao diện
 const LOAI_HINH_OPTIONS = [
     "Vận chuyển độc lập quá cảnh",
@@ -7,42 +12,64 @@ const LOAI_HINH_OPTIONS = [
     "Chuyển cửa khẩu – Nhập khẩu"
 ];
 
-// CẤU HÌNH 1: QR PTVT (Cố định, không phụ thuộc Loại hình)
+// ============================================================
+// CẤU HÌNH 1: QR PTVT (Giữ nguyên theo chuẩn cũ)
+// ============================================================
 const qrPTVTConfig = {
-    "bks": 0, 
-    "socont": 2, 
-    "sotokhai": 3, 
-    "diadiem": 5, 
-    "mathang": 6, 
-    "laixe": 8, 
-    "nguoikhai": 11
+    "bks": 0,       // Cột E
+    "socont": 2,    // Cột F
+    "sotokhai": 3,  // Cột C
+    "diadiem": 5,   // Cột D
+    "mathang": 6,   // Cột G
+    "laixe": 8,     // Cột I
+    "nguoikhai": 11 // Cột H
 };
 
+// ============================================================
 // CẤU HÌNH 2: QR HỒ SƠ ĐỘNG (Thay đổi theo Loại hình)
-// Hệ thống sẽ tự động đối chiếu tên Loại hình người dùng chọn để lấy đúng cấu hình này.
+// Lưu ý: Đã xóa các trường (ngaytokhai, luong, banke, nghiepvu)
+// ============================================================
 const MAPPING_QR_HOSO = {
     
     "Vận chuyển độc lập quá cảnh": {
-        "loaihinh": 0, "mst": 1, "tencty": 2, "sotokhai": 3, 
-        "ngaytokhai": 4, "luong": 5, "banke": 6, "nghiepvu": 7
+        "loaihinh": 0, 
+        "mst": 1, 
+        "tencty": 2, 
+        "sotokhai": 3, 
+        "nguoikhai": 4
     },
     
     "Vận chuyển độc lập kho ngoại quan": {
-        // Ví dụ loại hình này không cần nghiệp vụ, index sẽ khác:
-        "loaihinh": 0, "sotokhai": 1, "ngaytokhai": 2, "mst": 3, "tencty": 4
+        // Có thể đảo vị trí tùy ý
+        "loaihinh": 0, 
+        "sotokhai": 1, 
+        "mst": 2, 
+        "tencty": 3,
+        "diadiem": 4
     },
     
     "Xuất nhập khẩu cửa khẩu quốc tế Tà Lùng": {
-        // Ví dụ loại hình này Cột A là Số tờ khai, Cột B là Luồng:
-        "sotokhai": 0, "luong": 1, "loaihinh": 2, "mst": 3
+        "sotokhai": 0, 
+        "loaihinh": 1, 
+        "mst": 2,
+        "tencty": 3,
+        "mathang": 4
     },
     
     "Chuyển cửa khẩu – Xuất khẩu": {
-        "loaihinh": 0, "sotokhai": 1, "ngaytokhai": 2, "banke": 3
+        "loaihinh": 0, 
+        "sotokhai": 1, 
+        "mst": 2,
+        "bks": 3,
+        "socont": 4
     },
     
     "Chuyển cửa khẩu – Nhập khẩu": {
-        "loaihinh": 0, "sotokhai": 1, "ngaytokhai": 2, "banke": 3
+        "loaihinh": 0, 
+        "sotokhai": 1, 
+        "mst": 2,
+        "bks": 3,
+        "socont": 4
     }
 
 };

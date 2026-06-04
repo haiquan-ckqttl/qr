@@ -24,12 +24,12 @@ var QRGenInline = (function(){
 
 var phieus = [];
 var nextId = 1;
-// Bắt buộc điền các trường này mới cho phép in
-var REQUIRED = ['loaihinh', 'mst', 'tencty', 'sotokhai', 'diadiem', 'bks', 'nguoikhai'];
+
+// Đã cập nhật: Bắt buộc thêm socont và mathang
+var REQUIRED = ['loaihinh', 'mst', 'tencty', 'sotokhai', 'diadiem', 'bks', 'socont', 'mathang', 'nguoikhai'];
 
 window.addEventListener('DOMContentLoaded', function(){
     detectLib();
-    // Khởi tạo phiếu đầu tiên khi load web
     addPhieu();
 });
 
@@ -48,7 +48,6 @@ function detectLib(){
     text.textContent = 'Không tìm thấy thư viện offline — dùng API online cho QR';
 }
 
-// Lắp ráp dữ liệu vào mảng theo Cấu hình Index
 function buildQRStr(p, config){
     var maxIndex = 0;
     for (var key in config) {
@@ -97,14 +96,12 @@ function addPhieu(){
     var p = {
         id: id, 
         loaihinh: (typeof LOAI_HINH_OPTIONS !== 'undefined') ? LOAI_HINH_OPTIONS[0] : '', 
-        mst: '', tencty: '', sotokhai: '', ngaytokhai: '', luong: 'Xanh', 
-        banke: '', nghiepvu: '', diadiem: '', bks: '', socont: '', 
+        mst: '', tencty: '', sotokhai: '', diadiem: '', bks: '', socont: '', 
         mathang: '', cccd: '', nguoikhai: '', laixe: ''
     };
     phieus.push(p);
     renderCard(p);
     updateUI();
-    toast('Đã thêm phiếu #'+id, 'info');
 }
 
 function duplicatePhieu(id){
@@ -176,6 +173,7 @@ function renderCard(p){
     card.className = 'phieu-card';
     card.id = 'card-' + p.id;
     
+    // Khối HTML render Form đã được dọn dẹp và gộp chung
     card.innerHTML = `
         <div class="card-head" onclick="toggleCard(${p.id})">
             <div class="phieu-num">${p.id}</div>
@@ -185,10 +183,10 @@ function renderCard(p){
         </div>
         <div class="card-body" id="body-${p.id}">
             
-            <div style="font-weight:bold; margin-bottom:10px; color:var(--accent);">📌 1. THÔNG TIN HỒ SƠ HẢI QUAN</div>
-            <div class="form-grid" style="margin-bottom: 24px;">
+            <div class="form-grid">
+                
                 <div class="fg col-span-3">
-                    <label>Loại hình <span class="req">*</span></label>
+                    <label>Loại hình khai báo <span class="req">*</span></label>
                     <select class="fi" id="f${p.id}loaihinh" onchange="setField(${p.id},'loaihinh',this.value)">
                         ${loaiHinhOptionsHtml}
                     </select>
@@ -207,7 +205,7 @@ function renderCard(p){
                 <div class="fg col-span-2">
                     <label>Tên đơn vị (DN) <span class="req">*</span></label>
                     <div class="fi-row">
-                        <input class="fi" id="f${p.id}tencty" placeholder="Công ty..." oninput="setField(${p.id},'tencty',this.value)">
+                        <input class="fi" id="f${p.id}tencty" placeholder="Nhập tên doanh nghiệp..." oninput="setField(${p.id},'tencty',this.value)">
                         <button class="btn btn-ghost btn-sm" style="flex-shrink:0" onclick="fetchMST(${p.id})" id="fbtn${p.id}" title="Tra cứu Tên DN qua Internet">
                             <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
                         </button>
@@ -215,75 +213,49 @@ function renderCard(p){
                 </div>
                 
                 <div class="fg">
-                    <label>Số tờ khai <span class="req">*</span></label>
+                    <label>Số tờ khai (STK) <span class="req">*</span></label>
                     <div class="fi-wrap">
-                        <input class="fi" id="f${p.id}sotokhai" placeholder="12 chữ số" maxlength="12" oninput="setField(${p.id},'sotokhai',this.value.replace(/\\D/g,''))">
+                        <input class="fi" id="f${p.id}sotokhai" placeholder="Nhập 12 chữ số" maxlength="12" oninput="setField(${p.id},'sotokhai',this.value.replace(/\\D/g,''))">
                         <span class="fi-check" id="stkchk${p.id}"></span>
                     </div>
                     <div class="field-err" id="stkerr${p.id}">STK phải đúng 12 chữ số!</div>
                 </div>
-                
-                <div class="fg">
-                    <label>Ngày tờ khai</label>
-                    <input class="fi" id="f${p.id}ngaytokhai" placeholder="VD: 15/06/2026" oninput="setField(${p.id},'ngaytokhai',this.value)">
-                </div>
-                
-                <div class="fg">
-                    <label>Luồng</label>
-                    <select class="fi" id="f${p.id}luong" onchange="setField(${p.id},'luong',this.value)">
-                        <option value="Xanh">Xanh</option>
-                        <option value="Vàng">Vàng</option>
-                        <option value="Đỏ">Đỏ</option>
-                    </select>
-                </div>
-                
-                <div class="fg">
-                    <label>Bản kê nhập khẩu số</label>
-                    <input class="fi" id="f${p.id}banke" oninput="setField(${p.id},'banke',this.value)">
-                </div>
-                
-                <div class="fg col-span-2">
-                    <label>Nghiệp vụ</label>
-                    <input class="fi" id="f${p.id}nghiepvu" oninput="setField(${p.id},'nghiepvu',this.value)">
-                </div>
-            </div>
 
-            <div style="font-weight:bold; margin-bottom:10px; color:var(--accent);">🚛 2. THÔNG TIN PTVT & LÔ HÀNG</div>
-            <div class="form-grid">
+                <div class="fg">
+                    <label>Địa điểm tập kết <span class="req">*</span></label>
+                    <input class="fi" id="f${p.id}diadiem" list="location-suggestions" placeholder="Chọn hoặc nhập địa điểm..." oninput="setField(${p.id},'diadiem',this.value)">
+                </div>
+
+                <div class="fg">
+                    <label>Người khai Hải quan <span class="req">*</span></label>
+                    <input class="fi" id="f${p.id}nguoikhai" placeholder="Họ và tên..." oninput="setField(${p.id},'nguoikhai',this.value)">
+                </div>
+
                 <div class="fg">
                     <label>Biển kiểm soát <span class="req">*</span></label>
                     <input class="fi" id="f${p.id}bks" placeholder="VD: 34H121212" style="text-transform:uppercase" oninput="setField(${p.id},'bks',this.value.toUpperCase().replace(/[^A-Z0-9]/g,''))">
                 </div>
                 
                 <div class="fg">
-                    <label>Số Container <span class="opt-tag">Tùy chọn</span></label>
-                    <input class="fi" id="f${p.id}socont" placeholder="VD: CICU5999091" style="text-transform:uppercase" oninput="setField(${p.id},'socont',this.value.toUpperCase())">
+                    <label>Số Container <span class="req">*</span></label>
+                    <input class="fi" id="f${p.id}socont" placeholder="VD: CICU5999091 hoặc Không" style="text-transform:uppercase" oninput="setField(${p.id},'socont',this.value.toUpperCase())">
                 </div>
                 
                 <div class="fg">
-                    <label>Địa điểm tập kết <span class="req">*</span></label>
-                    <input class="fi" id="f${p.id}diadiem" placeholder="Phú Anh, Sơn Cảng..." oninput="setField(${p.id},'diadiem',this.value)">
-                </div>
-                
-                <div class="fg">
-                    <label>Mặt hàng <span class="opt-tag">Tùy chọn</span></label>
+                    <label>Mặt hàng <span class="req">*</span></label>
                     <input class="fi" id="f${p.id}mathang" placeholder="VD: Sầu riêng tươi" oninput="setField(${p.id},'mathang',this.value)">
                 </div>
                 
                 <div class="fg">
                     <label>CCCD / GPLX Lái xe <span class="opt-tag">Tùy chọn</span></label>
-                    <input class="fi" id="f${p.id}cccd" oninput="setField(${p.id},'cccd',this.value)">
+                    <input class="fi" id="f${p.id}cccd" placeholder="Số giấy tờ..." oninput="setField(${p.id},'cccd',this.value)">
                 </div>
                 
-                <div class="fg">
+                <div class="fg col-span-2">
                     <label>Tên lái xe <span class="opt-tag">Tùy chọn</span></label>
                     <input class="fi" id="f${p.id}laixe" placeholder="Nguyễn Văn A" oninput="setField(${p.id},'laixe',this.value)">
                 </div>
                 
-                <div class="fg col-span-3">
-                    <label>Người khai Hải quan (Ký tên) <span class="req">*</span></label>
-                    <input class="fi" id="f${p.id}nguoikhai" placeholder="Họ và tên..." oninput="setField(${p.id},'nguoikhai',this.value)">
-                </div>
             </div>
             
         </div>
@@ -299,10 +271,7 @@ function renderCard(p){
 }
 
 function fillCard(p){
-    var fields = [
-        'loaihinh', 'mst', 'tencty', 'sotokhai', 'ngaytokhai', 'luong', 'banke', 
-        'nghiepvu', 'diadiem', 'bks', 'socont', 'mathang', 'cccd', 'nguoikhai', 'laixe'
-    ];
+    var fields = ['loaihinh', 'mst', 'tencty', 'sotokhai', 'diadiem', 'bks', 'socont', 'mathang', 'cccd', 'nguoikhai', 'laixe'];
     fields.forEach(function(k){
         var el = document.getElementById('f'+p.id+k);
         if(el) el.value = p[k] || '';
@@ -317,7 +286,6 @@ function toggleCard(id){
     }
 }
 
-// Bắt lỗi Validation trực tiếp khi gõ
 function setField(id, key, value){
     var p = phieus.find(function(x){return x.id === id;});
     if(!p) return;
@@ -325,7 +293,6 @@ function setField(id, key, value){
     var el = document.getElementById('f'+id+key);
     if(el && el.value !== value) el.value = value;
 
-    // Check Số Tờ Khai (Bắt buộc 12 số)
     if(key === 'sotokhai'){
         var errStk = document.getElementById('stkerr'+id);
         var chkStk = document.getElementById('stkchk'+id);
@@ -334,7 +301,6 @@ function setField(id, key, value){
         else{ el.className='fi bad'; if(errStk)errStk.classList.add('show'); if(chkStk)chkStk.textContent=''; }
     }
 
-    // Check Mã số thuế (Bắt buộc 10 số)
     if(key === 'mst'){
         var errMst = document.getElementById('msterr'+id);
         var chkMst = document.getElementById('mstchk'+id);
@@ -346,9 +312,7 @@ function setField(id, key, value){
     refreshStatus(p);
 }
 
-// Hàm quyết định Phiếu đã sẵn sàng in chưa
 function isReady(p){
-    // Bắt buộc điền đủ các ô yêu cầu & STK = 12 số & MST = 10 số
     return REQUIRED.every(function(k){return p[k] && p[k].trim();}) 
            && p.sotokhai.length === 12 
            && p.mst.length === 10;
@@ -385,7 +349,6 @@ function updateUI(){
         : (n > 0 ? '✓ Tất cả phiếu đã đủ thông tin' : '');
 }
 
-// Fetch API từ VietQR để gợi ý tên công ty nếu không có trong Data JSON nội bộ
 function fetchMST(id){
     var p = phieus.find(function(x){return x.id===id;});
     if(!p || !p.mst || p.mst.length !== 10){ toast('MST phải đúng 10 số trước khi tra cứu','error'); return; }
@@ -407,6 +370,40 @@ function fetchMST(id){
             btn.innerHTML='<svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>';
             btn.disabled=false;
         });
+}
+
+// Hàm UI Helper
+function closeModal(){ document.getElementById('modal-preview').classList.remove('open'); }
+document.getElementById('modal-preview').addEventListener('click',function(e){if(e.target===this)closeModal();});
+var modalInstruction = document.getElementById('modal-instruction');
+if(modalInstruction) {
+    modalInstruction.addEventListener('click', function(e){
+        if(e.target === this) this.classList.remove('open');
+    });
+}
+
+function openPreview(){
+    var list = phieus.filter(isReady);
+    if(!list.length){ toast('Chưa có phiếu nào đủ thông tin','error'); return; }
+    var body = document.getElementById('modal-body');
+    body.innerHTML = '<div style="margin-bottom:10px;padding:8px 12px;background:var(--bg);border-radius:7px;font-size:13px">'
+        +'<b>'+list.length+' phiếu</b> sẽ được in'+(phieus.length>list.length?' · <span style="color:var(--orange)">'+( phieus.length-list.length)+' phiếu bỏ qua</span>':'')
+        +'</div>'
+        +list.map(function(p){
+            return '<div style="border:1px solid var(--border);border-radius:7px;padding:10px;margin-bottom:8px;font-size:12px">'
+                +'<b style="font-size:13px">Phiếu #'+p.id+'</b>'
+                +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:3px 10px;margin-top:6px">'
+                    +'<div><b>STK:</b> '+p.sotokhai+'</div>'
+                    +'<div><b>BKS:</b> '+p.bks+'</div>'
+                    +'<div><b>MST:</b> '+p.mst+'</div>'
+                    +'<div><b>Cont:</b> '+p.socont+'</div>'
+                    +'<div style="grid-column:1/-1"><b>DN:</b> '+p.tencty+'</div>'
+                    +'<div style="grid-column:1/-1"><b>Hàng:</b> '+p.mathang+'</div>'
+                    +(p.laixe?'<div><b>Lái xe:</b> '+p.laixe+'</div>':'')
+                +'</div>'
+            +'</div>';
+        }).join('');
+    document.getElementById('modal-preview').classList.add('open');
 }
 
 function toast(msg, type){

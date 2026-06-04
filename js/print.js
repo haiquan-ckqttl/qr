@@ -1,85 +1,90 @@
 /* ============================================================
+   FILE: js/print.js
    THUẬT TOÁN VẼ GIAO DIỆN BẢN IN (CHUẨN FORM HẢI QUAN)
    ============================================================ */
 
 function buildPrintHTML(item) {
     var p = item.p;
     var now = new Date();
-    // Tạo ngày in hiện tại (Dành cho phần chữ ký)
-    var currentDay = String(now.getDate()).padStart(2, '0');
-    var currentMonth = String(now.getMonth() + 1).padStart(2, '0');
+    
+    var pad = n => String(n).padStart(2, '0');
+    var currentDay = pad(now.getDate());
+    var currentMonth = pad(now.getMonth() + 1);
     var currentYear = now.getFullYear();
+    // Tạo chuỗi ngày giờ in hoàn chỉnh (Ví dụ: 19:45 04/06/2026)
+    var ts = pad(now.getHours()) + ':' + pad(now.getMinutes()) + ' ' + currentDay + '/' + currentMonth + '/' + currentYear;
 
     return `
-    <div class="print-page" style="position: relative; page-break-after: always; width: 100%; font-family: 'Times New Roman', Times, serif; padding: 10mm 15mm; box-sizing: border-box; font-size: 13pt; line-height: 1.4; color: #000; background: #fff; min-height: 297mm;">
+    <div class="print-page" style="position: relative; width: 100%; font-family: 'Times New Roman', Times, serif; padding: 8mm 15mm; box-sizing: border-box; font-size: 11pt; line-height: 1.35; color: #000; background: #fff; min-height: 297mm;">
         
         <img src="./images/logo-hq.png" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.1; width: 140mm; z-index: 0; pointer-events: none;"/>
 
         <div style="position: relative; z-index: 1;">
             
-            <table style="width:100%; border:none; margin-bottom: 5mm; border-collapse: collapse;">
+            <table style="width:100%; border:none; margin-bottom: 3mm; border-collapse: collapse;">
                 <tr>
                     <td style="width: 20%; text-align: center; vertical-align: top;">
-                        <div style="font-weight:bold; font-size: 11pt; margin-bottom: 2px;">Mã QR 1</div>
-                        ${item.urlHoSo ? `<img src="${item.urlHoSo}" style="width:25mm; height:25mm; display:block; margin:0 auto;"/>` : `<div style="width:25mm;height:25mm;border:1px solid #000;margin:0 auto;"></div>`}
+                        ${item.urlHoSo ? `<img src="${item.urlHoSo}" style="width:23mm; height:23mm; display:block; margin:0 auto;"/>` : `<div style="width:23mm;height:23mm;border:1px solid #000;margin:0 auto;"></div>`}
                     </td>
-                    <td style="width: 50%; text-align: center; vertical-align: top; font-weight: bold; font-size: 12pt; line-height: 1.3;">
+                    <td style="width: 50%; text-align: center; vertical-align: top; font-weight: bold; font-size: 11pt; line-height: 1.3;">
                         CHI CỤC HẢI QUAN KHU VỰC XVI<br>
                         HẢI QUAN CK QUỐC TẾ TÀ LÙNG
                     </td>
-                    <td style="width: 30%; vertical-align: top; font-weight: bold; font-size: 12pt; line-height: 1.6; padding-left: 5mm;">
+                    <td style="width: 30%; vertical-align: top; font-weight: bold; font-size: 11pt; line-height: 1.5; padding-left: 5mm;">
                         Nhập sổ:..........................<br>
-                        Loại hình: <span style="text-decoration: underline dotted;">${p.loaihinh || '......................'}</span>
+                        Loại hình: <span style="text-decoration: underline none;">${p.loaihinh || '......................'}</span>
                     </td>
                 </tr>
             </table>
 
-            <div style="text-align: center; font-weight: bold; font-size: 14pt; margin-bottom: 5mm;">
+            <div style="text-align: center; font-weight: bold; font-size: 12pt; margin-bottom: 3mm;">
                 PHIẾU ĐĂNG KÝ HỒ SƠ HẢI QUAN<br>
-                <span style="font-size: 12pt; font-weight: bold;">(Tờ khai đăng ký <span style="text-decoration: underline dotted;">${p.loaihinh || '......................'}</span>)</span>
+                <span style="font-size: 11pt; font-weight: bold;">(Tờ khai đăng ký ${p.loaihinh || '......................'})</span>
             </div>
 
             <div style="font-weight: bold; margin-bottom: 2mm;">I. PHẦN DÀNH CHO NGƯỜI KHAI HẢI QUAN:</div>
-            <div style="display:flex; margin-bottom:3px;">
+            <div style="display:flex; margin-bottom:2px;">
                 <span>Tên đơn vị: </span><span style="flex:1; border-bottom:1px dotted #000; margin-left:5px;"><b>${p.tencty}</b></span>
             </div>
-            <div style="display:flex; margin-bottom:3px;">
+            <div style="display:flex; margin-bottom:2px;">
                 <span>Mã số thuế: </span><span style="flex:1; border-bottom:1px dotted #000; margin-left:5px;"><b>${p.mst}</b></span>
             </div>
-            <div style="display:flex; margin-bottom:3px; align-items: flex-end;">
+            <div style="display:flex; margin-bottom:2px; align-items: flex-end;">
                 <span>Số, ngày tờ khai: </span><span style="border-bottom:1px dotted #000; width: 140px; text-align:center;"><b>${p.sotokhai}</b></span>
-                <span> /....../11B1 ngày </span><span style="border-bottom:1px dotted #000; width: 100px; text-align:center;"><b>${p.ngaytokhai}</b></span>
-                <span>/2026; Luồng: </span><span style="flex:1; border-bottom:1px dotted #000; text-align:center;"><b>${p.luong}</b></span>
+                <span> /....../11B1 ngày </span><span style="border-bottom:1px none #000; width: 100px; text-align:center;"><b>${p.ngaytokhai || '...../...../2026'}</b></span>
+                <span>; Luồng: </span><span style="flex:1; border-bottom:1px dotted #000; text-align:center;"><b>${p.luong || ''}</b></span>
             </div>
-            <div style="display:flex; margin-bottom:4mm; align-items: flex-end;">
-                <span>Bản kê nhập khẩu hàng hóa số: </span><span style="border-bottom:1px dotted #000; flex:1; text-align:center;"><b>${p.banke}</b></span>
-                <span> Nghiệp vụ: </span><span style="flex:1; border-bottom:1px dotted #000; text-align:center;"><b>${p.nghiepvu}</b></span>
+            <div style="display:flex; margin-bottom:3mm; align-items: flex-end;">
+                <span>Bản kê nhập khẩu hàng hóa số: </span><span style="border-bottom:1px dotted #000; flex:1; text-align:center;"><b>${p.banke || ''}</b></span>
+                <span> Nghiệp vụ: </span><span style="flex:1; border-bottom:1px dotted #000; text-align:center;"><b>${p.nghiepvu || ''}</b></span>
             </div>
 
-            <div style="display: flex; justify-content: space-around; text-align: center; margin-bottom: 6mm;">
+            <div style="display: flex; justify-content: space-around; text-align: center; margin-bottom: 3mm;">
                 <div>
-                    <i>Ngày ${currentDay} tháng ${currentMonth} năm ${currentYear}</i><br>
+                    <i>Ngày ..... tháng ..... năm ........</i><br>
                     <b>Công chức đối chiếu thu phí cơ sở hạ tầng</b><br>
                     <i>(Ký tên hoặc đóng dấu)</i>
+                    <div style="height: 18mm;"></div>
                 </div>
                 <div>
-                    <i>Ngày ${currentDay} tháng ${currentMonth} năm ${currentYear}</i><br>
+                    <i>Ngày ..... tháng ..... năm ........</i><br>
                     <b>Người khai hải quan</b><br>
-                    <i>(Ký, ghi rõ họ tên)</i><br><br><br><br>
+                    <i>(Ký, ghi rõ họ tên)</i>
+                    <div style="height: 18mm;"></div>
                     <b>${p.nguoikhai}</b>
                 </div>
             </div>
 
             <div style="font-weight: bold; margin-bottom: 2mm;">II. PHẦN DÀNH CHO CÔNG CHỨC HẢI QUAN:</div>
-            <table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 4mm;">
+            <table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 3mm;">
                 <tr>
-                    <td style="width: 33.33%; padding: 5px; height: 28mm; vertical-align: top;">
+                    <td style="width: 33.33%; padding: 4px; height: 35mm; vertical-align: top;">
                         <b>CC kiểm tra hồ sơ (Bước 2)</b><br>2)..............................<br><i>(ký đóng dấu)</i>
                     </td>
-                    <td style="width: 33.33%; padding: 5px; vertical-align: top;">
+                    <td style="width: 33.33%; padding: 4px; vertical-align: top;">
                         <b>CC kiểm tra thực tế (Bước 3)</b><br>3)..............................<br><i>(ký đóng dấu)</i>
                     </td>
-                    <td style="width: 33.33%; padding: 5px; vertical-align: top;">
+                    <td style="width: 33.33%; padding: 4px; vertical-align: top;">
                         <b>CC kiểm tra thuế, lệ phí (Bước 4)</b><br>4)..............................<br><i>(ký đóng dấu)</i>
                     </td>
                 </tr>
@@ -87,58 +92,64 @@ function buildPrintHTML(item) {
 
             <table border="1" style="width: 100%; border-collapse: collapse;">
                 <tr>
-                    <td style="width: 60%; padding: 8px 12px; vertical-align: top;">
-                        <div style="font-weight: bold; text-align: center; margin-bottom: 8px; font-size: 12pt;">
+                    <td style="width: 60%; padding: 6px 10px; vertical-align: top;">
+                        <div style="font-weight: bold; text-align: center; margin-bottom: 5px; font-size: 11pt;">
                             ĐĂNG KÝ THÔNG TIN PTVT<br>CHỞ HÀNG HÓA XUẤT KHẨU/NHẬP KHẨU
                         </div>
                         <div style="display:flex; font-weight: bold;">
                             <span>Địa điểm tập kết: </span><span style="flex:1; border-bottom:1px dotted #000; margin-left:5px; font-weight:normal;"><b>${p.diadiem}</b></span>
                         </div>
                     </td>
-                    <td style="width: 40%; padding: 8px 12px; vertical-align: top;">
+                    <td style="width: 40%; padding: 6px 10px; vertical-align: top;">
                         <b>GET IN:</b>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2" style="padding: 6px 12px; background-color: #f9f9f9;">
+                    <td colspan="2" style="padding: 4px 10px; background-color: #f9f9f9;">
                         <b>III. PHẦN PHIẾU ĐĂNG KÝ PTVT CHỞ HÀNG XUẤT NHẬP KHẨU:</b>
                     </td>
                 </tr>
                 <tr>
-                    <td style="padding: 10px 12px; vertical-align: top; line-height: 1.7; font-size: 12pt;">
+                    <td style="padding: 8px 10px; vertical-align: top; line-height: 1.5;">
                         1. Biển kiểm soát: <b>${p.bks}</b><br>
                         2. Số hiệu Container: <b>${p.socont}</b><br>
                         3. Mặt hàng: <b>${p.mathang}</b><br>
                         4. Mã số thuế: <b>${p.mst}</b><br>
-                        5. Số CCCD/GPLX của người ĐKPTVT(optinal trên web form): <b>${p.cccd || ''}</b><br>
-                        6. Tên lái xe: <b>${p.laixe}</b>
+                        5. Số CCCD/GPLX của người ĐKPTVT: <b>${p.cccd || '..........................'}</b><br>
+                        6. Tên lái xe: <b>${p.laixe || '........................................................................'}</b>
                     </td>
-                    <td style="padding: 10px 12px; vertical-align: top; font-size: 12pt;">
-                        <div style="margin-bottom:8px;"><b>1. Ngày xuất cảnh:</b><br><div style="border-bottom:1px dotted #000; height:12px;"></div></div>
-                        <div style="margin-bottom:8px;"><b>2. Ngày nhập cảnh:</b><br><div style="border-bottom:1px dotted #000; height:12px;"></div></div>
+                    <td style="padding: 8px 10px; vertical-align: top;">
+                        <div style="margin-bottom:6px;"><b>1. Ngày xuất cảnh:</b><br><div style="border-bottom:1px dotted #000; height:10px;"></div></div>
+                        <div style="margin-bottom:6px;"><b>2. Ngày nhập cảnh:</b><br><div style="border-bottom:1px dotted #000; height:10px;"></div></div>
                         
-                        <div style="text-align: center; margin-top: 5px;">
-                            <div style="font-weight: bold; margin-bottom: 3px;">Mã quét QR 2</div>
+                        <div style="text-align: center; margin-top: 4px;">
                             ${item.urlPTVT ? `<img src="${item.urlPTVT}" style="width:23mm; height:23mm; display:block; margin: 0 auto;"/>` : `<div style="width:23mm;height:23mm;border:1px solid #000;margin:0 auto;"></div>`}
-                            <div style="margin-top: 4px;">
-                                <b>CC giám sát</b><br>
-                                <i>(ký đóng dấu)</i><br><br><br>
-                            </div>
                         </div>
                     </td>
                 </tr>
             </table>
+            
+            <div style="text-align: right; margin-top: 2mm; padding-right: 15mm;">
+                <b>CC giám sát</b><br>
+                <i>(ký đóng dấu)</i>
+                <div style="height: 14mm;"></div>
+            </div>
+        </div>
+
+        <div style="position: absolute; bottom: 6mm; left: 15mm; right: 15mm; border-top: 0.5px solid #bbb; padding-top: 1mm; font-size: 8.5pt; color: #444; font-style: italic; display: flex; justify-content: space-between; font-family: sans-serif; z-index: 10; pointer-events: none;">
+            <span></span>
+            <span>Thời gian in: ${ts}</span>
         </div>
     </div>
     
-    <div class="print-page" style="position: relative; page-break-after: always; width: 100%; font-family: 'Times New Roman', Times, serif; padding: 15mm; box-sizing: border-box; font-size: 13pt; line-height: 1.5; color: #000; background: #fff; min-height: 297mm;">
+    <div class="print-page" style="position: relative; width: 100%; font-family: 'Times New Roman', Times, serif; padding: 15mm; box-sizing: border-box; font-size: 11pt; line-height: 1.4; color: #000; background: #fff; min-height: 297mm;">
         
         <img src="./images/logo-hq.png" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.1; width: 150mm; z-index: 0; pointer-events: none;"/>
 
         <div style="position: relative; z-index: 1;">
-            <div style="text-align: center; font-weight: bold; font-size: 14pt; margin-bottom: 8mm;">
+            <div style="text-align: center; font-weight: bold; font-size: 12pt; margin-bottom: 8mm;">
                 THÔNG TIN BỔ SUNG CỦA NGƯỜI KHAI HẢI QUAN<br>
-                <span style="font-size: 13pt; font-weight: bold; text-decoration: underline;">(Sử dụng trong trường hợp cần bổ sung thông tin)</span>
+                <span style="font-size: 11pt; font-weight: bold; text-decoration: underline;">(Sử dụng trong trường hợp cần bổ sung thông tin)</span>
             </div>
             
             <table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 5mm; font-weight: bold;">
@@ -159,11 +170,12 @@ function buildPrintHTML(item) {
             </table>
             
             <div style="text-align: right; padding-right: 15mm; margin-top: 15mm;">
-                <b style="font-size: 14pt;">Người khai hải quan</b><br>
-                <i style="font-size: 13pt;">(Ký, ghi rõ họ tên)</i><br><br><br><br><br>
+                <b style="font-size: 12pt;">Người khai hải quan</b><br>
+                <i style="font-size: 11pt;">(Ký, ghi rõ họ tên)</i><br><br><br><br><br>
                 <b>${p.nguoikhai}</b>
             </div>
         </div>
+
     </div>
     `;
 }
@@ -200,7 +212,7 @@ function doPrint(){
         var html = items.map(buildPrintHTML).join('');
         document.getElementById('print-output').innerHTML = html;
         
-        // Ghi đè CSS in ẩn các lề mặc định của trình duyệt
+        // Ghi đè CSS in ẩn các lề mặc định của trình duyệt và kiểm soát ngắt trang bằng class thay vì inline
         var style = document.getElementById('dynamic-page-style');
         if(!style){ style=document.createElement('style'); style.id='dynamic-page-style'; document.head.appendChild(style); }
         
@@ -208,7 +220,8 @@ function doPrint(){
             @media print { 
                 @page { size: A4 portrait; margin: 0; } 
                 body { margin: 0; }
-                .print-page:last-child { page-break-after: auto !important; }
+                .print-page { page-break-after: always !important; break-after: page !important; }
+                .print-page:last-child { page-break-after: auto !important; break-after: auto !important; }
             }
         `;
         
