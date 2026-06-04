@@ -523,10 +523,9 @@ function buildPrintHTML(items, paper){
                         +'<div class="tf" style="padding:1.2mm 0;"><span class="tf-l">3. Số container:</span><span class="tf-v">'+p.socont+'</span></div>'
                         +'<div class="tf" style="padding:1.2mm 0;"><span class="tf-l">4. Địa điểm:</span><span class="tf-v">'+p.diadiem+'</span></div>'
                         +'<div class="tf" style="padding:1.2mm 0;"><span class="tf-l">5. Mặt hàng:</span><span class="tf-v">'+p.mathang+'</span></div>'
-                        +'<div class="tf" style="padding:1.2mm 0;"><span class="tf-l">6. Người khai hải quan:</span><span class="tf-v">'+p.nguoikhai+'</span></div>'
-                        +'<div class="tf" style="padding:1.2mm 0;"><span class="tf-l">7. Tên lái xe:</span><span class="tf-v">'+(p.laixe||'..........................................')+'</span></div>'
-                        +'<div class="tf" style="padding:1.2mm 0;"><span class="tf-l">8. Mã số thuế:</span><span class="tf-v">'+p.mst+'</span></div>'
-                        +'<div class="tf" style="padding:1.2mm 0; border-bottom:none;"><span class="tf-l">9. Tên công ty:</span><span class="tf-v">'+p.tencty+'</span></div>'
+                        +'<div class="tf" style="padding:1.2mm 0;"><span class="tf-l">6. Tên lái xe:</span><span class="tf-v">'+(p.laixe||'..........................................')+'</span></div>'
+                        +'<div class="tf" style="padding:1.2mm 0;"><span class="tf-l">7. Mã số thuế:</span><span class="tf-v">'+p.mst+'</span></div>'
+                        +'<div class="tf" style="padding:1.2mm 0; border-bottom:none;"><span class="tf-l">8. Tên công ty:</span><span class="tf-v">'+p.tencty+'</span></div>'
                     +'</div>'
                 +'</div>'
                 
