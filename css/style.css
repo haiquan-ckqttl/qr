@@ -722,3 +722,123 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+/* ============================================================
+   9. MODALS, OVERLAYS & TOASTS
+   ============================================================ */
+.modal-bg {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s;
+}
+
+.modal-bg.open { opacity: 1; pointer-events: all; }
+
+.modal {
+    background: #fff;
+    border-radius: 14px;
+    padding: 22px;
+    max-width: 480px;
+    width: 94%;
+    box-shadow: 0 20px 60px rgba(0,0,0,.2);
+    transform: translateY(8px);
+    transition: transform .2s;
+}
+
+/* Modal rộng hơn dành riêng cho Hướng dẫn */
+.modal.modal-lg {
+    max-width: 640px;
+}
+
+.modal-bg.open .modal { transform: translateY(0); }
+.modal h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+.modal-body { font-size: 13px; color: var(--muted); max-height: 65vh; overflow-y: auto; padding-right: 4px; }
+.modal-foot { margin-top: 14px; display: flex; justify-content: flex-end; gap: 8px; }
+
+/* Cấu trúc cho nội dung Hướng dẫn */
+.instruction-content {
+    font-size: 13.5px;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.instruction-content h4 {
+    color: var(--accent);
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 14.5px;
+    font-weight: 700;
+}
+
+.instruction-content ul {
+    padding-left: 20px;
+    margin-bottom: 14px;
+}
+
+.instruction-content li {
+    margin-bottom: 6px;
+    color: var(--muted);
+}
+
+.instruction-content strong {
+    color: var(--text);
+}
+
+.highlight-box {
+    background: var(--orange-bg);
+    border-left: 4px solid var(--orange);
+    padding: 12px 14px;
+    margin: 16px 0;
+    border-radius: 4px;
+    color: #b45309;
+}
+
+.loading-print {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,.2);
+    color: var(--text);
+    font-size: 15px;
+}
+
+.toaster {
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    z-index: 2000;
+}
+
+.toast {
+    padding: 9px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 4px 16px rgba(0,0,0,.15);
+    max-width: 280px;
+    animation: tIn .25s ease;
+}
+
+@keyframes tIn { from { transform: translateX(110%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+@keyframes tOut { from { opacity: 1; } to { transform: translateX(110%); opacity: 0; } }
+
+.t-success { background: #0e7a45; color: #fff; }
+.t-error { background: var(--red); color: #fff; }
+.t-info { background: #1c2b3a; color: #fff; }
+
+.spin { display: inline-block; animation: rot .7s linear infinite; }
+@keyframes rot { to { transform: rotate(360deg); } }

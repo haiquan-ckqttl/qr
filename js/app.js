@@ -373,6 +373,21 @@ function fetchMST(id){
 /* ============================================================
    8. XỬ LÝ TRƯỚC KHI IN & RENDER HTML BẢN IN
    ============================================================ */
+function closeModal(){ document.getElementById('modal-preview').classList.remove('open'); }
+document.getElementById('modal-preview').addEventListener('click',function(e){if(e.target===this)closeModal();});
+
+// Đóng Modal Xem trước
+function closeModal(){ document.getElementById('modal-preview').classList.remove('open'); }
+document.getElementById('modal-preview').addEventListener('click',function(e){if(e.target===this)closeModal();});
+
+// Đóng Modal Hướng dẫn (khi click ra ngoài vùng tối)
+var modalInstruction = document.getElementById('modal-instruction');
+if(modalInstruction) {
+    modalInstruction.addEventListener('click', function(e){
+        if(e.target === this) this.classList.remove('open');
+    });
+}
+
 function openPreview(){
     var list = phieus.filter(isReady);
     if(!list.length){ toast('Chưa có phiếu nào đủ thông tin','error'); return; }

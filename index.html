@@ -46,6 +46,10 @@
       </button>
     </div>
     <div class="toolbar-right">
+      <button class="btn btn-ghost" onclick="document.getElementById('modal-instruction').classList.add('open')">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        Hướng dẫn
+      </button>
       <button class="btn btn-primary" onclick="addPhieu()">
         <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
         Thêm phiếu
@@ -101,6 +105,35 @@
   </div>
 </div>
 
+<<div class="modal-bg" id="modal-instruction">
+  <div class="modal modal-lg">
+    <h3>📖 Quy trình & Hướng dẫn tạo phiếu QR</h3>
+    <div class="modal-body instruction-content">
+      <div class="highlight-box">
+        ⚠ <strong>Nhiệm vụ của Doanh nghiệp:</strong> Đại diện doanh nghiệp chỉ thực hiện nhập thông tin, in phiếu và kẹp cùng hồ sơ tờ khai nộp cho Hải quan. Việc quét mã QR kiểm soát sẽ do cơ quan Hải quan thực hiện.
+      </div>
+      
+      <h4>1. Quy trình khai báo & Nộp hồ sơ</h4>
+      <ul>
+        <li><strong>Nhập liệu:</strong> Điền đầy đủ và chính xác các thông tin lô hàng vào hệ thống bên dưới.</li>
+        <li><strong>In phiếu:</strong> Chọn khổ giấy in (Ưu tiên khổ A5) và in phiếu trực tiếp.</li>
+        <li><strong>Nộp hồ sơ:</strong> Kẹp phiếu vừa in kèm theo hồ sơ của tờ khai đó và gửi cho cơ quan Hải quan để vào sổ và thực hiện kiểm soát.</li>
+      </ul>
+
+      <h4>2. Quy định nhập liệu chuẩn</h4>
+      <ul>
+        <li><strong>Mã số thuế:</strong> Nhập chính xác mã số thuế (10 hoặc 14 số). Bấm nút <strong>↻ (Tra cứu)</strong> để tự động điền Tên công ty.</li>
+        <li><strong>Số tờ khai (STK):</strong> Bắt buộc phải nhập đúng <strong>12 chữ số</strong> (Hệ thống sẽ báo đỏ nếu nhập sai).</li>
+        <li><strong>Biển kiểm soát (BKS):</strong> Viết liền, không khoảng trắng, không ký tự đặc biệt (Ví dụ: <code>34H121212</code>).</li>
+        <li><strong>Số container:</strong> Viết liền (Ví dụ: <code>CICU5999091</code>). Nếu là xe tải bạt không có số cont, có thể điền <code>Không</code>.</li>
+      </ul>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-primary" onclick="document.getElementById('modal-instruction').classList.remove('open')">Đã hiểu</button>
+    </div>
+  </div>
+</div>
+
 <div class="modal-bg" id="print-loading" style="z-index: 9999;">
   <div class="loading-print">
     <span class="spin" style="font-size: 20px; color: var(--accent);">↻</span>
@@ -113,6 +146,5 @@
 
 <script src="js/qrcode.min.js"></script> 
 <script src="js/app.js"></script>
-
 </body>
 </html>
