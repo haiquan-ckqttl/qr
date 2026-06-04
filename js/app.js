@@ -518,7 +518,7 @@ function buildPrintHTML(items, paper){
                 // PHIẾU DOANH NGHIỆP (PHẢI)
                 +'<div class="ticket-side" style="flex: 3; padding:2mm 3mm; padding-left:6mm; display:flex; flex-direction:column; min-width:0;">'
                     +'<div style="text-align:center; font-size:7pt; font-weight:bold; text-transform:uppercase; margin-bottom:1mm;">HẢI QUAN CỬA KHẨU QUỐC TẾ TÀ LÙNG</div>'
-                    +'<div style="text-align:center; font-size:7pt; font-weight:bold; text-transform:uppercase; border-top:1px solid #000; border-bottom:1px solid #000; padding:1mm 0; margin-bottom:1.5mm;">PHIẾU ĐK PTVT CHỞ HÀNG XUẤT KHẨU (DN)</div>'
+                    +'<div style="text-align:center; font-size:7pt; font-weight:bold; text-transform:uppercase; border-top:1px solid #000; border-bottom:1px solid #000; padding:1mm 0; margin-bottom:1.5mm;">PHIẾU ĐK PTVT CHỞ HÀNG XUẤT KHẨU DN</div>'
                     +'<div style="font-size: 8pt; display:flex; flex-direction:column; gap:1.5mm;">'
                         +'<div><b style="font-size:7.5pt;">1. BKS:</b><div class="t-dn-val big" style="text-align:center; font-size:11pt;">'+p.bks+'</div></div>'
                         +'<div><b style="font-size:7.5pt;">2. Số TK:</b><div class="t-dn-val big" style="text-align:center; font-size:10pt;">'+p.sotokhai+'</div></div>'
