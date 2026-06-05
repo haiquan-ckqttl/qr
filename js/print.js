@@ -143,10 +143,17 @@ function buildPrintHTML(item) {
                 </tr>
             </table>
             
-            <div style="text-align: right; margin-top: 2mm; padding-right: 15mm;">
-                <b>CC giám sát</b><br>
-                <i>(ký đóng dấu)</i>
-                <div style="height: 14mm;"></div>
+            <div style="display: flex; justify-content: space-between; margin-top: 5mm; padding: 0 15mm;">
+                <div style="text-align: center; width: 45%;">
+                    <b>CCGSHQ tại địa điểm tập kết</b><br>
+                    Đ/c ..............................
+                    <div style="height: 14mm;"></div>
+                </div>
+                <div style="text-align: center; width: 45%;">
+                    <b>CC giám sát</b><br>
+                    <i>(ký đóng dấu)</i>
+                    <div style="height: 14mm;"></div>
+                </div>
             </div>
         </div>
 

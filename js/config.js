@@ -14,6 +14,18 @@ const LOAI_HINH_OPTIONS = [
 
 // ============================================================
 // CẤU HÌNH 1: QR PTVT (Cố định, không phụ thuộc Loại hình)
+// const qrPTVTConfig = {
+//     "bks": 0,       // Cột E
+//     "socont": 2,    // Cột F
+//     "sotokhai": 3,  // Cột C
+//     "diadiem": 5,   // Cột D
+//     "mathang": 6,   // Cột G
+//     "laixe": 8,     // Cột I
+//     "sdtlaixe": 9,  // Cột J (Tạm gán)
+//     "nguoikhai": 11,// Cột H
+//     "tencty": 12,   // MỚI: Tên doanh nghiệp (Tạm gán)
+//     "diachicty": 13 // MỚI: Địa chỉ doanh nghiệp (Tạm gán)
+// };
 // ============================================================
 const qrPTVTConfig = {
     "bks": 0,       // Cột E
@@ -22,10 +34,7 @@ const qrPTVTConfig = {
     "diadiem": 5,   // Cột D
     "mathang": 6,   // Cột G
     "laixe": 8,     // Cột I
-    "sdtlaixe": 9,  // Cột J (Tạm gán)
-    "nguoikhai": 11,// Cột H
-    "tencty": 12,   // MỚI: Tên doanh nghiệp (Tạm gán)
-    "diachicty": 13 // MỚI: Địa chỉ doanh nghiệp (Tạm gán)
+    "nguoikhai": 11 // Cột H
 };
 
 // ============================================================
@@ -36,56 +45,27 @@ const qrPTVTConfig = {
 const MAPPING_QR_HOSO = {
     
     "VCDLQC": {
-        "loaihinh": 0, 
-        "mst": 1, 
-        "tencty": 2, 
-        "sotokhai": 3, 
-        "nguoikhai": 4,
-        "diachicty": 5,
-        "ngaytokhai": 6
+        "sotokhai": 0
     },
     
     "VCDLKNQ": {
-        "loaihinh": 0, 
-        "sotokhai": 1, 
-        "mst": 2, 
-        "tencty": 3,
-        "diadiem": 4,
-        "diachicty": 5,
-        "ngaytokhai": 6
+        "sotokhai": 0
     },
     
     "XNKTL": {
-        "sotokhai": 0, 
-        "loaihinh": 1, 
-        "mst": 2,
-        "tencty": 3,
-        "mathang": 4,
-        "luong": 5,       // MỚI: Luồng (Bắt buộc với XNKTL)
-        "diachicty": 6,   
-        "ngaytokhai": 7   
+        "sotokhai": 0 
     },
     
     "CCKXK": {
-        "loaihinh": 0, 
-        "sotokhai": 1, 
-        "mst": 2,
-        "bks": 3,
-        "socont": 4,
-        "tencty": 5,
-        "diachicty": 6,
-        "ngaytokhai": 7
+        "mst": 0,
+        "tencty": 1,
+        "diachicty": 2
     },
     
     "CCKNK": {
-        "loaihinh": 0, 
-        "sotokhai": 1, 
-        "mst": 2,
-        "bks": 3,
-        "socont": 4,
-        "tencty": 5,
-        "diachicty": 6,
-        "ngaytokhai": 7
+        "mst": 0,
+        "tencty": 1,
+        "diachicty": 2
     }
 
 };

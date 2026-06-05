@@ -25,42 +25,13 @@ var QRGenInline = (function(){
 var phieus = [];
 var nextId = 1;
 
+// Mảng REQUIRED gốc (Trường 'luong' sẽ được kiểm tra động trong hàm isReady)
 var REQUIRED_BASE = ['loaihinh', 'mst', 'tencty', 'diachicty', 'sotokhai', 'diadiem', 'bks', 'socont', 'mathang', 'cccd', 'laixe', 'sdtlaixe', 'nguoikhai'];
 
 window.addEventListener('DOMContentLoaded', function(){
-    injectResponsiveStyles(); // Bơm CSS Layout & sửa lỗi mất thanh in ấn
     detectLib();
     addPhieu();
 });
-
-// Bổ sung CSS động để form xếp cột chuẩn và giữ thanh in ấn (Print Bar) luôn hiển thị ở đáy
-function injectResponsiveStyles() {
-    if(document.getElementById('smart-grid-style')) return;
-    var s = document.createElement('style');
-    s.id = 'smart-grid-style';
-    s.textContent = `
-        .form-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: start; }
-        .col-span-2 { grid-column: span 2; }
-        .col-span-3 { grid-column: span 3; }
-        
-        /* Chống lỗi mất thanh in ấn */
-        .print-bar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; background: #fff; border-top: 1px solid var(--border); position: sticky; bottom: 0; z-index: 100; box-shadow: 0 -2px 10px rgba(0,0,0,0.05); }
-        
-        @media (max-width: 992px) {
-            .form-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-            .col-span-3 { grid-column: span 2; }
-            .col-span-2 { grid-column: span 2; }
-        }
-        
-        @media (max-width: 600px) {
-            .form-grid { grid-template-columns: 1fr; gap: 10px; }
-            .col-span-3, .col-span-2 { grid-column: span 1; }
-            .print-bar { flex-direction: column; gap: 12px; text-align: center; }
-            .print-bar > div { width: 100%; justify-content: center; }
-        }
-    `;
-    document.head.appendChild(s);
-}
 
 function detectLib(){
     var badge = document.getElementById('lib-badge');
@@ -223,13 +194,13 @@ function renderCard(p){
                 
                 <div class="fg col-span-3" style="grid-column: span 3;">
                     <label>Mã số thuế <span class="req">*</span></label>
-                    <div style="display: flex; gap: 8px;">
-                        <div class="fi-wrap" style="flex: 1;">
+                    <div class="mst-flex">
+                        <div class="fi-wrap">
                             <input class="fi" id="f${p.id}mst" list="mst-suggestions" placeholder="Nhập 10 hoặc 14 số" maxlength="14" 
                                    oninput="var val=this.value.replace(/\\D/g,''); setField(${p.id},'mst',val); if(typeof handleAutocompleteMST === 'function') handleAutocompleteMST(${p.id}, val);">
                             <span class="fi-check" id="mstchk${p.id}"></span>
                         </div>
-                        <button class="btn btn-primary" style="flex-shrink: 0; padding: 0 16px; display: flex; align-items: center; gap: 6px; font-weight: 600;" onclick="fetchMST(${p.id})" id="fbtn${p.id}" title="Tra cứu Tên & Địa chỉ DN">
+                        <button class="btn btn-primary btn-search-mst" onclick="fetchMST(${p.id})" id="fbtn${p.id}" title="Tra cứu Tên & Địa chỉ DN">
                             <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
                             Tra cứu
                         </button>
@@ -237,7 +208,7 @@ function renderCard(p){
                     <div class="field-err" id="msterr${p.id}">MST phải đúng 10 hoặc 14 chữ số!</div>
                 </div>
 
-                <div class="fg col-span-2">
+                <div class="fg col-span-3">
                     <label>Tên đơn vị (DN) <span class="req">*</span></label>
                     <input class="fi" id="f${p.id}tencty" placeholder="Nhập tên doanh nghiệp..." oninput="setField(${p.id},'tencty',this.value)">
                 </div>
@@ -296,7 +267,7 @@ function renderCard(p){
                 <div class="fg">
                     <label>Số Container / Rơ moóc <span class="req">*</span></label>
                     <div class="fi-wrap">
-                        <input class="fi" id="f${p.id}socont" placeholder="CICU... hoặc 15R... hoặc /" style="text-transform:uppercase" oninput="setField(${p.id},'socont',this.value.toUpperCase().replace(/[^A-Z0-9/]/g,''))">
+                        <input class="fi" id="f${p.id}socont" placeholder="CICU... hoặc RM... hoặc /" style="text-transform:uppercase" oninput="setField(${p.id},'socont',this.value.toUpperCase().replace(/[^A-Z0-9/]/g,''))">
                         <span class="fi-check" id="socontchk${p.id}"></span>
                     </div>
                     <div class="field-err" id="soconterr${p.id}">Nhập chữ và số (≥ 5 ký tự) hoặc gõ "/"</div>
@@ -406,7 +377,6 @@ function isValidField(key, val) {
         case 'sotokhai': return val.length === 12;
         case 'mst': return val.length === 10 || val.length === 14;
         case 'bks': return val.length >= 4 && !(/[^A-Z0-9]/.test(val));
-        // Đã tối ưu Valid: Rơ moóc thường có >= 5 ký tự (Ví dụ: 15R1234)
         case 'socont': return val === '/' || (val.length >= 5 && /^[A-Z0-9]+$/.test(val));
         case 'cccd': return val === '/' || val.length >= 9;
         case 'laixe': return val === '/' || val.length >= 2;
@@ -490,10 +460,9 @@ function updateUI(){
     document.getElementById('cnt').textContent = n;
     var ca = document.getElementById('btn-clearall');
     if(ca) ca.style.display = n > 0 ? '' : 'none';
-    var pb = document.getElementById('print-bar');
     
-    // Đã fix lỗi mất thanh in ấn: Ép cứng display flex khi có dữ liệu
-    if(pb) pb.style.display = n > 0 ? 'flex' : 'none';
+    var pb = document.getElementById('print-bar');
+    if(pb) pb.style.display = n > 0 ? 'flex' : 'none'; // Giữ nguyên flex cho Print Bar
     
     var pt = document.getElementById('pb-title');
     var ps = document.getElementById('pb-sub');
