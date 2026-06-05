@@ -31,10 +31,9 @@ const qrPTVTConfig = {
     "bks": 0,       // Cột E
     "socont": 2,    // Cột F
     "sotokhai": 3,  // Cột C
-    "diadiem": 5,   // Cột D
-    "mathang": 6,   // Cột G
-    "laixe": 8,     // Cột I
-    "nguoikhai": 11 // Cột H
+    "diadiem": 5,   // Cột G
+    "mathang": 6,     // Cột I
+    "nguoikhai": 13 // Cột H
 };
 
 // ============================================================
@@ -58,14 +57,22 @@ const MAPPING_QR_HOSO = {
     
     "CCKXK": {
         "mst": 0,
-        "tencty": 1,
-        "diachicty": 2
+        "sotokhai": 3,
+        "mathang": 8,
+        "bks": 17,
+        "nguoikhai": 18,
+        "diadiem": 19,
+        "socont": 20
     },
     
     "CCKNK": {
         "mst": 0,
-        "tencty": 1,
-        "diachicty": 2
+        "sotokhai": 3,
+        "mathang": 8,
+        "bks": 17,
+        "nguoikhai": 18,
+        "diadiem": 19,
+        "socont": 20
     }
 
 };

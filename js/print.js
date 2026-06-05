@@ -28,26 +28,35 @@ function buildPrintHTML(item) {
 
         <div style="position: relative; z-index: 1;">
             
-            <table style="width:100%; border:none; margin-bottom: 3mm; border-collapse: collapse;">
+            <table style="width:100%; border:none; margin-bottom: 5mm; border-collapse: collapse;">
                 <tr>
-                    <td style="width: 20%; text-align: center; vertical-align: top;">
-                        ${item.urlHoSo ? `<img src="${item.urlHoSo}" style="width:23mm; height:23mm; display:block; margin:0 auto;"/>` : `<div style="width:23mm;height:23mm;border:1px solid #000;margin:0 auto;"></div>`}
+                    <td style="width: 25%; vertical-align: top; font-size: 10pt; line-height: 1.8;">
+                        <div style="border: 0px solid #000; padding: 5px; border-radius: 4px;">
+                            Nhập sổ: ..........................<br>
+                            Loại hình: <b>${p.loaihinh || '.........'}</b>
+                        </div>
                     </td>
-                    <td style="width: 50%; text-align: center; vertical-align: top; font-weight: bold; font-size: 11pt; line-height: 1.3;">
-                        CHI CỤC HẢI QUAN KHU VỰC XVI<br>
-                        HẢI QUAN CỬA KHẨU QUỐC TẾ TÀ LÙNG
+                    
+                    <td style="width: 50%; text-align: center; vertical-align: top; padding: 0 5px;">
+                        <div style="font-weight: bold; font-size: 11pt; line-height: 1.3; border-bottom: 1px solid #000;">
+                            CHI CỤC HẢI QUAN KHU VỰC XVI<br>
+                            HẢI QUAN CỬA KHẨU QUỐC TẾ TÀ LÙNG
+                        </div>
+                        <div style="margin-top: 10mm; border-top: 0px solid #000; padding-top: 3mm;">
+                            <h2 style="font-size: 14pt; margin: 0;">PHIẾU ĐĂNG KÝ HỒ SƠ</h2>
+                            <div style="font-size: 11pt; font-weight: normal; margin-top: 2px;">
+                                (Tờ khai: <b>${loaiHinhName || '...'}</b>)
+                            </div>
+                        </div>
                     </td>
-                    <td style="width: 30%; vertical-align: top; font-weight: bold; font-size: 11pt; line-height: 1.5; padding-left: 5mm;">
-                        Nhập sổ:..........................<br>
-                        Loại hình: <span style="text-decoration: underline none;"><b>${p.loaihinh || '......................'}</b></span>
+                    
+                    <td style="width: 25%; text-align: right; vertical-align: top;">
+                        <div style="display: inline-block; border: 1px solid #333; padding: 2px;">
+                            ${item.urlHoSo ? `<img src="${item.urlHoSo}" style="width:30mm; height:30mm; display:block;"/>` : `<div style="width:30mm;height:30mm;background:#f0f0f0;"></div>`}
+                        </div>
                     </td>
                 </tr>
             </table>
-
-            <div style="text-align: center; font-weight: bold; font-size: 12pt; margin-bottom: 3mm;">
-                PHIẾU ĐĂNG KÝ HỒ SƠ HẢI QUAN<br>
-                <span style="font-size: 11pt; font-weight: bold;">(Tờ khai đăng ký ${loaiHinhName || '......................'})</span>
-            </div>
 
             <div style="font-weight: bold; margin-bottom: 2mm;">I. PHẦN DÀNH CHO NGƯỜI KHAI HẢI QUAN:</div>
             <div style="display:flex; margin-bottom:2px;">
@@ -137,7 +146,7 @@ function buildPrintHTML(item) {
                         </div>
                         
                         <div style="text-align: center; margin-top: 10px;">
-                            ${item.urlPTVT ? `<img src="${item.urlPTVT}" style="width:23mm; height:23mm; display:block; margin: 0 auto;"/>` : `<div style="width:23mm;height:23mm;border:1px solid #000;margin:0 auto;"></div>`}
+                            ${item.urlPTVT ? `<img src="${item.urlPTVT}" style="width:28mm; height:28mm; display:block; margin: 0 auto;"/>` : `<div style="width:23mm;height:23mm;border:1px solid #000;margin:0 auto;"></div>`}
                         </div>
                     </td>
                 </tr>
