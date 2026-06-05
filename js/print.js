@@ -42,7 +42,7 @@ function buildPrintHTML(item) {
                             CHI CỤC HẢI QUAN KHU VỰC XVI<br>
                             HẢI QUAN CỬA KHẨU QUỐC TẾ TÀ LÙNG
                         </div>
-                        <div style="margin-top: 10mm; border-top: 0px solid #000; padding-top: 3mm;">
+                        <div style="margin-top: 7mm; border-top: 0px solid #000; padding-top: 3mm;">
                             <h2 style="font-size: 14pt; margin: 0;">PHIẾU ĐĂNG KÝ HỒ SƠ</h2>
                             <div style="font-size: 11pt; font-weight: normal; margin-top: 2px;">
                                 (Tờ khai: <b>${loaiHinhName || '...'}</b>)
@@ -152,7 +152,7 @@ function buildPrintHTML(item) {
                 </tr>
             </table>
             
-            <div style="display: flex; justify-content: space-between; margin-top: 5mm; padding: 0 15mm;">
+            <div style="display: flex; justify-content: space-between; margin-top: 2mm; padding: 0 15mm;">
                 <div style="text-align: center; width: 45%;">
                     <b>CCGSHQ tại địa điểm tập kết</b><br>
                     <div style="height: 20mm;"></div>
