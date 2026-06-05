@@ -25,8 +25,8 @@ var QRGenInline = (function(){
 var phieus = [];
 var nextId = 1;
 
-// Đã cập nhật: Bắt buộc thêm socont và mathang
-var REQUIRED = ['loaihinh', 'mst', 'tencty', 'sotokhai', 'diadiem', 'bks', 'socont', 'mathang', 'nguoikhai'];
+// Mảng các trường bắt buộc
+var REQUIRED = ['loaihinh', 'mst', 'tencty', 'sotokhai', 'diadiem', 'bks', 'socont', 'mathang', 'cccd', 'laixe', 'sdtlaixe', 'nguoikhai'];
 
 window.addEventListener('DOMContentLoaded', function(){
     detectLib();
@@ -95,9 +95,9 @@ function addPhieu(){
     var id = nextId++;
     var p = {
         id: id, 
-        loaihinh: (typeof LOAI_HINH_OPTIONS !== 'undefined') ? LOAI_HINH_OPTIONS[0] : '', 
+        loaihinh: (typeof LOAI_HINH_OPTIONS !== 'undefined' && LOAI_HINH_OPTIONS.length > 0) ? LOAI_HINH_OPTIONS[0].code : '', 
         mst: '', tencty: '', sotokhai: '', diadiem: '', bks: '', socont: '', 
-        mathang: '', cccd: '', nguoikhai: '', laixe: ''
+        mathang: '', cccd: '', laixe: '', sdtlaixe: '', nguoikhai: ''
     };
     phieus.push(p);
     renderCard(p);
@@ -166,14 +166,14 @@ function renderCard(p){
     if(es) es.remove();
 
     var loaiHinhOptionsHtml = (typeof LOAI_HINH_OPTIONS !== 'undefined') 
-        ? LOAI_HINH_OPTIONS.map(opt => `<option value="${opt}">${opt}</option>`).join('')
+        ? LOAI_HINH_OPTIONS.map(opt => `<option value="${opt.code}">${opt.code} - ${opt.displayName}</option>`).join('')
         : `<option value="">Chưa tải được cấu hình</option>`;
 
     var card = document.createElement('div');
     card.className = 'phieu-card';
     card.id = 'card-' + p.id;
     
-    // Khối HTML render Form đã được dọn dẹp và gộp chung
+    // Giao diện đã được nâng cấp với các thẻ Validate (fi-wrap, fi-check, field-err)
     card.innerHTML = `
         <div class="card-head" onclick="toggleCard(${p.id})">
             <div class="phieu-num">${p.id}</div>
@@ -199,7 +199,7 @@ function renderCard(p){
                                oninput="var val=this.value.replace(/\\D/g,''); setField(${p.id},'mst',val); if(typeof handleAutocompleteMST === 'function') handleAutocompleteMST(${p.id}, val);">
                         <span class="fi-check" id="mstchk${p.id}"></span>
                     </div>
-                    <div class="field-err" id="msterr${p.id}">MST phải nhập đúng 10 chữ số!</div>
+                    <div class="field-err" id="msterr${p.id}">MST phải đúng 10 chữ số!</div>
                 </div>
 
                 <div class="fg col-span-2">
@@ -233,12 +233,20 @@ function renderCard(p){
 
                 <div class="fg">
                     <label>Biển kiểm soát <span class="req">*</span></label>
-                    <input class="fi" id="f${p.id}bks" placeholder="VD: 34H121212" style="text-transform:uppercase" oninput="setField(${p.id},'bks',this.value.toUpperCase().replace(/[^A-Z0-9]/g,''))">
+                    <div class="fi-wrap">
+                        <input class="fi" id="f${p.id}bks" placeholder="VD: 34H121212" style="text-transform:uppercase" oninput="setField(${p.id},'bks',this.value.toUpperCase().replace(/[^A-Z0-9]/g,''))">
+                        <span class="fi-check" id="bkschk${p.id}"></span>
+                    </div>
+                    <div class="field-err" id="bkserr${p.id}">Viết liền, không ký tự đặc biệt, tối thiểu 4 ký tự</div>
                 </div>
                 
                 <div class="fg">
                     <label>Số Container <span class="req">*</span></label>
-                    <input class="fi" id="f${p.id}socont" placeholder="VD: CICU5999091 hoặc Không" style="text-transform:uppercase" oninput="setField(${p.id},'socont',this.value.toUpperCase())">
+                    <div class="fi-wrap">
+                        <input class="fi" id="f${p.id}socont" placeholder="CICU5999091 hoặc gõ /" style="text-transform:uppercase" oninput="setField(${p.id},'socont',this.value.toUpperCase().replace(/[^A-Z0-9/]/g,''))">
+                        <span class="fi-check" id="socontchk${p.id}"></span>
+                    </div>
+                    <div class="field-err" id="soconterr${p.id}">Nhập chuẩn 4 chữ 7 số hoặc gõ "/"</div>
                 </div>
                 
                 <div class="fg">
@@ -247,13 +255,30 @@ function renderCard(p){
                 </div>
                 
                 <div class="fg">
-                    <label>CCCD / GPLX Lái xe <span class="opt-tag">Tùy chọn</span></label>
-                    <input class="fi" id="f${p.id}cccd" placeholder="Số giấy tờ..." oninput="setField(${p.id},'cccd',this.value)">
+                    <label>CCCD / GPLX Lái xe <span class="req">*</span></label>
+                    <div class="fi-wrap">
+                        <input class="fi" id="f${p.id}cccd" placeholder="Số giấy tờ hoặc gõ /" oninput="setField(${p.id},'cccd',this.value.replace(/[^0-9/]/g,''))">
+                        <span class="fi-check" id="cccdchk${p.id}"></span>
+                    </div>
+                    <div class="field-err" id="cccderr${p.id}">Nhập đủ dãy số hoặc gõ "/"</div>
                 </div>
                 
-                <div class="fg col-span-2">
-                    <label>Tên lái xe <span class="opt-tag">Tùy chọn</span></label>
-                    <input class="fi" id="f${p.id}laixe" placeholder="Nguyễn Văn A" oninput="setField(${p.id},'laixe',this.value)">
+                <div class="fg">
+                    <label>Tên lái xe <span class="req">*</span></label>
+                    <div class="fi-wrap">
+                        <input class="fi" id="f${p.id}laixe" placeholder="Họ và tên hoặc gõ /" oninput="setField(${p.id},'laixe',this.value)">
+                        <span class="fi-check" id="laixechk${p.id}"></span>
+                    </div>
+                    <div class="field-err" id="laixeerr${p.id}">Nhập tên (≥ 2 ký tự) hoặc gõ "/"</div>
+                </div>
+
+                <div class="fg">
+                    <label>SĐT Lái xe <span class="req">*</span></label>
+                    <div class="fi-wrap">
+                        <input class="fi" id="f${p.id}sdtlaixe" placeholder="Số điện thoại hoặc gõ /" oninput="setField(${p.id},'sdtlaixe',this.value.replace(/[^0-9/]/g,''))">
+                        <span class="fi-check" id="sdtlaixechk${p.id}"></span>
+                    </div>
+                    <div class="field-err" id="sdtlaixeerr${p.id}">Nhập 10-11 số hoặc gõ "/"</div>
                 </div>
                 
             </div>
@@ -271,7 +296,7 @@ function renderCard(p){
 }
 
 function fillCard(p){
-    var fields = ['loaihinh', 'mst', 'tencty', 'sotokhai', 'diadiem', 'bks', 'socont', 'mathang', 'cccd', 'nguoikhai', 'laixe'];
+    var fields = ['loaihinh', 'mst', 'tencty', 'sotokhai', 'diadiem', 'bks', 'socont', 'mathang', 'cccd', 'nguoikhai', 'laixe', 'sdtlaixe'];
     fields.forEach(function(k){
         var el = document.getElementById('f'+p.id+k);
         if(el) el.value = p[k] || '';
@@ -286,36 +311,65 @@ function toggleCard(id){
     }
 }
 
+// BỘ KIỂM TRA ĐIỀU KIỆN (VALIDATION RULES)
+function isValidField(key, val) {
+    if (!val) return false;
+    val = val.trim();
+    switch(key) {
+        case 'sotokhai': return val.length === 12;
+        case 'mst': return val.length === 10;
+        case 'bks': return val.length >= 4 && !(/[^A-Z0-9]/.test(val)); // Cấm ký tự lạ, độ dài >= 4
+        case 'socont': return val === '/' || /^[A-Z]{4}[0-9]{7}$/.test(val); // / hoặc chuẩn 4 chữ 7 số
+        case 'cccd': return val === '/' || val.length >= 9; // CMND 9 số, CCCD 12 số
+        case 'laixe': return val === '/' || val.length >= 2;
+        case 'sdtlaixe': return val === '/' || (val.length >= 10 && val.length <= 11);
+        default: return val.length > 0;
+    }
+}
+
 function setField(id, key, value){
     var p = phieus.find(function(x){return x.id === id;});
     if(!p) return;
     p[key] = value;
+    
     var el = document.getElementById('f'+id+key);
     if(el && el.value !== value) el.value = value;
 
-    if(key === 'sotokhai'){
-        var errStk = document.getElementById('stkerr'+id);
-        var chkStk = document.getElementById('stkchk'+id);
-        if(!value){ el.className='fi'; if(errStk)errStk.classList.remove('show'); if(chkStk)chkStk.textContent=''; }
-        else if(value.length === 12){ el.className='fi ok'; if(errStk)errStk.classList.remove('show'); if(chkStk){chkStk.textContent='✓';chkStk.style.color='var(--green)';} }
-        else{ el.className='fi bad'; if(errStk)errStk.classList.add('show'); if(chkStk)chkStk.textContent=''; }
-    }
-
-    if(key === 'mst'){
-        var errMst = document.getElementById('msterr'+id);
-        var chkMst = document.getElementById('mstchk'+id);
-        if(!value){ el.className='fi'; if(errMst)errMst.classList.remove('show'); if(chkMst)chkMst.textContent=''; }
-        else if(value.length === 10){ el.className='fi ok'; if(errMst)errMst.classList.remove('show'); if(chkMst){chkMst.textContent='✓';chkMst.style.color='var(--green)';} }
-        else{ el.className='fi bad'; if(errMst)errMst.classList.add('show'); if(chkMst)chkMst.textContent=''; }
+    // Xử lý Giao diện Validation thông minh (Chớp viền, hiện ✓, báo lỗi)
+    var validateKeys = ['sotokhai', 'mst', 'bks', 'socont', 'cccd', 'laixe', 'sdtlaixe'];
+    if (validateKeys.includes(key)) {
+        var err = document.getElementById(key + 'err' + id);
+        var chk = document.getElementById(key + 'chk' + id);
+        
+        if (!value) {
+            el.className = 'fi'; 
+            if(err) err.classList.remove('show'); 
+            if(chk) chk.textContent = '';
+        } else {
+            if (isValidField(key, value)) {
+                el.className = 'fi ok'; 
+                if(err) err.classList.remove('show'); 
+                if(chk) { chk.textContent = '✓'; chk.style.color = 'var(--green)'; }
+            } else {
+                el.className = 'fi bad'; 
+                if(err) err.classList.add('show'); 
+                if(chk) chk.textContent = '';
+            }
+        }
     }
 
     refreshStatus(p);
 }
 
 function isReady(p){
-    return REQUIRED.every(function(k){return p[k] && p[k].trim();}) 
-           && p.sotokhai.length === 12 
-           && p.mst.length === 10;
+    // Kiểm tra tất cả các trường trong mảng REQUIRED
+    return REQUIRED.every(function(k){ 
+        var val = p[k];
+        if (['sotokhai', 'mst', 'bks', 'socont', 'cccd', 'laixe', 'sdtlaixe'].includes(k)) {
+            return isValidField(k, val);
+        }
+        return val && val.trim().length > 0;
+    });
 }
 
 function refreshStatus(p){
@@ -324,7 +378,9 @@ function refreshStatus(p){
     var title = document.getElementById('ctitle-'+p.id);
 
     var ok = isReady(p);
-    if(card) card.className = 'phieu-card' + (ok ? ' ready' : ((p.sotokhai && p.sotokhai.length !== 12) || (p.mst && p.mst.length !== 10) ? ' errored' : ''));
+    
+    // Nếu tổng thể chưa xong nhưng có lỗi định dạng riêng lẻ thì báo viền cam/đỏ
+    if(card) card.className = 'phieu-card' + (ok ? ' ready' : (!ok && p.mst ? ' errored' : ''));
     if(spill){ spill.textContent = ok?'Sẵn sàng ✓':'Chưa đủ'; spill.className='status-pill '+(ok?'sp-ready':'sp-pending'); }
 
     var preview = p.sotokhai || p.bks || p.tencty || '';
@@ -399,7 +455,8 @@ function openPreview(){
                     +'<div><b>Cont:</b> '+p.socont+'</div>'
                     +'<div style="grid-column:1/-1"><b>DN:</b> '+p.tencty+'</div>'
                     +'<div style="grid-column:1/-1"><b>Hàng:</b> '+p.mathang+'</div>'
-                    +(p.laixe?'<div><b>Lái xe:</b> '+p.laixe+'</div>':'')
+                    +'<div><b>Lái xe:</b> '+p.laixe+'</div>'
+                    +'<div><b>SĐT:</b> '+p.sdtlaixe+'</div>'
                 +'</div>'
             +'</div>';
         }).join('');

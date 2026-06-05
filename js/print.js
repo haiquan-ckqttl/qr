@@ -14,8 +14,15 @@ function buildPrintHTML(item) {
     // Tạo chuỗi ngày giờ in hoàn chỉnh (Ví dụ: 19:45 04/06/2026)
     var ts = pad(now.getHours()) + ':' + pad(now.getMinutes()) + ' ' + currentDay + '/' + currentMonth + '/' + currentYear;
 
+    // Dò tìm Tên hiển thị (displayName) từ Mã code loại hình
+    var loaiHinhName = p.loaihinh;
+    if (typeof LOAI_HINH_OPTIONS !== 'undefined') {
+        var found = LOAI_HINH_OPTIONS.find(opt => opt.code === p.loaihinh);
+        if (found) loaiHinhName = found.displayName;
+    }
+
     return `
-    <div class="print-page" style="position: relative; width: 100%; font-family: 'Times New Roman', Times, serif; padding: 8mm 15mm; box-sizing: border-box; font-size: 11pt; line-height: 1.35; color: #000; background: #fff; min-height: 297mm;">
+    <div class="print-page" style="position: relative; width: 100%; font-family: 'Times New Roman', Times, serif; padding: 8mm 15mm; box-sizing: border-box; font-size: 11pt; line-height: 1.35; color: #000; background: #fff; height: 297mm; overflow: hidden;">
         
         <img src="./images/logo-hq.png" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.1; width: 140mm; z-index: 0; pointer-events: none;"/>
 
@@ -28,18 +35,18 @@ function buildPrintHTML(item) {
                     </td>
                     <td style="width: 50%; text-align: center; vertical-align: top; font-weight: bold; font-size: 11pt; line-height: 1.3;">
                         CHI CỤC HẢI QUAN KHU VỰC XVI<br>
-                        HẢI QUAN CK QUỐC TẾ TÀ LÙNG
+                        HẢI QUAN CỬA KHẨU QUỐC TẾ TÀ LÙNG
                     </td>
                     <td style="width: 30%; vertical-align: top; font-weight: bold; font-size: 11pt; line-height: 1.5; padding-left: 5mm;">
                         Nhập sổ:..........................<br>
-                        Loại hình: <span style="text-decoration: underline none;">${p.loaihinh || '......................'}</span>
+                        Loại hình: <span style="text-decoration: underline none;"><b>${p.loaihinh || '......................'}</b></span>
                     </td>
                 </tr>
             </table>
 
             <div style="text-align: center; font-weight: bold; font-size: 12pt; margin-bottom: 3mm;">
                 PHIẾU ĐĂNG KÝ HỒ SƠ HẢI QUAN<br>
-                <span style="font-size: 11pt; font-weight: bold;">(Tờ khai đăng ký ${p.loaihinh || '......................'})</span>
+                <span style="font-size: 11pt; font-weight: bold;">(Tờ khai đăng ký ${loaiHinhName || '......................'})</span>
             </div>
 
             <div style="font-weight: bold; margin-bottom: 2mm;">I. PHẦN DÀNH CHO NGƯỜI KHAI HẢI QUAN:</div>
@@ -110,15 +117,16 @@ function buildPrintHTML(item) {
                     </td>
                 </tr>
                 <tr>
-                    <td style="padding: 8px 10px; vertical-align: top; line-height: 1.5;">
+                    <td style="padding: 6px 10px; vertical-align: top; line-height: 1.35;">
                         1. Biển kiểm soát: <b>${p.bks}</b><br>
                         2. Số hiệu Container: <b>${p.socont}</b><br>
                         3. Mặt hàng: <b>${p.mathang}</b><br>
                         4. Mã số thuế: <b>${p.mst}</b><br>
                         5. Số CCCD/GPLX của người ĐKPTVT: <b>${p.cccd || '..........................'}</b><br>
-                        6. Tên lái xe: <b>${p.laixe || '........................................................................'}</b>
+                        6. Tên lái xe: <b>${p.laixe || '........................................................................'}</b><br>
+                        7. SĐT lái xe: <b>${p.sdtlaixe || '..................................'}</b>
                     </td>
-                    <td style="padding: 8px 10px; vertical-align: top;">
+                    <td style="padding: 6px 10px; vertical-align: top;">
                         <div style="margin-bottom:6px;"><b>1. Ngày xuất cảnh:</b><br><div style="border-bottom:1px dotted #000; height:10px;"></div></div>
                         <div style="margin-bottom:6px;"><b>2. Ngày nhập cảnh:</b><br><div style="border-bottom:1px dotted #000; height:10px;"></div></div>
                         
@@ -137,12 +145,12 @@ function buildPrintHTML(item) {
         </div>
 
         <div style="position: absolute; bottom: 6mm; left: 15mm; right: 15mm; border-top: 0.5px solid #bbb; padding-top: 1mm; font-size: 8.5pt; color: #444; font-style: italic; display: flex; justify-content: space-between; font-family: sans-serif; z-index: 10; pointer-events: none;">
-            <span></span>
+            <span>Hải quan Cửa khẩu Quốc tế Tà Lùng</span>
             <span>Thời gian in: ${ts}</span>
         </div>
     </div>
     
-    <div class="print-page" style="position: relative; width: 100%; font-family: 'Times New Roman', Times, serif; padding: 15mm; box-sizing: border-box; font-size: 11pt; line-height: 1.4; color: #000; background: #fff; min-height: 297mm;">
+    <div class="print-page" style="position: relative; width: 100%; font-family: 'Times New Roman', Times, serif; padding: 15mm; box-sizing: border-box; font-size: 11pt; line-height: 1.4; color: #000; background: #fff; height: 297mm; overflow: hidden;">
         
         <img src="./images/logo-hq.png" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.1; width: 150mm; z-index: 0; pointer-events: none;"/>
 
@@ -176,6 +184,10 @@ function buildPrintHTML(item) {
             </div>
         </div>
 
+        <div style="position: absolute; bottom: 6mm; left: 15mm; right: 15mm; border-top: 0.5px solid #bbb; padding-top: 1mm; font-size: 8.5pt; color: #444; font-style: italic; display: flex; justify-content: space-between; font-family: sans-serif; z-index: 10; pointer-events: none;">
+            <span>Hải quan Cửa khẩu Quốc tế Tà Lùng</span>
+            <span>Thời gian in: ${ts}</span>
+        </div>
     </div>
     `;
 }
@@ -193,7 +205,7 @@ function doPrint(){
 
     Promise.all(list.map(function(p){
         // 1. Lấy cấu hình ĐỘNG cho Hồ Sơ
-        var configHoSo = MAPPING_QR_HOSO[p.loaihinh] || MAPPING_QR_HOSO[LOAI_HINH_OPTIONS[0]];
+        var configHoSo = MAPPING_QR_HOSO[p.loaihinh] || MAPPING_QR_HOSO[LOAI_HINH_OPTIONS[0].code];
         var strHoSo = buildQRStr(p, configHoSo);
         
         // 2. Lấy cấu hình CỐ ĐỊNH cho PTVT
@@ -212,16 +224,39 @@ function doPrint(){
         var html = items.map(buildPrintHTML).join('');
         document.getElementById('print-output').innerHTML = html;
         
-        // Ghi đè CSS in ẩn các lề mặc định của trình duyệt và kiểm soát ngắt trang bằng class thay vì inline
+        // Cấu hình CSS In động ẩn hoàn toàn tất cả giao diện web thừa (bao gồm cả Toaster thông báo)
         var style = document.getElementById('dynamic-page-style');
         if(!style){ style=document.createElement('style'); style.id='dynamic-page-style'; document.head.appendChild(style); }
         
         style.textContent = `
             @media print { 
                 @page { size: A4 portrait; margin: 0; } 
-                body { margin: 0; }
-                .print-page { page-break-after: always !important; break-after: page !important; }
-                .print-page:last-child { page-break-after: auto !important; break-after: auto !important; }
+                body { margin: 0; padding: 0; background: #fff; }
+                
+                /* Khóa chết tất cả giao diện quản lý, pop-up và thanh thông báo toast */
+                .no-print, .toaster, #toaster, .toast, .modal-bg, #print-loading { 
+                    display: none !important; 
+                }
+                
+                .print-only { display: block !important; }
+                
+                .print-page { 
+                    height: 297mm; 
+                    max-height: 297mm;
+                    box-sizing: border-box;
+                    position: relative;
+                    overflow: hidden;
+                    page-break-after: always !important; 
+                    break-after: page !important; 
+                }
+                
+                /* Trang cuối cùng của lệnh in sẽ bị triệt tiêu lệnh ngắt trang để chống sinh trang trắng */
+                #print-output .print-page:last-child { 
+                    page-break-after: avoid !important; 
+                    break-after: avoid !important;
+                    margin-bottom: 0 !important;
+                    padding-bottom: 0 !important;
+                }
             }
         `;
         

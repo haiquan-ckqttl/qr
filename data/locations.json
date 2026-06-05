@@ -4,11 +4,23 @@
     "name": "Phú Anh"
   },
   {
-    "code": "11B1G07",
+    "code": "11B1G12",
     "name": "Sơn Cảng"
   },
   {
-    "code": "11B1G08",
-    "name": "Bãi Xe Quang Minh"
+    "code": "11B1G01",
+    "name": "XNK"
+  },
+  {
+    "code": "11B1G09",
+    "name": "Bình An"
+  },
+  {
+    "code": "11B1GB1",
+    "name": "ĐNVTL"
+  },
+  {
+    "code": "11B1W01",
+    "name": "KNQ CT"
   }
 ]

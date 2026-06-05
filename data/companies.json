@@ -1,12 +1,3357 @@
 [
   {
-    "mst": "4800185029",
-    "name": "Công ty Cổ phần Tà Lùng Quang Minh",
-    "address": "Phố Tà Lùng, Thị trấn Tà Lùng, Huyện Quảng Hòa, Cao Bằng"
+    "mst": "5701796364",
+    "name": "Cty CP Năng Lực Mới",
+    "address": "P Ninh DươnG, TP Móng Cái, QN"
   },
   {
-    "mst": "0100109106",
-    "name": "Tập đoàn Công nghiệp Viễn thông Quân đội",
-    "address": "Lô D26 Khu đô thị mới Cầu Giấy, Hà Nội"
+    "mst": "0201401957",
+    "name": "Cty CP Thương Mại Vận Tải Thiên Quý",
+    "address": "Số 426, Đường Đà Nẵng, Phường Đông Hải 1, Quận Hải An, TP Hải Phòng"
+  },
+  {
+    "mst": "5700484612",
+    "name": "Cty CP TM XNK & DL Vạn Sáng",
+    "address": "59 Nguyễn Bỉnh Khiêm, Ka Long, Móng Cái, QN"
+  },
+  {
+    "mst": "0201401121",
+    "name": "CTy TNHH PT TM Và DV Hùng Cường",
+    "address": "Số 96 lô 22 Lê Hồng Phong,P. Đông Khê,Q.Ngô Quyền, Hải Phòng"
+  },
+  {
+    "mst": "5801474434",
+    "name": "Công ty TNHH Bảo Phúc Hoà Nam",
+    "address": "Số 148, Thôn 2, Hoà Nam, xã Hoà Nam, huyện Di Linh, Lâm Đồng, Việt Nam"
+  },
+  {
+    "mst": "0201019297",
+    "name": "Cty TNHH Vận Tải Giao Nhận Quốc Tế Cường Thuỷ",
+    "address": "Phòng 12A02, tháp B,TD Plaza,lô 20A Lê Hồng Phong,Đông Khê,Ngô Quyền,Hải Phòng"
+  },
+  {
+    "mst": "0201714124",
+    "name": "Cty TNHH XNK Thịnh Phát Hải Phòng",
+    "address": "3/61 Đình Đông, Đông Hải, Lê Chân, HP"
+  },
+  {
+    "mst": "0201634535",
+    "name": "Cty TNHH Xuất Nhập Khẩu An Phú Lâm",
+    "address": "SỐ 567 Lê Thánh Tông, Phường Vạn Mỹ,  Ngô Quyền, Hải Phòng"
+  },
+  {
+    "mst": "5700537180",
+    "name": "Cty Cổ Phần Thương Mại Đồng Tâm",
+    "address": "Km 3,5 - Hải Yên - Móng Cái - Quảng Ninh"
+  },
+  {
+    "mst": "5701332813",
+    "name": "Cty CP DV Thương Mại Xnk Long Hải Jsc",
+    "address": "Ô số 33, lô 03 đường Mạc Đĩnh Chi, KĐT Ngọc Hà, phường Hải Yên, thành phố Móng Cái, tỉnh Quảng Ninh"
+  },
+  {
+    "mst": "0104931892",
+    "name": "Cty CP Thương Mại và Vận Tải Nam Thái",
+    "address": "Tầng 6 tòa nhà Việt á, phố Duy Tân - Phường Dịch Vọng Hậu - Quận Cầu Giấy - Hà Nội"
+  },
+  {
+    "mst": "0201117576",
+    "name": "Cty TNHH B.O.P",
+    "address": "Hải An-HP"
+  },
+  {
+    "mst": "0201747592",
+    "name": "Cty TNHH Hoàng Nam Giang Logistics",
+    "address": "Số 21D/299 Ngô Gia Tự ,Thư Trung 1, Phường Đằng Lâm ,Quận Hải An , TP Hải Phòng"
+  },
+  {
+    "mst": "0201261146",
+    "name": "Cty TNHH Khoáng Sản Khánh An",
+    "address": "Số 27 Đông Trà 1, P. Dư hàng Kênh, Q. Lê Chân, TP. Hải Phòng"
+  },
+  {
+    "mst": "4800156490",
+    "name": "Cty TNHH Một Thành Viên Ct",
+    "address": "Pò tập-Tà lùng-Huyện Phục hoà- Tỉnh Cao bằng"
+  },
+  {
+    "mst": "5700651359",
+    "name": "Cty TNHH MTV Quỳnh Phát",
+    "address": "thôn Yên Lịch, xã Dân Tiến, huyện Khoái Châu, tỉnh Hưng Yên"
+  },
+  {
+    "mst": "5701423002",
+    "name": "Cty TNHH TM ĐT Phát Triển Long Thành",
+    "address": "Số 46 Nguyễn Bỉnh Khiêm Ka Long Móng Cái"
+  },
+  {
+    "mst": "4800752630",
+    "name": "Cty TNHH TM XNK Minh Phát Cao Bằng",
+    "address": "Xóm Pò Tập, Thị trấn Tà Lùng, Huyện Phục Hòa, Tỉnh Cao Bằng, Việt Nam"
+  },
+  {
+    "mst": "5701341254",
+    "name": "Công Ty TNHH Đại Các",
+    "address": "Số 1 Yết Kiêu, Ka Long, Móng Cái , Quảng Ninh"
+  },
+  {
+    "mst": "4900286334",
+    "name": "Công Ty TNHH Kim Phúc Hà",
+    "address": "SỐ 16, ĐƯỜNG VĂN VỈ, KHU TÁI ĐỊNH CƯ PHAI LUÔNG"
+  },
+  {
+    "mst": "5700677357",
+    "name": "Công Ty TNHH Phong Vượng",
+    "address": "Tổ 14, Khu 2, Kim Đồng, Hoà Lạc, Móng Cái, Quảng Ninh"
+  },
+  {
+    "mst": "0201717037",
+    "name": "Công Ty TNHH Thương Mại Vinh Thuận Khang",
+    "address": "210 đường Chùa Vẽ, P. Đông Hải 1, Q. Hải An, TP. Hải Phòng"
+  },
+  {
+    "mst": "5300241090",
+    "name": "Cty Cổ Phần Khoáng Sản Hoàng Gia",
+    "address": "lô 06 Đường Trần Quang Khải - Khu Công Nghiệp Bắc Duyên Hải - Phường Duyên Hải - TP Lào Cai"
+  },
+  {
+    "mst": "5700401976",
+    "name": "Cty Cổ Phần Thành Đạt",
+    "address": "Số 72B, đường Hùng Vương, Ka Long, Móng Cái, Quảng Ninh"
+  },
+  {
+    "mst": "0200406582",
+    "name": "Cty Cổ Phần Thương Mại Hoàng Cầu",
+    "address": "Km2, đường đi đảo Đình Vũ, Đông Hải 2, Hải An, Hải Phòng"
+  },
+  {
+    "mst": "5701392890",
+    "name": "Cty Cổ Phần Xuất Nhập Khẩu Ka Long",
+    "address": "Số 01: đường Nguyễn Văn Trỗi, ph Trần Phú, tp Móng Cái, Quảng Ninh"
+  },
+  {
+    "mst": "5700646493",
+    "name": "Cty CP Đại Thiên Hà",
+    "address": "Số 3 Nguyễn Văn Cừ, Ka Long, Móng Cái, QN"
+  },
+  {
+    "mst": "4900796335",
+    "name": "Cty CP ĐT Và Thương Mại Duy Đức",
+    "address": "Cửa khẩu Chi Ma, Yên Khoái, Lộc Bình, Lạng Sơn"
+  },
+  {
+    "mst": "0200372301",
+    "name": "Cty CP Kho Vận Ab Plus",
+    "address": "Đường K9, Đông Hải 2, Hải An, Hải Phòng"
+  },
+  {
+    "mst": "0201364751",
+    "name": "Cty CP TM BMK",
+    "address": "21/A2 Phương Lưu 6-Đông Hải-Ngô Quyền-HP"
+  },
+  {
+    "mst": "0200113804",
+    "name": "Cty CP TMDV & XNK Hải Phòng",
+    "address": "19 Ký Con, Hồng Bàng, HP"
+  },
+  {
+    "mst": "0102345275",
+    "name": "Cty CP Vinalines Logistics VN",
+    "address": "Số 01-Đào Duy Anh-Đống Đa-HN"
+  },
+  {
+    "mst": "0200730878",
+    "name": "Cty CP XNK Quảng Bình",
+    "address": "Hạ Lý-Hồng Bàng-HP"
+  },
+  {
+    "mst": "0200923894",
+    "name": "Cty CP XNK Thiên An",
+    "address": "Số 567 Lê Thánh Tông, Ngô Quyền, HP"
+  },
+  {
+    "mst": "5700397335",
+    "name": "Cty CPTM Trung Thành",
+    "address": "Km2, Hùng Vương, Hồng Hà, Ninh Dương, Móng Cái, QN"
+  },
+  {
+    "mst": "0200375711",
+    "name": "Cty CPTM Xây Dựng 5 - Hải Phòng",
+    "address": "22 Võ Thị Sáu, Hải Phòng"
+  },
+  {
+    "mst": "5701358480",
+    "name": "Cty TNHH  Tiến Hoàng Móng Cái",
+    "address": "Số 105 đường Trần Phú, Trần Phú, Móng Cái, Quảng Ninh"
+  },
+  {
+    "mst": "0200583951",
+    "name": "Cty TNHH ĐTXD DV & TM Trung Việt",
+    "address": "310B, Lê Thánh Tông, P Máy Chai, Q Ngô Quyền, TP Hải Phòng"
+  },
+  {
+    "mst": "5701699145",
+    "name": "Cty TNHH DV Và Xnk Việt Thái",
+    "address": "Số 177,Nguyễn Bỉnh Khiêm,phường Ka Long,Thành phố Móng Cái,tỉnh Quảng Ninh"
+  },
+  {
+    "mst": "0101320165",
+    "name": "Cty TNHH Huhui Thương Mại Quốc Tế",
+    "address": "Số 25 nhà N7A, KĐT Trung Hòa, Nhân Chính, Phường Nhân Chính, Quận Thanh Xuân, TP Hà Nội, Việt Nam"
+  },
+  {
+    "mst": "0201631950",
+    "name": "Cty TNHH MD Hồng Thái",
+    "address": "Số 157 Văn Cao-P. Đằng Giang-Ngô Quyền-HP"
+  },
+  {
+    "mst": "5700496135",
+    "name": "Cty TNHH Nhã Phương",
+    "address": "Km2, khu 7, Hải Yến, Móng Cái, Quảng Ninh"
+  },
+  {
+    "mst": "0107646967",
+    "name": "Cty TNHH PT TM & XNK Cường Thịnh",
+    "address": "SỐ 1A NGÁCH 43, NGÕ 43 CHÙA BỘC"
+  },
+  {
+    "mst": "5700397078",
+    "name": "Cty TNHH QT Sao Bắc",
+    "address": "Số 7 Lê Quý Đôn, Bạch Đằng,Hạ Long, QN"
+  },
+  {
+    "mst": "5700943062",
+    "name": "Cty TNHH Quang Ngọc",
+    "address": "Khu 7, phường Hải Yên, Tp Móng Cái, tỉnh Quảng Ninh, Việt Nam"
+  },
+  {
+    "mst": "5700462626",
+    "name": "Cty TNHH Quốc Đạt",
+    "address": "Khu 8, P, Hải Hòa, TP Móng Cái, QN"
+  },
+  {
+    "mst": "0200469085",
+    "name": "Cty TNHH Sản Xuất Thương Mại Hoàng Thành",
+    "address": "số 31 tập thể phân đạm , P. Trại chuối , Q. Hồng bàng , TP Hải phòng"
+  },
+  {
+    "mst": "0104193966",
+    "name": "Cty TNHH SX & XNK TM Quang Anh",
+    "address": "P. Hoàng Văn Thụ-Q. Hoàng Mai-HN"
+  },
+  {
+    "mst": "0200659992",
+    "name": "Cty TNHH Thương Mại Quảng Thành",
+    "address": "Số 7/45 Tổ 17 Nghĩa Xá, Lê Chân, HP"
+  },
+  {
+    "mst": "0201718231",
+    "name": "Cty TNHH Thương Mại Vũ Phúc",
+    "address": "Số 210 đường Chùa Vẽ, P. Đông Hải 1, Q. Hải An, TP. Hải Phòng"
+  },
+  {
+    "mst": "4900790037",
+    "name": "Cty TNHH Thương Mại Xnk Quảng An",
+    "address": "số 34, khu Lò Rèn, thị trấn Đồng Đăng, Huyện Cao Lộc, Lạng Sơn"
+  },
+  {
+    "mst": "201769194",
+    "name": "Cty TNHH TM & DV vận tải Trung Linh",
+    "address": "số 3 B66, Khu D4, Cát Bi, Hải An, Hải Phòng"
+  },
+  {
+    "mst": "0200636184",
+    "name": "Cty TNHH TM BMT",
+    "address": "Số 528 Lô 22, Đường Lê Hồng Phong, P. Đông Khê, Q. Ngô Quyền, HP"
+  },
+  {
+    "mst": "0201748130",
+    "name": "Cty TNHH TM Quốc Tế Bảo Ngọc",
+    "address": "Số 652 Lê Thánh Tông, P.Đông Hải 1, Q.Hải An, TP.Hải Phòng"
+  },
+  {
+    "mst": "5700501307",
+    "name": "Cty TNHH Vũ Hải",
+    "address": "Hải Hòa-Móng Cái-Quảng Ninh"
+  },
+  {
+    "mst": "0200989278",
+    "name": "Cty TNHH XNK Minh Khánh",
+    "address": "Phương Lưu 6-Đông Hải 1-Hải An-HP"
+  },
+  {
+    "mst": "0201173838",
+    "name": "Cty TNHH XNK Song Toàn",
+    "address": "116BT01/97 Bạch Đằng, Hạ Lý, Q Hồng Bàng, Hải PhònG"
+  },
+  {
+    "mst": "0201605541",
+    "name": "Cty TNHH Xuất Nhập Khẩu Khánh Hà",
+    "address": "số 24/161 Phương Lưu 6, Phường Đông Hải 1, Quận Hải An, TP. Hải Phòng"
+  },
+  {
+    "mst": "5701562140",
+    "name": "Cty TNHH Xuất Nhập Khẩu Việt Quế",
+    "address": "Số 08, Đông Trì, Trần Phú, Móng Cái, Quảng Ninh"
+  },
+  {
+    "mst": "0101220146",
+    "name": "Cty Cổ Phần Đầu Tư Thảo Nguyên Xanh",
+    "address": "Số 73, tổ 58, phường Thành Công, quận Ba Đình, Hà Nội"
+  },
+  {
+    "mst": "0200672425",
+    "name": "Cty CP GP tiếp vận DKP",
+    "address": "508 Lê Thánh Tông, P. Vạn Mỹ, Ngô Quyền, HP"
+  },
+  {
+    "mst": "5701597721",
+    "name": "Cty TNHH DV XNK Thuận An",
+    "address": "Móng Cái-Quảng Ninh"
+  },
+  {
+    "mst": "5701686555",
+    "name": "Cty TNHH Thương Mại Long Hải Mc",
+    "address": "Số 61 - Chu Văn An - Hòa Lạc - Móng Cái - Quảng Ninh"
+  },
+  {
+    "mst": "0106015990",
+    "name": "Cty TNHH XNK Kim Hòa",
+    "address": "Số 16, ngách 57/88, đường Mễ Trì, P Mễ Trì, quận Nam Từ Niêm, HN"
+  },
+  {
+    "mst": "0201743460",
+    "name": "Cty TNHH XNK Vạn Đạt",
+    "address": "Số 237 Lô 22 Lê Hồng Phong, P. Đông Khê, Ngô Quyền, HP"
+  },
+  {
+    "mst": "5701407875",
+    "name": "Công Ty Cổ Phần Huy Tuấn",
+    "address": "Số 68A T3 K7 P.Bãi Cháy , Hạ Long , Quảng Ninh"
+  },
+  {
+    "mst": "0900690980",
+    "name": "Cty CP Bích Thị",
+    "address": "178 Nguyễn Văn Linh, P Lam Sơn, TP Hưng Yên, Tỉnh Hưng Yên"
+  },
+  {
+    "mst": "0200912437",
+    "name": "Cty CP ĐT Vận Tải Biển & TM Sao Vàng",
+    "address": "83 Máy Tơ, Lạc Viên, Ngô Quyền, Hải Phòng"
+  },
+  {
+    "mst": "5700557934",
+    "name": "Cty CP ĐTXNK Long Giang",
+    "address": "Trần Hưng Đạo, Hạ Long, QN"
+  },
+  {
+    "mst": "0200785806",
+    "name": "Cty CP DVTM & VT Thùy Dương",
+    "address": "17 Hồ Sen-Trại Cau-Lê Chân-HP"
+  },
+  {
+    "mst": "0106786739",
+    "name": "Cty CP Giao Nhận Vinh Hưng",
+    "address": "Tầng 9, tòa nhà Hàn Việt, số 203 Minh Khai, phường Minh Khai, quận Hai Bà Trưng, Hà Nội"
+  },
+  {
+    "mst": "5700911166",
+    "name": "Cty CP Hoàng Thái",
+    "address": "Số 68 Đường Phạm Ngũ Lão, P Ka Long, Móng Cái-Quảng Ninh"
+  },
+  {
+    "mst": "5700569746",
+    "name": "Cty CP TM & DV Trí Đức",
+    "address": "Móng Cái - QN"
+  },
+  {
+    "mst": "4900219641",
+    "name": "Cty CP TM XNK Thành Lợi",
+    "address": "Mai Pha, TP Lạng Sơn"
+  },
+  {
+    "mst": "5701572300",
+    "name": "Cty CP TM Xuất Nhập Khẩu Cẩm Giang",
+    "address": "Tổ 3 khu 2, P. Trần Phú  - TP Móng Cái  - QN"
+  },
+  {
+    "mst": "5700510439",
+    "name": "Cty CP TM&XD Thành Nga",
+    "address": "Số 165B Hùng Vương, Ka Long, Móng Cái, QN"
+  },
+  {
+    "mst": "5700100369",
+    "name": "CTy CP Vận Tải Biển Và XNK Quảng Ninh",
+    "address": "Số 9 Bến Đoan, thành phố Hạ Long, Quảng Ninh"
+  },
+  {
+    "mst": "5700646510",
+    "name": "Cty CP XNK Tổng hợp Vilcom",
+    "address": "14 Xuân Diệu-Trần Phú-Móng Cái-QN"
+  },
+  {
+    "mst": "5700904200",
+    "name": "Cty CPTM Và Xuất Nhập Khẩu Sao Sáng",
+    "address": "27 Nguyễn Văn Trỗi, Trần Phú, Móng Cái, Quảng Ninh"
+  },
+  {
+    "mst": "5701369676",
+    "name": "Cty TNHH 1TV Tân Đức Thành",
+    "address": "125 Nguyễn Bỉnh Khiêm, Kalong, Móng Cái, HP"
+  },
+  {
+    "mst": "5701460438",
+    "name": "Cty TNHH ĐTPTTM XNK Vĩnh Thuận MC",
+    "address": "07 Hữu Nghị-Trần Phú-Móng Cái-Quảng Ninh"
+  },
+  {
+    "mst": "4900528181",
+    "name": "Cty TNHH KD TM Tổng Hợp A&Q",
+    "address": "Số 66 Ngạn Sơn, khối 5, phường Vĩnh Trại, tp Lạng Sơn, tỉnh Lạng Sơn"
+  },
+  {
+    "mst": "5700658114",
+    "name": "Cty TNHH Mai Hoa",
+    "address": "Số 37-38 Đường Phạm Ngũ Lão, Ka Long, Móng Cái, QN"
+  },
+  {
+    "mst": "0800996326",
+    "name": "Cty TNHH MTV Cơ Khí Luyện Kim Hiệp Sơn",
+    "address": "ngã tư phụ sơn, kinh môn, tỉnh hải dương"
+  },
+  {
+    "mst": "0201593783",
+    "name": "Cty TNHH Quốc Tế Vĩnh Niên",
+    "address": "Khu 5 Trung Hành, phường Đằng Lâm, quận Hải An, thành phố Hải Phòng"
+  },
+  {
+    "mst": "0104191408",
+    "name": "Cty TNHH Thương Mại Và Kho Vận Devyt",
+    "address": "Tầng T, Số 5 Đào Duy Anh, Đống Đa, HN"
+  },
+  {
+    "mst": "5700908283",
+    "name": "Cty TNHH Thương Mại Và XNK Thiên An",
+    "address": "Số 104 Đường Mạc Đĩnh Chi, Phường Ka Long, TP Móng Cái, Quảng Ninh"
+  },
+  {
+    "mst": "0200741333",
+    "name": "Cty TNHH TM NAM Việt",
+    "address": "83 bạch đằng hồng bàng hải phòng"
+  },
+  {
+    "mst": "0201221471",
+    "name": "Cty TNHH TM&DV XNK Thủy Anh",
+    "address": "Đông Hải 1-Hải An-HP"
+  },
+  {
+    "mst": "0103472639",
+    "name": "Cty TNHH TMQT Anh Quân",
+    "address": "Số 6, Ngách 44 Ngõ 11, Tô Ngọc Vân, Quảng An, Tây Hồ, HN"
+  },
+  {
+    "mst": "0101830913",
+    "name": "Cty TNHH XD TM Hà Thành",
+    "address": "124/22/16/2 Âu Cơ -Tứ Liên-Tây Hồ - HN"
+  },
+  {
+    "mst": "0201276865",
+    "name": "Cty TNHH XNK & DL Thuận Phong",
+    "address": "Lạch Sẽ, Lập Lễ, Thuỷ Nguyên, Hải Phòng"
+  },
+  {
+    "mst": "0201560065",
+    "name": "Cty TNHH Xuất Nhập Khẩu Hoàng Mỹ Anh",
+    "address": "Số 7B-CT1-D17, Đổng Quốc Bình, Ngô Quyền, Hải Phòng"
+  },
+  {
+    "mst": "0200680948",
+    "name": "Công Ty TNHH Xuất Nhập Khẩu - Dịch Vụ Thương Mại Thành Đạt",
+    "address": "xóm 7, xã Hòa Bình, Huyện Thủy Nguyên, TP.Hải Phòng"
+  },
+  {
+    "mst": "0201592684",
+    "name": "Cty TNHH MTV Vận Tải Hoàng Thường",
+    "address": "5/2/458 Nguyễn Văn Linh , P Vĩnh Niệm, Q Lê Chân, TP Hải phòng"
+  },
+  {
+    "mst": "5701828672",
+    "name": "Công TY TNHH MTV Thương mại Và XNK Thành Hiếu",
+    "address": "Thôn 8, Xã Hải Đông, Thành phố Móng cái, Quảng Ninh"
+  },
+  {
+    "mst": "4900807883",
+    "name": "Công Ty Cổ Phần Hà Hải Lạng Sơn",
+    "address": "Cửa khẩu Chi Ma, xã Yên Khoái, huyện Lộc Bình, tỉnh Lạng Sơn"
+  },
+  {
+    "mst": "5100178966",
+    "name": "Cty TNHH TM Quỳnh Anh",
+    "address": "Tổ 13, Phường Trần Phú, TP Hà Giang"
+  },
+  {
+    "mst": "4900636571",
+    "name": "Cty CPTM QT Hữu Vượng",
+    "address": "Số 50, Khu Lò Rèn, Đồng Đăng, Cao Lộc, Lạng Sơn"
+  },
+  {
+    "mst": "4800874276",
+    "name": "Cty TNHH Ắc quy Green Cao Bằng",
+    "address": "Tà Lùng - Phục Hòa - Cao Bằng"
+  },
+  {
+    "mst": "480092919620",
+    "name": "Cty TNHH 1TV CT",
+    "address": "Tà Lùng - Phục Hòa - Cao Bằng"
+  },
+  {
+    "mst": "1900310905",
+    "name": "Cty CP chế biến thủy sản XNK Âu Vững I",
+    "address": "Lô A1, Đường số 3, KCN Láng Trâm, Xóm Mới, Tân Thạnh, Giá Rai, Bạc Liêu"
+  },
+  {
+    "mst": "1700537465",
+    "name": "Cty CP thủy sản Vinh Cường",
+    "address": "Tổ 2, Apa Vĩnh Tây, Vĩnh Phong, Vĩnh Thuận, Kiên Giang"
+  },
+  {
+    "mst": "4900405849",
+    "name": "Cty TNHH 1TV Trường Thạch",
+    "address": "Số 96 đường Nhị Thanh, P. Tam Thanh, TP Lạng Sơn"
+  },
+  {
+    "mst": "5700624965",
+    "name": "Cty TNHH Công nghiệp YOUNGSUN WOLFRAM Việt Nam",
+    "address": "Lô 9+10, KCN Cái Lân, Hạ Long, Quảng Ninh"
+  },
+  {
+    "mst": "4800163674",
+    "name": "DNTH Thu Hương",
+    "address": "Tà Lùng - Phục Hòa - Cao Bằng"
+  },
+  {
+    "mst": "3700720094",
+    "name": "Cty TNHH Việt - Ý",
+    "address": "Phường Tân Hiệp - TX Tân Uyên - Tỉnh Bình Dương"
+  },
+  {
+    "mst": "1900358431",
+    "name": "Công Ty CP CB Thủy Sản XNK Âu Vững II",
+    "address": "Lô A1, Đường số 3, KCN Láng Trâm, Xóm Mới, Tân Thạnh, Giá Rai, Bạc Liêu"
+  },
+  {
+    "mst": "6300249870",
+    "name": "Cty TNHH Hải Thanh",
+    "address": "Châu Thành A - Hậu Giang"
+  },
+  {
+    "mst": "0201574413",
+    "name": "Cty TNHH XNK&VT Quang Minh",
+    "address": "Thôn 1, Hoa Đậu, Thủy Nguyên, Hải Phòng"
+  },
+  {
+    "mst": "4900762826",
+    "name": "Cty TNHH 1TV Bách Việt Lạng Sơn",
+    "address": "Đường 37m, KĐT Phú Lộc 4, khối 6, Phường Vĩnh Trại, TP Lạng Sơn"
+  },
+  {
+    "mst": "0106646393",
+    "name": "Cty TNHH giao nhận vận tải DN",
+    "address": "Số 26I4, KĐT Yên Hòa, P. Yên Hòa, Cầu Giấy, HN"
+  },
+  {
+    "mst": "1200631935",
+    "name": "Cty TNHH Đại Thành",
+    "address": "Ấp Đông Hòa - Xã Song Thuận - Châu Thành - Tền Giang"
+  },
+  {
+    "mst": "4800161250",
+    "name": "HTX Thanh Kỳ",
+    "address": "Lũng Cam - Phan Thanh - Nguyên Bình - Cao Bằng"
+  },
+  {
+    "mst": "2000574632",
+    "name": "Công Ty TNHH Thủy Sản Trọng Nhân",
+    "address": "751 Lý Thường Kiệt, Phường 06, Thành phố Cà Mau, Tỉnh Cà Mau"
+  },
+  {
+    "mst": "0201305770",
+    "name": "Cty TNHH DV Thiên Thành",
+    "address": "Số 20/46/19 Chùa Hàng, Phường Dư Hàng, Lê Chân, Hải Phòng"
+  },
+  {
+    "mst": "02143777007",
+    "name": "Cty CP XNK Tỉnh Lào Cai",
+    "address": "Số 039 Đường Nguyễn Huệ, P. Lào Cai, TP Lào Cai, Tỉnh Lào Cai"
+  },
+  {
+    "mst": "1701888593",
+    "name": "Cty TNHH Thủy sản Aoki",
+    "address": "14A Apa Tân Điền, xã Giục Tượng,Châu Thành, Kiên Giang"
+  },
+  {
+    "mst": "4900236502",
+    "name": "Cty TNHH Tuấn Minh",
+    "address": "CK Chi Ma, Yên Khoái, Lộc Bình, Lạng Sơn"
+  },
+  {
+    "mst": "5700645820",
+    "name": "Cty CP thủy sản Minh Khuê",
+    "address": "Số 31 Đại lộ Hòa Bình, Trần Phú, Móng Cái, Quảng Ninh"
+  },
+  {
+    "mst": "4900786591",
+    "name": "Cty TNHH & XNK Tuấn Sơn",
+    "address": "CK Chi Ma, Yên Khoái, Lộc Bình, Lạng Sơn"
+  },
+  {
+    "mst": "5700614163",
+    "name": "Cty CP TM&XNK Hưng Thịnh",
+    "address": "Số 2 Lương Thế Vinh, Ka Long, Móng Cái, Quảng Ninh"
+  },
+  {
+    "mst": "0201740237",
+    "name": "Cty TNHH MD Phú Thái Nguyên",
+    "address": "Số 411 Lô 22 Đường Lê Hồng Phong, P. Đông Khê, Q. Ngô Quyền, Hải Phòng"
+  },
+  {
+    "mst": "5300103414",
+    "name": "Cty CP XNK Tỉnh Lào Cai",
+    "address": "Số 039 Đường Nguyễn Huệ, P. Lào Cai, TP Lào Cai, Tỉnh Lào Cai"
+  },
+  {
+    "mst": "0102023581",
+    "name": "Cty TNHH KD&DV XNK",
+    "address": "149/62 Giảng Võ - Hà Nội"
+  },
+  {
+    "mst": "1400656366",
+    "name": "Cty TNHH 1TV chế biến thủy sản Hoàng Long",
+    "address": "Ấp Tân Cường-Phú Cường-Tam Nông-Đồng Tháp"
+  },
+  {
+    "mst": "1900287501",
+    "name": "Cty TNHH chế biến thủy sản & XNK Trang Khanh",
+    "address": "2/14 Hẻm 1 Đường Tỉnh lộ 38 - Phường 5 - TP Bạc Liêu"
+  },
+  {
+    "mst": "4800104012",
+    "name": "Cty CP mía đường Cao Bằng",
+    "address": "Tà Lùng - Phục Hòa - Cao Bằng"
+  },
+  {
+    "mst": "4900287708",
+    "name": "Cty CP Kim loại màu Bắc Bộ",
+    "address": "Số 28 Đường Minh Khai, P. Hoàng Văn Thụ, TP Lạng Sơn, Tỉnh Lạng Sơn"
+  },
+  {
+    "mst": "0301724813",
+    "name": "Cty TNHH Việt Hiếu Nghĩa",
+    "address": "Số 9/9 Lý Văn Phúc - P. Tân Định - Q.1 - TP HCM"
+  },
+  {
+    "mst": "5701653743",
+    "name": "Cty TNHH Vạn Trung MC",
+    "address": "Số 209 Nguyễn Du, Khu Thọ Xuân, P. Hòa Lạc, TP Móng Cái, Quảng Ninh"
+  },
+  {
+    "mst": "0106646363",
+    "name": "Cty TNHH giao nhận vận tải DN",
+    "address": "Số 26I4, KĐT Yên Hòa, P. Yên Hòa, Cầu Giấy, HN"
+  },
+  {
+    "mst": "57003484612",
+    "name": "Cty CP TM XNK & DL Vạn Sáng",
+    "address": "59 Nguyễn Bỉnh Khiêm, Ka Long, Móng Cái, QN"
+  },
+  {
+    "mst": "0106148020",
+    "name": "Cty CP ĐT xây dựng & TM Đức Tiến",
+    "address": "Số 22 Khu tập thể Bệnh viện Nông nghiệp, xã Ngọc Hồi, Huyện Thanh Trì, HN"
+  },
+  {
+    "mst": "5700569764",
+    "name": "Cty CP thương mại và DV Trí Đức",
+    "address": "Đường Đại lộ Hòa Bình, Khu Thượng Trung, P. Ninh Dương, TP Móng Cái, Quảng Ninh"
+  },
+  {
+    "mst": "5701822293",
+    "name": "Cty CP Đầu tư và phát triển TD Việt Nam",
+    "address": "Khu 7 Đường Hùng Vương, P. Hải Yên, Móng Cái, QN"
+  },
+  {
+    "mst": "5701704349",
+    "name": "Cty TNHH Khải Hoàn",
+    "address": "28 Vạn Ninh, Trần Phú, Móng Cái, QN"
+  },
+  {
+    "mst": "0201276860",
+    "name": "Cty TNHH XNK&DL Thuận Phong",
+    "address": "Lạch Sẽ, Lập Lễ, Thuỷ Nguyên, Hải Phòng"
+  },
+  {
+    "mst": "5701848012",
+    "name": "Cty TNHH DC XNK Thương Tín",
+    "address": "Số 209 Đường Nguyễn Du, P. Hòa Lạc, TP Móng Cái, Quảng Ninh"
+  },
+  {
+    "mst": "4800104102",
+    "name": "Cty CP mía đường Cao Bằng",
+    "address": "Tà Lùng - Phục Hòa - Cao Bằng"
+  },
+  {
+    "mst": "4900808580",
+    "name": "Cty TNHH 1TV Ngọc Quế LS",
+    "address": "Khu Nam Quan - Đồng Đăng - Cao Lộc - Lạng Sơn"
+  },
+  {
+    "mst": "4900777131",
+    "name": "Cty TNHH 1TV XNK&TM Anh Anh",
+    "address": "Số 4 Trưng Trắc - P. Chi Lăng - TP Lạng Sơn"
+  },
+  {
+    "mst": "0102180295",
+    "name": "Cty CP dịch vụ XNK Minh Phát",
+    "address": "14/26 Thái Thịnh II, Thịnh Quang, Đống Đa, HN"
+  },
+  {
+    "mst": "0200613331",
+    "name": "Cty CP Thành Tùng",
+    "address": "Số 4/32 Chè Hương, Đông Hải 1, Hải An, Hải Phòng"
+  },
+  {
+    "mst": "2901378136",
+    "name": "Cty TNHH XNK Asean Hm",
+    "address": "Đường Mai Lão Bạng, Xóm 9, Xã nghi phú, TP Vinh, Nghệ An"
+  },
+  {
+    "mst": "0101262192",
+    "name": "Cty TNHH TM&DV SX Tân Sơn Hà",
+    "address": "277 Kim Ngưu, Hai Bà Trưng, HN"
+  },
+  {
+    "mst": "3500387294",
+    "name": "Cty CP Hải Việt",
+    "address": "167/10 Đường 30-4, P. Thắng Nhất, TP Vũng Tàu"
+  },
+  {
+    "mst": "0201278598",
+    "name": "Cty CP thương mại Dầu khí Hải Phòng",
+    "address": "Số 96 lô 22 Lê Hồng Phong,P. Đông Khê,Q.Ngô Quyền, Hải Phòng"
+  },
+  {
+    "mst": "3502259373",
+    "name": "Cty TNHH Hải sản Bình Dương",
+    "address": "22/36 Chi Lang, P.12, TP Vũng Tàu"
+  },
+  {
+    "mst": "4800864969",
+    "name": "Cty TNHH TM XNK Ngọc Long",
+    "address": "Pò tập-Tà lùng-Huyện Phục hoà- Tỉnh Cao bằng"
+  },
+  {
+    "mst": "1300268232",
+    "name": "Cty TNHH chế biến Dừa",
+    "address": "52B Nguyễn Đinh Chiểu, P8, TP Bến Tre, Tỉnh Bến Tre"
+  },
+  {
+    "mst": "0201107338",
+    "name": "Cty TNHH Thương mại Quốc tế Sao Việt",
+    "address": "148/193 Văn Cao, Hải An, Hải Phòng"
+  },
+  {
+    "mst": "3502259273",
+    "name": "Cty TNHH Hải sản Bình Dương",
+    "address": "22/36 Chi Lăng, Phường 12, TP Vũng Tàu"
+  },
+  {
+    "mst": "49002258283",
+    "name": "Cty CP Sản xuất và XNK Đạt Phát",
+    "address": "85A Khu Dây Thép, Đồng Đăng, Cao Lộc, Lạng Sơn"
+  },
+  {
+    "mst": "0106199219",
+    "name": "Cty TNHH VT&XD Phúc Linh",
+    "address": "Số 47 Vũ Trọng Phụng, Thanh Xuân Trung, Thanh Xuân, HN"
+  },
+  {
+    "mst": "5701818579",
+    "name": "Cty TNHH Thương mại và XNK Thiên Thanh",
+    "address": "Khu 6, Phường Ka Long, TP Móng Cái, QN"
+  },
+  {
+    "mst": "4900766644",
+    "name": "Cty TNHH 1TV Ocean Line",
+    "address": "127C Trần Hưng Đạo, P. Chi Lăng, TP Lạng Sơn"
+  },
+  {
+    "mst": "0107412486",
+    "name": "Công Ty TNHH Xuất Nhập Khẩu Tiệp Phong",
+    "address": "Số 18 Yên Ninh, Phường Trúc Bạch, quận Ba Đình , Thành phố Hà Nội"
+  },
+  {
+    "mst": "0104039114",
+    "name": "Cty CP Đầu tư Bắc Thành Công",
+    "address": "Số nhà 187 ngõ 192, Đường Kim Mã, P. Kim Mã, Ba Đình, HN"
+  },
+  {
+    "mst": "0201719299",
+    "name": "Cty TNHH Mậu dịch Đức Hồng Phát",
+    "address": "Số 23/37 Lê Chân, P. An Biên, Q. Lê Chân, HP"
+  },
+  {
+    "mst": "5700100714",
+    "name": "Cty CP XNK thủy sản Quảng Ninh",
+    "address": "35 Bến Tàu - TP Hạ Long - Tỉnh Quảng Ninh"
+  },
+  {
+    "mst": "5700761760",
+    "name": "`Cty CP XNK Châu Á - Thái Bình Dương",
+    "address": "Đường Quang Trung - P. Ka Long - Móng Cái - QN"
+  },
+  {
+    "mst": "0200870931",
+    "name": "Cty CP Tân Cảng 128 - Hải Phòng",
+    "address": "Hạ Đoạn - P. Đông Hải - Q. Hải An - HP"
+  },
+  {
+    "mst": "5701817134",
+    "name": "Cty TNHH Hưng Huy Phong",
+    "address": "Thôn 10 - Hải Xuân - Móng Cái - Quảng Ninh"
+  },
+  {
+    "mst": "0107290774",
+    "name": "Cty TNHH Logistics Tancate",
+    "address": "Lê Đức Thọ - Mỹ Đình 2 - Nam Từ Liêm - Hà Nội"
+  },
+  {
+    "mst": "0105483033",
+    "name": "Cty TNHH XNK Hùng Cường",
+    "address": "Số 17 ngõ 16 Nguyễn Phúc Lai, P. Ô Chợ Dừa, Q. Đống Đa, HN"
+  },
+  {
+    "mst": "4900798068",
+    "name": "Cty TNHH XNK Hảo Phát Thịnh",
+    "address": "Số 78 Đường Nguyễn Phi Khanh, P. Tam Thanh, TP Lạng Sơn, Tỉnh Lạng Sơn"
+  },
+  {
+    "mst": "4800147601",
+    "name": "Cty TNHH XD & TM Tổng Hợp",
+    "address": "Tổ 15 Phường Sông Hiến - TP Cao Bằng"
+  },
+  {
+    "mst": "5701473691",
+    "name": "Cty TNHH chế biến và xuất khẩu thủy sản Quảng Ninh",
+    "address": "Khu 1, P. Hải Yên, TP Móng Cái, QN"
+  },
+  {
+    "mst": "0201753645",
+    "name": "Cty CP dịch vụ Cảng Hải Phòng",
+    "address": "Lô KB1-1, KCN Nam Đình Vũ (Khu 1), P. Đông Hải 2, Q. Hải An, HP"
+  },
+  {
+    "mst": "0104093966",
+    "name": "Cty TNHH sản xuất và XNK thương mại Quang Anh",
+    "address": "Số 2, Ngách 8, Ngõ 293 Tam Trinh, Tổ 50, Hoàng Văn Thụ, Hoàng Mai, HN"
+  },
+  {
+    "mst": "0900222647",
+    "name": "Cty CP Thép Việt Ý",
+    "address": "KCN Phố Nối A, Giai Phạm, Yên Mỹ, Hưng Yên"
+  },
+  {
+    "mst": "0104412486",
+    "name": "Công Ty TNHH Xuất Nhập Khẩu Tiệp Phong",
+    "address": "Số 18 Yên Ninh, Phường Trúc Bạch, quận Bà Đình , Thành phố Hà Nội, Việt Nam"
+  },
+  {
+    "mst": "0107957874",
+    "name": "Cty CP xuất nhập khẩu ODA Toàn Cầu",
+    "address": "Thôn Điền Xá, Xã Quang Tiến, Sóc Sơn, HN"
+  },
+  {
+    "mst": "0105283757",
+    "name": "Cty TNHH XNK Khoáng sản Đông Dương",
+    "address": "Số 5, ngách 56, ngõ 105, Doãn Kế Thiện, Mai Dịch, Cầu Giấy, Hà Nội"
+  },
+  {
+    "mst": "4300504037",
+    "name": "Cty TNHH Hai Thành viên Gallant Dachan Seafood",
+    "address": "Quảng Phú, Quảng Ngãi, Việt Nam"
+  },
+  {
+    "mst": "4900228808",
+    "name": "Cty TNHH Ngọc Diệp",
+    "address": "25 Ngô Thì Sỹ, P. Tam Thanh, TP Lạng Sơn"
+  },
+  {
+    "mst": "0201640458",
+    "name": "Cty CP Liên Việt Logistics",
+    "address": "Lô CN2.4 và KB 4.3 - KCN MP Đình Vũ - P. Đông Hải 2 - Hải An - HP"
+  },
+  {
+    "mst": "3702201954",
+    "name": "Cty TNHH Thuận Cảnh Việt Nam",
+    "address": "Ô 3,4,9,10 Lô B3, Đường D3, KCN Đất Cuốc, Huyện Bắc Tân Uyên, Bình Dương"
+  },
+  {
+    "mst": "0200819893",
+    "name": "Cty CP thủy sản Anh Minh",
+    "address": "Số 3 Đường Ngô Quyền, P. Máy Chai, Q. Ngô Quyền, HP"
+  },
+  {
+    "mst": "2300183340",
+    "name": "Cty Giấy và Bao bì - Phú Giang",
+    "address": "Xã Phú Lâm - Tiên Du - Bắc Ninh"
+  },
+  {
+    "mst": "0105284711",
+    "name": "Cty CP TM Quốc tế Quang Anh",
+    "address": "Số 2 Ngõ 34 Nguyên Hồng, Láng Hạ, Đống Đa, HN"
+  },
+  {
+    "mst": "0201559736",
+    "name": "Cty TNHH Tiếp Vận Minh An",
+    "address": "69B, Máy Tơ, Ngô Quyền, HP"
+  },
+  {
+    "mst": "0801218505",
+    "name": "Cty TNHH XNK TM Quân Minh",
+    "address": "Số 99A Phố Chương Dương, P. Trần Phú, TP Hải Dương, Tỉnh Hải Dương"
+  },
+  {
+    "mst": "57000501307",
+    "name": "Cty TNHH Vũ Hải",
+    "address": "KCN Hải Hòa, Móng Cái, QN"
+  },
+  {
+    "mst": "4600431654",
+    "name": "Cty CP Kim khí Ngọc Anh",
+    "address": "Ngõ 266/1 Đườn Cách mạng Tháng 8, tổ 22 Phú Xá, TP Thái Nguyên"
+  },
+  {
+    "mst": "0201267483",
+    "name": "Cty TNHH Hưng Phát Toàn Cầu",
+    "address": "Số 36 Lô 4 Quán Nam, Kênh Dương, Lê Chân, HP"
+  },
+  {
+    "mst": "0309280560",
+    "name": "Cty TNHH sản xuất Thương mại DV Mỹ Anh An",
+    "address": "149 Phú Thọ Hòa, P. Phú Thọ Hòa, Q. Tân Phú, TP HCM"
+  },
+  {
+    "mst": "4900805759",
+    "name": "Cty TNHH 1TV XNK Tứ Kỳ",
+    "address": "Số 9, Ngõ 2 Phố Muối, Phường Tam Thanh, TP. Lạng Sơn"
+  },
+  {
+    "mst": "4900783417",
+    "name": "Cty TNHH 1TV vận tải Phong Phú",
+    "address": "Số 47/1 đường Bà Triệu, Tổ 5 khối 14, P. Hoàng Văn Thụ, TP Lạng Sơn"
+  },
+  {
+    "mst": "0302146887",
+    "name": "Cty TNHH Sản xuất thương mại Vạn Hưng",
+    "address": "124 Hòa Bình, P. Hòa Thạnh, Q. Tân Phú, TP HCM"
+  },
+  {
+    "mst": "4401019809",
+    "name": "Công Ty TNHH Xin Bang",
+    "address": "Lô C9 - C11 - KCN Hoà Hiệp - H. Đông Hoà - T.Phú Yên"
+  },
+  {
+    "mst": "0200835768",
+    "name": "Cty CP TM ĐT Vân Long CDC",
+    "address": "Hùng Vương - Hồng Bàng - Hải Phòng"
+  },
+  {
+    "mst": "0201802645",
+    "name": "Cty CP Quản lý và khai thác kho lạnh DKP",
+    "address": "Lô 2.11 KCN Minh Phương Đình Vũ, phường Đông Hải 2, quận Hải An, TP Hải Phòng"
+  },
+  {
+    "mst": "0106912398",
+    "name": "Cty TNHH thương mại và dịch vụ Nam Nam",
+    "address": "Số 2, ngách 324/22 Đường Thụy Khê, P. Bưởi, Q. Tây Hồ, HN"
+  },
+  {
+    "mst": "4800165086",
+    "name": "Cty TNHH Sông Đà 7.09",
+    "address": "Thôm Đán, Xã Hạnh Phúc, Quảng Uyên, Cao Bằng"
+  },
+  {
+    "mst": "2100266310",
+    "name": "Cty CP Trà Bắc",
+    "address": "216 Bạch Đằng, P 4, TP Trà Vinh, Tỉnh Trà Vinh"
+  },
+  {
+    "mst": "5701702334",
+    "name": "Cty TNHH XNK Đại Hải Phong",
+    "address": "Số 112-5/8 P. Ka Long, TP Móng Cái, QN"
+  },
+  {
+    "mst": "5701467909",
+    "name": "Cty TNHH XNK Trường Sơn TSC",
+    "address": "Số 17 Lương Thế Vinh, Ka Long, Móng Cái, QN"
+  },
+  {
+    "mst": "5701485460",
+    "name": "Cty TNHH Hoàng Ngân Móng Cái",
+    "address": "105 Trần Phú, Trần Phú, Móng Cái, QN"
+  },
+  {
+    "mst": "5700481636",
+    "name": "Cty CP Indeco",
+    "address": "Thôn 9, Hải Xuân, Móng Cái, QN"
+  },
+  {
+    "mst": "0201774349",
+    "name": "Cty TNHH XNK Việt Hoa Hải Phòng",
+    "address": "Số 3 Lê Thánh Tông, Máy Tơ, Ngô Quyền, HP"
+  },
+  {
+    "mst": "5701361370",
+    "name": "Cty TNHH TM&DL Thuận Phát",
+    "address": "Khu 8 P. Hải Hòa, TP Móng Cái, QN"
+  },
+  {
+    "mst": "5701892519",
+    "name": "Cty TNHH XNK Thái Đông",
+    "address": "Thôn 6 Xã Hải Đông, TP Móng Cái, QN"
+  },
+  {
+    "mst": "0200788589",
+    "name": "Cty TNHH TM DV Duy Chinh",
+    "address": "330 Phan Đăng Lưu, P. Trần Thành Ngọ, Q. Kiến An, HP"
+  },
+  {
+    "mst": "0801148449",
+    "name": "Cty CP DV TM vận tải Hưng Phát",
+    "address": "Thôn Quyết Thắng, Xã Kim Anh, Huyện Kim Thành, Hải Dương"
+  },
+  {
+    "mst": "0201318924",
+    "name": "Cty TNHH KD & DV Vũ Gia",
+    "address": "Số 4/2 Đặng Kim Nở, P. Cát Dài, Q. Lê Chân, HP"
+  },
+  {
+    "mst": "5701710141",
+    "name": "Cty TNHH TM XNK An Khánh",
+    "address": "Số 20 Tổ 2, Khu 6C, P.Hồng Hải, TP Hạ Long, QN"
+  },
+  {
+    "mst": "5700870625",
+    "name": "Cty CP TM XNK Thuận Hưng",
+    "address": "Thôn 5 Hải Xuân, Móng Cái, QN"
+  },
+  {
+    "mst": "2600667092",
+    "name": "Cty CP XD&TM Vạn Thành",
+    "address": "Tổ 3, Phố Tân Thuận, P.Tân Dân, TP Việt Trì, Phú Thọ"
+  },
+  {
+    "mst": "0104368870",
+    "name": "Cty CP GK Việt Nam",
+    "address": "Khu dân cư số 3, P. Trung Hưng, TX Sơn Tây, HN"
+  },
+  {
+    "mst": "4900774860",
+    "name": "Cty TNHH TM&DV VT Đức Bảo",
+    "address": "Khu KTCK Hữu Nghị, Thôn Kéo Kham, TT Đồng Đăng, Lạng Sơn"
+  },
+  {
+    "mst": "0201718111",
+    "name": "Cty TNHH TM & XNK Vạn Phước",
+    "address": "Số 23 cầu thang 6, tầng 1, A2 khu tập thể Vạn Mỹ, P. Vạn Mỹ, Ngô Quyền, HP"
+  },
+  {
+    "mst": "5701677536",
+    "name": "Cty Cổ phần DDP",
+    "address": "Số 68A T3 K7 P.Bãi Cháy , Hạ Long , Quảng Ninh"
+  },
+  {
+    "mst": "0201625481",
+    "name": "Cty TNHH TM QT Lâm Hoàng",
+    "address": "Số 5A/23 Đường Nguyễn Công trứ, P. Hàng Kênh, Q. Lê Chân, TP. Hải Phòng, VN"
+  },
+  {
+    "mst": "5100442307",
+    "name": "Cty TNHH 1TV Lan Khuê Hà Giang",
+    "address": "Tổ 12, TT Việt Quang, huyện Bắc Quang, Hà Giang"
+  },
+  {
+    "mst": "5701871156",
+    "name": "Cty TNHH XNK Ngân Quý",
+    "address": "Thôn 1, xã Quang Minh, Huyện Hải Hà, Quảng Ninh"
+  },
+  {
+    "mst": "0500581627",
+    "name": "Cty CP PT đô thị quốc tế Việt Nam",
+    "address": "Đường Lê Trọng Tấn, P. La Khê, Q. Hà Đông, HN"
+  },
+  {
+    "mst": "030314296",
+    "name": "Cty CP ĐT & PT Quốc Gia I.D.I",
+    "address": "Bình Thạnh, Lấp Vò, Đồng Tháp"
+  },
+  {
+    "mst": "0201576234",
+    "name": "Cty TNHH XNK Hải Thanh",
+    "address": "Hải An-HP"
+  },
+  {
+    "mst": "0101502895",
+    "name": "Cty TNHH TM DV vận tải Hà Nội Container",
+    "address": "Lô 17, dãy X1, tổ 23, P. Bồ Đề, Long Biên, HN"
+  },
+  {
+    "mst": "5701736044",
+    "name": "Cty TNHH TM&VT Phương Lợi",
+    "address": "Tổ 53, Khu 6, P. Hồng Gai, TP Hạ Long, QN"
+  },
+  {
+    "mst": "0800592316",
+    "name": "Cty TNHH TM & DV Bình An",
+    "address": "Khu KTCK - TT Tà Lùng - Phục Hòa - Cao Bằng"
+  },
+  {
+    "mst": "5701701059",
+    "name": "Cty CP XNK Tỷ An",
+    "address": "Số 326B đường Hùng Vương, P. Ka Long, Móng Cái, QN"
+  },
+  {
+    "mst": "1400571715",
+    "name": "Cty CP XNK thủy sản Cửu Long",
+    "address": "Lô III C, Khu C mở rộng, KCN Sa Đéc, Đồng Tháp"
+  },
+  {
+    "mst": "0201723337",
+    "name": "Cty TNHH Thịnh Phong Thái",
+    "address": "Số 411 Lô 22 Đường Lê Hồng Phong, P. Đông Khê, Q. Ngô Quyền, Hải Phòng"
+  },
+  {
+    "mst": "84868458",
+    "name": "Cty TNHH TM DV XNK Hải Thanh",
+    "address": "Tổ 16, P.Đằng Hải, Hải An, HP"
+  },
+  {
+    "mst": "5701697081",
+    "name": "Cty CP XNK Hoàng Phú Thịnh",
+    "address": "Khu 6, Phường Hải Yên, Móng Cái, QN"
+  },
+  {
+    "mst": "0107735127",
+    "name": "Cty TNHH phát triển TM & XNK Phúc Lâm",
+    "address": "Số 29 ngõ Tức Mạc, P. Cửa Nam, Q. Hoàn Kiếm, HN"
+  },
+  {
+    "mst": "0201578915",
+    "name": "Cty TNHH Đầu tư vận tải Giang Sơn",
+    "address": "Số 12/1 Đường A, P. Đông Hải 1, Hải An, HP"
+  },
+  {
+    "mst": "1200575021",
+    "name": "Cty CP Gò Đàng",
+    "address": "Lô 45 KCN Mỹ Tho, Xã Trung An, TP Mỹ Tho, Tiền Giang"
+  },
+  {
+    "mst": "0107371800",
+    "name": "Cty CP tập đoàn 3Hg",
+    "address": "19 Khu 3 Xã Phú Minh, Sóc Sơn, HN"
+  },
+  {
+    "mst": "0201782068",
+    "name": "Cty TNHH Hải RUI",
+    "address": "774 Lê Thánh Tông, HP"
+  },
+  {
+    "mst": "1900404705",
+    "name": "Cty TNHH 1TV KD chế biến thủy sản XNK Bạch Linh",
+    "address": "398 Khúc Tréo A, Tân Phong, Giá Rai, Bạc Liêu"
+  },
+  {
+    "mst": "0311635595",
+    "name": "Cty TNHH SX thương mại Nam Khôi",
+    "address": "726/9 Lê Trọng Tấn, P. Bình Hưng Hòa, Q. Bình Tân, TP HCM"
+  },
+  {
+    "mst": "0101054925",
+    "name": "Cty TNHH Lê Hào",
+    "address": "46 Quốc Tử Giám - Đống Đa - HN"
+  },
+  {
+    "mst": "0106080005",
+    "name": "Cty TNHH thương mại TH & XNK Hoàng Lâm",
+    "address": "Số 809G, Khu Đền Lừ, P. Hoàng Văn Thụ, Q. Hoàng Mai, HN"
+  },
+  {
+    "mst": "0303141296",
+    "name": "Cty CP ĐT & PT Quốc Gia I.D.I",
+    "address": "QL 80, Cụm CN Vàm Cống, Ấp An Thạnh, Xã Bình Thành, Lấp Vò, Đồng Tháp"
+  },
+  {
+    "mst": "5701358434",
+    "name": "Cty TNHH An Bình Phát - Móng Cái",
+    "address": "46 đường Duy Tân, KĐT Ngọc Hà, P. Hải Yên, Móng Cái, QN"
+  },
+  {
+    "mst": "0201735766",
+    "name": "Cty TNHH XNK nông sản Gia Hưng",
+    "address": "Số 78 Đường Bao Trần Hưng Đạo, P. Đông Hải 1, Q. Hải An, HP"
+  },
+  {
+    "mst": "5700904458",
+    "name": "Cty TNHH TM Cát Vận",
+    "address": "31 Vườn Trầu, Trần Phú, Móng Cái, QN"
+  },
+  {
+    "mst": "5701677127",
+    "name": "Cty TNHH Đầu tư TM XNK Biển Đông",
+    "address": "Khu 7, phường Ka Long, TP Móng Cái, QN"
+  },
+  {
+    "mst": "0105873058",
+    "name": "Công Ty Cổ Phần Đầu Tư Đỉnh Vàng",
+    "address": "số 24- nghách 40- ngõ 215- phố định công thượng- P. Định Công- Q. Hoàng Mai- Hà nội"
+  },
+  {
+    "mst": "0200324636",
+    "name": "Cty TNHH máy tính Tân An Thịnh Việt Nam",
+    "address": "Số 19 Ký Con - Hải Phòng - Việt Nam"
+  },
+  {
+    "mst": "5701786373",
+    "name": "Cty TNHH 1TV TM XNK và DV Trí Sơn",
+    "address": "Km 2.5 Khu 7, Phường Hải Yên, TP Móng Cái, QN"
+  },
+  {
+    "mst": "2000393273",
+    "name": "Cty CP tập đoàn thủy sản Minh Phú",
+    "address": "KCN Phường 8, TP Cà Mau"
+  },
+  {
+    "mst": "4800901152",
+    "name": "Cty TNHH Hương Giang Cao Bằng",
+    "address": "SN 003, Khu 2, TT Hùng Quốc, Trà Lĩnh, Cao Bằng"
+  },
+  {
+    "mst": "4600789591",
+    "name": "Doanh nghiệp Tư nhân Bảo Linh",
+    "address": "Tổ 14 Phường Tích Lương, TP Thái Nguyên"
+  },
+  {
+    "mst": "4601261620",
+    "name": "Cty CP khoáng sản và luyện kim Trung Thành",
+    "address": "Khu B, KCN Sông Công - Bách Quang - Sông Công - TP Thái Nguyên"
+  },
+  {
+    "mst": "0900993985",
+    "name": "Cty TNHH XNK Hằng Lâm",
+    "address": "Phố Chợ Dầu, Xã Quảng Châu, TP Hưng Yên, Tỉnh Hưng Yên"
+  },
+  {
+    "mst": "1100120126",
+    "name": "Cty TNHH Đại Hưng Phát",
+    "address": "Số 81B, QL 62, Phường 2, TP Tân An, Tỉnh Long An"
+  },
+  {
+    "mst": "1100107301",
+    "name": "Cty CP CB hàng XK Long An",
+    "address": "Phường 2, TP Tân An, Tỉnh Long An"
+  },
+  {
+    "mst": "1100732217",
+    "name": "Cty TNHH Mỹ An",
+    "address": "286 QL 62, Lợi Bình Nhơn, TP Tân An, Tỉnh Long An"
+  },
+  {
+    "mst": "6000435604",
+    "name": "Cty TNHH Đức Thịnh",
+    "address": "TT Eaknốp, huyện Eakar, Tỉnh ĐakLak"
+  },
+  {
+    "mst": "4200605433",
+    "name": "Cty CP CB nông sản XNK Khánh Hòa",
+    "address": "Thôn Cư Thạnh, Xã Suối Hiệp, huyện Diên Khánh, Khánh Hòa"
+  },
+  {
+    "mst": "3900370418",
+    "name": "Cty TNHH Tân Hòa",
+    "address": "Ấp Tân Hòa, Xã Tân Bình, TP Tây Ninh, Tây Ninh"
+  },
+  {
+    "mst": "3900304990",
+    "name": "Cty TNHH Bimico",
+    "address": "Sô 02, Trần Văn Trà, Ấp Kinh Tế, Xã Bình Minh, TP Tây Ninh"
+  },
+  {
+    "mst": "3800211407",
+    "name": "Cty TNHH Thương mại SX - XNK Bình Phước",
+    "address": "Ấp 4 - Tân Lập - Đồng Phú - Bình Phước"
+  },
+  {
+    "mst": "0302817119",
+    "name": "Công ty cổ phần Long Sơn",
+    "address": "Lô III.23A, đường 19/5A, KCN Tân Bình, quận Tân Phú, TP HCM"
+  },
+  {
+    "mst": "3801096186",
+    "name": "Cty TNHH MTV sản xuất TM DV Thành Nhân",
+    "address": "Số nhà 12, Tổ 38, Ấp Thái Dung, Xã Tân Tiến, huyện Đồng Phú, Bình Phước"
+  },
+  {
+    "mst": "1100644754",
+    "name": "Cty TNHH Duy Đức",
+    "address": "Lô C1, Đường số 1, Cụm CN Lợi Bình Nhơn, TP Tân An, Long An"
+  },
+  {
+    "mst": "3801092047",
+    "name": "Cty TNHH MTV sản xuất thương mại H&T",
+    "address": "Tổ 2, Khu phố 2, P. Long Thủy, TX Phước long, Bình Phước"
+  },
+  {
+    "mst": "1101788269",
+    "name": "Cty CP Phúc Như Hải",
+    "address": "Cụm CN Lợi Bình Nhơn, Xã Lợi Bình Nhơn, TP  Tân An, Long An"
+  },
+  {
+    "mst": "3800334462",
+    "name": "Cty TNHH Sơn Tùng",
+    "address": "Phường Phước Bình - TX Phước Long, Bình Phước"
+  },
+  {
+    "mst": "5701489677",
+    "name": "Cty CP thương mại và XNK Tâm Hưng",
+    "address": "Thôn 6 Xã Hải Đông, TP Móng Cái, QN"
+  },
+  {
+    "mst": "6000182199",
+    "name": "Cty TNHH DAKMAN Việt Nam",
+    "address": "Km0, QL26, TP Buôn Ma Thuột, Đắc Lắc"
+  },
+  {
+    "mst": "0106336539",
+    "name": "Cty TNHH Phát triển vận tải Đại An",
+    "address": "Số 53 Ngách 291 Ngõ 1141,Đường Giải Phóng,Phường Thịnh Liệt,Quận Hoàng Mai,Hà Nội"
+  },
+  {
+    "mst": "4800902163",
+    "name": "Cty CP đầu tư thương mại DV vận tải và XNK Trường Sơn",
+    "address": "Khu Tái định cư, TT Tà Lùng, Phục Hòa, Cao Bằng"
+  },
+  {
+    "mst": "5701586649",
+    "name": "Cty CP thương mại và DV XNK Vision",
+    "address": "Số 146 Đường Triều Dương, Phường Trần Phú, TP Móng Cái, Quảng Ninh"
+  },
+  {
+    "mst": "4800846617-001",
+    "name": "Chi nhánh Cty CP tư vấn đầu tư XD và công trình Mỏ",
+    "address": "Km7 - Xóm Khuổi Hân - Xã Ngũ Lão - H. Hòa An - Cao Bằng"
+  },
+  {
+    "mst": "0201842729",
+    "name": "Cty TNHH thuương mại quốc tế TL",
+    "address": "76/36 Vạn Mỹ, P. Vạn Mỹ, Q. Ngô Quyền, Hải Phòng"
+  },
+  {
+    "mst": "0200421340",
+    "name": "Cty TNHH Việt Trường",
+    "address": "Cum CN Vĩnh Niệm - Lê Chân - Hải Phòng"
+  },
+  {
+    "mst": "0201839860",
+    "name": "Cty TNHH đầu tư XNK Lộc Thiên Phú",
+    "address": "Tầng 3 số 17 Lô 7B Lê Hồng Phong, P. Đông Khê, Ngô Quyền, HP"
+  },
+  {
+    "mst": "3600268170",
+    "name": "Cty CP Chế biến XNK nông sản thực phẩm Đồng Nai",
+    "address": "647 Xa lộ Hà Nội, P.Long Bình, Biên Hòa, Đồng Nai"
+  },
+  {
+    "mst": "2300884829",
+    "name": "Cty TNHH Dịch vụ và TM Việt Hảo",
+    "address": "Số 4, Khu Dương Lôi, P. Tân Hồng, TX Từ Sơn, Bắc Ninh"
+  },
+  {
+    "mst": "0105837677",
+    "name": "Công ty CP QT Tico",
+    "address": "Sô 20A Dịch Vọng, Cầu Giấy, Hà Nội"
+  },
+  {
+    "mst": "5701342716",
+    "name": "Công ty CP DL và XNK Vĩnh Thịnh",
+    "address": "Số 07, Hữu Nghị, Trần Phú, Móng Cái, Quảng Nam"
+  },
+  {
+    "mst": "4600355467",
+    "name": "Công ty Cp Kim Quy thái Nguyên",
+    "address": "Tổ 11 Phường Trung Thành, Thái Nguyên"
+  },
+  {
+    "mst": "0201291486",
+    "name": "Công ty TNHH ĐT TM Tuấn Phong",
+    "address": "Ngô Quyền, Hải phòng"
+  },
+  {
+    "mst": "0201735406",
+    "name": "Công ty TNHH TM và DV VTC Hải Phòng",
+    "address": "115A/246A Đà Nẵng, Cầu Tre, Ngô Quyền, Hải Phòng"
+  },
+  {
+    "mst": "3801074545",
+    "name": "Công ty TNHH 1TV Sản Xuất và TM Hoàng Phúc",
+    "address": "Phước Long, Bình Phước"
+  },
+  {
+    "mst": "3603404336",
+    "name": "Công ty TNHH Lâm Hòa Hiệp",
+    "address": "Gia Kiệm, Thống Nhất, Đồng Nai"
+  },
+  {
+    "mst": "0100102580-005",
+    "name": "Chi nhánh công ty cổ phần KS và Cơ Khí : Nhà máy hợp kim sắt Mimeco- Tuyên Quang",
+    "address": "KCN Long Bình An, Đội Cấn, Tuyên Quang"
+  },
+  {
+    "mst": "0201337028",
+    "name": "Công ty TNHH TM QT Hoàng Lâm",
+    "address": "Số 22/88 Nguyễn Công Trứ, P. Hàng Kênh, Lê chân, Hải Phòng"
+  },
+  {
+    "mst": "0200687781",
+    "name": "Công ty TNHH Logistíc Thu Ngân",
+    "address": "Đông Khê - Ngô Quyền- Hải Phòng"
+  },
+  {
+    "mst": "0201717069",
+    "name": "công ty TNHH TM XNK Long Châu",
+    "address": "Đông Khê - Ngô Quyền- Hải Phòng"
+  },
+  {
+    "mst": "1900593788",
+    "name": "Công ty cổ phần Tôm Miền Nam",
+    "address": "Tân Phong, Giá Rai, Bạc Liêu, Việt Nam"
+  },
+  {
+    "mst": "0313394828",
+    "name": "Công ty TNHH Vận Tải- Tiếp Vận Ruby",
+    "address": "Phưòng 12, Tân Bình - Thành Phố Hồ Chí Minh"
+  },
+  {
+    "mst": "0801205672",
+    "name": "Công ty TNHH HHHV",
+    "address": "Bình Hàn- Hải Dương"
+  },
+  {
+    "mst": "4700253187",
+    "name": "Công ty CP KS Tây Giang Bắc Kạn",
+    "address": "Xã Cẩm Giàng, Bạch Thông, Bắc Kạn"
+  },
+  {
+    "mst": "0101938177",
+    "name": "Công ty cổ phần giải pháp Tòa Nhà Thông Minh",
+    "address": "Tầng 24, Tháp B, nhà 173 Xuân thủy, Dịch Vọng Hậu, Cầu Giấy, Hà Nội"
+  },
+  {
+    "mst": "4800165618",
+    "name": "Công ty CP Khoáng Sản Nikko Việt Nam",
+    "address": "Trà Lĩnh, Cao Bằng"
+  },
+  {
+    "mst": "4800890486",
+    "name": "Công ty TNHH Trần Hùng Cao Bằng",
+    "address": "Xóm Bản Gủn, xã Ngũ Lão, huyện Hòa An, tỉnh Cao Bằng"
+  },
+  {
+    "mst": "4800155426",
+    "name": "Doanh nghiệp Tư nhân Phú An",
+    "address": "Đỏng Lèng, Huyện Phục Hòa, Cao Bằng"
+  },
+  {
+    "mst": "1700106613",
+    "name": "Công ty CP Thủy Sản Kiên Giang",
+    "address": "P An Bình, TP Rạch Giá, Kiên Giang, Việt Nam"
+  },
+  {
+    "mst": "2200203836",
+    "name": "Công Ty Cổ Phần Chế Biến Thủy Sản  út Xi",
+    "address": "Số 24, đường tỉnh 934, Hà Bô, Tài Văn, Trần Đề, Sóc Trăng"
+  },
+  {
+    "mst": "0105758859",
+    "name": "Công Ty TNHH TM & Logictics QT Nam Á Việt Nam",
+    "address": "Tầng 2 số nhà 28C, phố Tây Sơn, P Điện Biên, Q Ba Đình, Hà Nội"
+  },
+  {
+    "mst": "2000470104",
+    "name": "Cty TNHH Anh Khoa",
+    "address": "335 A Lý Thường Kiệt, P6, TP. Cà Mau"
+  },
+  {
+    "mst": "4900804730",
+    "name": "Cty TNHH MTV An Phú LS",
+    "address": "Số 49, Nhị Thanh, Tam Thanh, Lạng Sơn"
+  },
+  {
+    "mst": "4800895822",
+    "name": "Công ty CP DT Kỹ Thuật Cao Bằng",
+    "address": "Số 52 Tổ 32 Kim Đồng, Hợp Giang, Cao Bằng"
+  },
+  {
+    "mst": "4401036441",
+    "name": "Công ty TNHH Hùng Bang",
+    "address": "Đường Võ Thị Sáu, khu phố 3, Phường Phú Thạnh, TP. Tuy Hoà, tỉnh Phú Yên"
+  },
+  {
+    "mst": "3602742491",
+    "name": "Công ty TNHH XNK Trần Duy hưng",
+    "address": "Thống Nhất Đồng Nai"
+  },
+  {
+    "mst": "8350046090",
+    "name": "Lý Thùy Dung",
+    "address": "Số 129 Cốc Nam, Tân Mỹ, Văn Lãng, Lạng Sơn"
+  },
+  {
+    "mst": "0106771323",
+    "name": "Công ty CP XNK Ks Hồng Hà",
+    "address": "Quỳnh Lôi, Hai Bà Trưng, Hà Nội"
+  },
+  {
+    "mst": "4800100836",
+    "name": "Công ty CP XNK Cao Bằng",
+    "address": "Số 26 Kim Đồng, Hợp Giang, Cao Bằng"
+  },
+  {
+    "mst": "0201614049",
+    "name": "Công ty TNHH Logistic Sen Vang",
+    "address": "Lê Lợi, Ngô Quyền, Hải Phòng"
+  },
+  {
+    "mst": "4600305988",
+    "name": "Cty TNHH SX DV & TM Phương Tân",
+    "address": "Tổ 31, P. Cam Giá, TP. Thái Nguyên"
+  },
+  {
+    "mst": "48000165086",
+    "name": "Công ty tnhh sông đà",
+    "address": "thôn đán, hạnh phúc, thái nguyên"
+  },
+  {
+    "mst": "1702003557",
+    "name": "Cty TNHH Hải sản Ngôi sao Tươi Sáng",
+    "address": "Châu Thành - Kiên Giang"
+  },
+  {
+    "mst": "5701285828",
+    "name": "Công ty TNHH TM XNK Phương Đông",
+    "address": "Số 58 Nguyễn Du, Hòa Lạc, Móng Cái"
+  },
+  {
+    "mst": "0201304618",
+    "name": "Công ty TNHH Logítics Viki",
+    "address": "Số 3 Lê Thánh Tông, Máy Tơ, Ngô Quyền, HP"
+  },
+  {
+    "mst": "0102921056",
+    "name": "Cty CP VT Quốc tế Ka",
+    "address": "Số 95 Lý Nam Đế, Phường Cửa Đông, Quận Hoàn Kiếm, Hà Nội"
+  },
+  {
+    "mst": "0201610397",
+    "name": "Công Ty TNHH Dịch Vụ Xuất Nhập Khẩu Tuấn Long",
+    "address": "Số 5A/09/07 Phú Xá, phường Đông Hải 1, Quận Hải An, thành phố Hải Phòng"
+  },
+  {
+    "mst": "0201734226",
+    "name": "Cty TNHH giao nhận XNK Thuỷ sản Hải Phòng",
+    "address": "Phòng 12A02, tháp B,TD Plaza,lô 20A Lê Hồng Phong,Đông Khê,Ngô Quyền,Hải Phòng"
+  },
+  {
+    "mst": "0201745193",
+    "name": "Cty TNHH GN Kim Phát Asian",
+    "address": "Ngô Quyền, Hải phòng"
+  },
+  {
+    "mst": "0201626502",
+    "name": "Cty TNHH Mậu dịch Az",
+    "address": "Hải An-HP"
+  },
+  {
+    "mst": "5600170940",
+    "name": "Doanh nghiệp tư nhân XNK Xuân Tính",
+    "address": "Phong Thổ Lai châu"
+  },
+  {
+    "mst": "0200690209",
+    "name": "Công ty TNHH Thiên Lâm",
+    "address": "Phù Đổng, Minh Khai, Hồng Bàng, Hải Phòng"
+  },
+  {
+    "mst": "0201789835",
+    "name": "CôNG TY TNHH ĐạI Lý HàNG HảI THIêN LONG",
+    "address": "Số 631 Nguyễn Văn Linh, Phường Vĩnh Niệm, Quận Lê Chân, Thành Phố Hải Phòng"
+  },
+  {
+    "mst": "0201703725",
+    "name": "Công ty TNHH PMI Hoàng Yến",
+    "address": "Ngô Quyền, Hải phòng"
+  },
+  {
+    "mst": "0201873068",
+    "name": "CôNG TY TNHH XUấT NHậP KHẩU KHáNH LINH AN",
+    "address": "Số 36A/67 Khúc Thừa Dụ 2, Phường Vĩnh Niệm, Quận Lê Chân, Thành phố Hải Phòng"
+  },
+  {
+    "mst": "0201854259",
+    "name": "Cty TNHH Đầu tư XNK Thiên Thành",
+    "address": "Số 3/52 Đường Chùa Vẽ, Phường Đông Hải 2, Quận Hải An, TP Hải Phòng"
+  },
+  {
+    "mst": "5701934984",
+    "name": "Cty TNHH TM XNK Song Nam",
+    "address": "Số 367, Đường Trần Quốc Tảng, P Hải Hòa, TP Móng Cái - QN"
+  },
+  {
+    "mst": "0201864955",
+    "name": "CôNG TY TNHH TM DV & XNK Cát Phượng",
+    "address": "khu chúng cư 9 tầng đường Lê Hồng Phong, P.Đông Khê, Q.Ngô Quyền, HP"
+  },
+  {
+    "mst": "0901014826",
+    "name": "Công ty TNHH TM XNK Thành Đoàn",
+    "address": "Lỳ Thường Kiệt- Hưng Yên"
+  },
+  {
+    "mst": "4900798597",
+    "name": "Công ty TNHH 1TV Minh Long Lạng Sơn",
+    "address": "Cao Lộc, Lạng Sơn"
+  },
+  {
+    "mst": "4900827431",
+    "name": "Công ty TNHH 1TV ZYN",
+    "address": "Văn Lãng- Lạng Sơn"
+  },
+  {
+    "mst": "0801242917",
+    "name": "CôNG TY TNHH TMTH Và XUấT NHậP KHẩU PHú NGUYễN",
+    "address": "Xóm Mới, Xã Hồng Lạc, Huyện Thanh Hà, Tỉnh Hải Dương"
+  },
+  {
+    "mst": "0201813580",
+    "name": "Công ty cổ phần năng lượng Tradimexco",
+    "address": "Ngô Quyền, Hải phòng"
+  },
+  {
+    "mst": "4800117526",
+    "name": "Cong ty TNHh Tm Thu Công",
+    "address": "Hợp Giang- Cao Bằng"
+  },
+  {
+    "mst": "5701661543",
+    "name": "Cty TNHH Phát triển TM Lâm Việt",
+    "address": "Số 04 đường Đào Phúc Lộc, phường Trần Phú, TP. Móng Cái, Quảng Ninh"
+  },
+  {
+    "mst": "2300981364",
+    "name": "Công ty TNHH Hoàng Minh Bắc Ninh",
+    "address": "Võ Cường, Bắc Ninh"
+  },
+  {
+    "mst": "5701776142",
+    "name": "Coông ty CP Super Intraco",
+    "address": "Móng Cái Quảng Ninh"
+  },
+  {
+    "mst": "4800846617001",
+    "name": "Chi Nhánh Công Ty Cổ Phần Tư Vấn Đầu Tư Xây Dựng Và Công Trình Mỏ",
+    "address": "KM7- xóm khuổi hân - Xã Ngũ Lão - Huyện Hòa An - Tỉnh Cao Bằng"
+  },
+  {
+    "mst": "0900608619",
+    "name": "Công ty TNHH TM Hải Dũng",
+    "address": "Lê Lợi, Hưng Yên"
+  },
+  {
+    "mst": "0201866053",
+    "name": "CôNG TY TNHH THươNG MạI XUấT NHậP KHẩU HàNG DươNG HảI PHòNG",
+    "address": "Số 750 Lô 22 Lê Hồng Phong, Phường Đông Khê, Quận Ngô Quyền,Thành Phố Hải Phòng, Việt Nam"
+  },
+  {
+    "mst": "0108137070",
+    "name": "CôNG TY TNHH ĐầU Tư Và XUấT NHậP KHẩU PHú NAM",
+    "address": "Số 6 Nguyễn Cơ Thạch (Khối Văn Phòng), P. Cầu Diễn, Quận Nam Từ Liêm, Hà Nội"
+  },
+  {
+    "mst": "0201887462",
+    "name": "Cty TNHH TM QT Hoàng Cầu",
+    "address": "362 Lê Thánh Tông- Máy Chai - Ngô Quyền - Hải Phòng"
+  },
+  {
+    "mst": "0301932045",
+    "name": "Công Ty Cổ Phần Sản Xuất-Thương Mại Huỳnh Minh",
+    "address": "145/8 Tân Thới 2,Tân Hiệp,Hóc Môn,TPHCM"
+  },
+  {
+    "mst": "0311828389",
+    "name": "Công Ty TNHH Một Thành Viên Thương Mại Trung Thành Tâm",
+    "address": "233 Trần Thị Cờ - phường Thới An - Quận 12 - TP Hồ Chí Minh"
+  },
+  {
+    "mst": "1100120045",
+    "name": "Công Ty TNHH Chế Biến Nông Sản Thực Phẩm Xuất Khẩu Tân An",
+    "address": "Cụm CN Lợi Bình Nhơn, Xã Lợi Bình Nhơn, TP.Tân AN, Long An, Việt Nam."
+  },
+  {
+    "mst": "1100642059",
+    "name": "Công ty TNHH TM và Chế biến hàng XNK Tứ Hải",
+    "address": "Ấp 7, xã Hiệp Thạnh, huyện Châu Thành, Long An."
+  },
+  {
+    "mst": "1100710830",
+    "name": "Công Ty Cổ Phần Lông Vũ Xuất Nhập Khẩu Tổng Hợp Long An",
+    "address": "53 Phan Văn Lại, Phường 6, Tp. Tân An, Tỉnh Long An"
+  },
+  {
+    "mst": "1100829642",
+    "name": "Công Ty TNHH Một Thành Viên Thảo Duy",
+    "address": "Cụm CN Lợi Bình Nhơn, xã Lợi Bình Nhơn, TPTA, Long An"
+  },
+  {
+    "mst": "1300354072",
+    "name": "Công ty TNHH Thương Mại - Sản Xuất Đức Thành",
+    "address": "Ấp An Vĩnh 1,X.Đa Phước Hội, H.Mỏ Cày Nam, T.Bến Tre"
+  },
+  {
+    "mst": "1301009689",
+    "name": "CôNG TY TNHH ĐạI VượNG PHú",
+    "address": "ấp Bình Công, xã Bình Phú, TP.Bến Tre, T.Bến Tre"
+  },
+  {
+    "mst": "3601047858",
+    "name": "Công ty TNHH Anh Quỳnh",
+    "address": "443/2A, Gia Tân 3, Thống Nhất, Đồng Nai."
+  },
+  {
+    "mst": "3602186163",
+    "name": "Công ty TNHH Bửu Phát",
+    "address": "33F, Khu Phố 1, Phường Bửu Long, TP Biên Hòa, Đồng Nai"
+  },
+  {
+    "mst": "3602209357",
+    "name": "Công Ty TNHH Một Thành Viên Phú Gia An",
+    "address": "253C, tổ 10, khu phố 3, P Long Bình, Tp Biên Hòa, tỉnh Đồng Nai"
+  },
+  {
+    "mst": "3602624547",
+    "name": "Công Ty TNHH Một Thành Viên Thuận Phúc Đạt",
+    "address": "số 27, khu 2, ấp Bảo Định, xã Xuân Định, Huyện Xuân Lộc, Đồng Nai"
+  },
+  {
+    "mst": "3602705203",
+    "name": "Công ty TNHH Hồng Lợi Thịnh",
+    "address": "774, tỉnh lộ 766, Xuân Thành, Xuân Lộc, Đồng Nai"
+  },
+  {
+    "mst": "3602737283",
+    "name": "Công Ty Cổ Phần Thương Mại Xuất Nhập Khẩu Lộc Việt Cường",
+    "address": "SUOI CAT 1, SUOI CAT, XUAN LOC, DONG NAI"
+  },
+  {
+    "mst": "3602946738",
+    "name": "Công Ty TNHH Một Thành Viên Xuất Nhập Khẩu Thương Mại T.D.Đ",
+    "address": "35C, TỔ 87, KP12, P HỐ NAI, BIÊN HÒA, ĐỒNG NAI"
+  },
+  {
+    "mst": "3602983017",
+    "name": "Công ty TNHH Một Thành Viên TM XNK Anh Tuệ",
+    "address": "Số 41, Ấp Trung Nghĩa, Xã Xuân Trường, huyên Xuân Lộc, tỉnh Đông Nai"
+  },
+  {
+    "mst": "3603061199",
+    "name": "Công Ty TNHH Một Thành Viên Trịnh Phong Giang",
+    "address": "ấp Hoàn Quân, xã Long Giao, huyện Cẩm Mỹ, tỉnh Đồng Nai"
+  },
+  {
+    "mst": "3603125438",
+    "name": "Công ty TNHH Một Thành Viên Nông Sản Nhân Hòa Phát",
+    "address": "Ấp 94, xã Túc Trưng, Huyện Định Quán, tỉnh Đồng Nai"
+  },
+  {
+    "mst": "3603334946",
+    "name": "Công Ty TNHH Nông Sản Hải Phát",
+    "address": "Số 312, ấp Bàu Cối, xã Bảo Quang, Thị Xã Long Khánh, Đồng Nai"
+  },
+  {
+    "mst": "3603359605",
+    "name": "Công Ty Cổ Phần Chế Biến Nông Sản Thực Phẩm Phước Tân Đồng Nai",
+    "address": "Số 1028-Tổ 18-Ấp Vườn Dừa,Xã Phước Tân,Biên Hòa,Đồng Nai"
+  },
+  {
+    "mst": "3700365146",
+    "name": "Công ty TNHH Gia Hoàng",
+    "address": "Phường Thới hòa, Bến Cát, Bình Dương"
+  },
+  {
+    "mst": "3701861588",
+    "name": "Công Ty TNHH Minh Thái Dương",
+    "address": "Thửa đất số 141, tờ bản đồ số 17, ấp 6, xã Vĩnh Tân, thị xã Tân Uyên, tỉnh Bình Dương"
+  },
+  {
+    "mst": "3702150298",
+    "name": "Công ty CP Găng Việt",
+    "address": "Xã Lai Hưng, Huyện Bàu Bàng, Tỉnh Bình Dương"
+  },
+  {
+    "mst": "3702155377",
+    "name": "Công Ty TNHH Một Thành Viên Bà Tám Bình Dương",
+    "address": "So 743/18, phuong Chanh Nghia, Tp Thu Dau Mot, tinh Binh Duong"
+  },
+  {
+    "mst": "3702228681",
+    "name": "Công Ty Cổ Phần Xuất Nhập Khẩu Điều Việt Hà",
+    "address": "4B/1, KP 1A, Phuong An Phu, TX Thuan An, Binh Duong"
+  },
+  {
+    "mst": "3800101274",
+    "name": "Công Ty Mỹ Lệ (Trách Nhiệm Hữu Hạn)",
+    "address": "ĐT 741 Long Hưng - Phú Riềng - Bình Phước"
+  },
+  {
+    "mst": "3800101330",
+    "name": "Công Ty Cổ Phần Sơn Long",
+    "address": "P Sơn Giang, Tx Phước Long, Bình Phước"
+  },
+  {
+    "mst": "3800259342",
+    "name": "Công Ty Cổ Phần Hoàng Sơn I",
+    "address": "ẤP 2, XÃ ĐỨC LIỄU, HUYỆN BÙ ĐĂNG, TỈNH BÌNH PHƯỚC"
+  },
+  {
+    "mst": "3800332680",
+    "name": "Công ty TNHH Tấn Toàn",
+    "address": "Phường Thác Mơ ,Thị Xã Phước Long ,Tỉnh Bình Phước"
+  },
+  {
+    "mst": "3800368327",
+    "name": "Công ty TNHH 1TV Sản Xuất TM Khánh My",
+    "address": "Phường Long Phước, TX Phước Long, Bình Phước"
+  },
+  {
+    "mst": "3800630895",
+    "name": "Công ty TNHH Một Thành Viên Phúc Vân",
+    "address": "Đường 741 Khu 1 Phường Long Thủy, Thị xã Phước Long tỉnh Bình Phước"
+  },
+  {
+    "mst": "3800735312",
+    "name": "CôNG TY TNHH MộT THàNH VIêN THươNG MạI DịCH Vụ XUấT NHậP KHẩU MườI TâM",
+    "address": "Số 244, tổ 2, khu 3, Phường Long Phước, Thị xã Phước Long, Tỉnh Bình Phước, Việt Nam"
+  },
+  {
+    "mst": "3800741556",
+    "name": "Công Ty TNHH Sản Xuất Thương Mại Nhu Kim Thành",
+    "address": "Lô i 1 KCN Minh Hưng Hàn Quốc,Minh Hưng, Chơn Thành, Bình Phước"
+  },
+  {
+    "mst": "3800820783",
+    "name": "Công ty TNHH Minh Tùng Phát",
+    "address": "Thôn 4, xã Đăng Hà, Huyện Bù Đăng, tỉnh Bình Phước"
+  },
+  {
+    "mst": "3801067354",
+    "name": "Công ty TNHH MTV Long Thịnh",
+    "address": "Số nhà 191, Thôn 2, xã Minh Hưng, Huyện Bù Đăng, tỉnh Bình Phước"
+  },
+  {
+    "mst": "3801068485",
+    "name": "Công ty TNHH Một Thành Viên Kiều Loan II",
+    "address": "Khu phố 2, P Long Phước, TX Phước Long, Bình Phước"
+  },
+  {
+    "mst": "3801073421",
+    "name": "Công Ty TNHH Một Thành Viên Thương Mại Trung Nam",
+    "address": "thôn Thuận Thành 2, xã Thuận Lợi, huyện Đồng Phú, tỉnh Bình Phước"
+  },
+  {
+    "mst": "3801085089",
+    "name": "Công Ty TNHH Một Thành Viên Sản Xuất Thương Mại Đức Thịnh",
+    "address": "192 Thôn 3, Thống Nhất, Bù Đăng, Bình Phước, Việt Nam"
+  },
+  {
+    "mst": "3801088499",
+    "name": "Công ty TNHH Một Thành Viên Sản Xuất TM XNK Thanh Hậu",
+    "address": "Thị Xã Phước Long, Bình Phước"
+  },
+  {
+    "mst": "3801090508",
+    "name": "Công Ty TNHH Một Thành Viên Hạt Điều Vinh Phú",
+    "address": "Số 441, đường ĐT 741 - Huyện Đồng Phú - Bình Phước"
+  },
+  {
+    "mst": "3801111074",
+    "name": "Công ty TNHH Đất Đỏ Bình phước",
+    "address": "Long Giang, Phước Long, Bình Phước"
+  },
+  {
+    "mst": "3801163259",
+    "name": "Công Ty TNHH Một Thành Viên Đầu Tư Sản Xuất Thương Mại Vĩnh Lợi",
+    "address": "TỔ 1, THÔN 5, XÃ ĐỨC LIỂU, H.BÙ ĐĂNG, T.BÌNH PHƯỚC"
+  },
+  {
+    "mst": "3801171443",
+    "name": "CôNG TY TNHH MộT THàNH VIêN THươNG MạI DịCH Vụ XUấT NHậP KHẩU LONG THịNH",
+    "address": "Quốc lộ 14, Thôn 2 - Xã Minh Hưng - Huyện Bù Đăng - Bình Phước"
+  },
+  {
+    "mst": "3900326176",
+    "name": "Công ty TNHH Một Thành Viên Hoàng Phúc",
+    "address": "Ấp Suối Dộp, Xã Thái Bình, Huyện Châu Thành, Tỉnh Tây Ninh"
+  },
+  {
+    "mst": "3900580567",
+    "name": "CôNG TY TRáCH NHIệM HữU HạN MộT THàNH VIêN NGọC KIM TIềN",
+    "address": "Ấp Xóm Mới II, xã Trí Bình, huyện Châu Thành, tỉnh Tây Ninh"
+  },
+  {
+    "mst": "4400406442",
+    "name": "Công ty TNHH Quang Sơn",
+    "address": "20 Lý Tự Trong phướng 7, TP Tuy Hòa, tỉnh Phú Yên"
+  },
+  {
+    "mst": "4400407982",
+    "name": "Công Ty TNHH Hoà Lâm",
+    "address": "Thôn Phú Sen, Xã Hòa Định Tây, Huyện Phú Hòa, tỉnh Phú Yên"
+  },
+  {
+    "mst": "4400779469",
+    "name": "Công ty TNHH Sản Xuất TM Quang Thông",
+    "address": "xã An Phú, TP tuy Hòa, tỉnh Phú Yên"
+  },
+  {
+    "mst": "4400863103",
+    "name": "Công ty CP Điều Phú Yên",
+    "address": "Tuy Hòa - Phú Yên"
+  },
+  {
+    "mst": "4400981763",
+    "name": "Công Ty TNHH Quy Quyền",
+    "address": "KHU PHỐ ĐỊNH THỌ 1, THỊ TRẤN PHÚ HOÀ, HUYỆN PHÚ HOÀ, TỈNH PHÚ YÊN"
+  },
+  {
+    "mst": "4500226186",
+    "name": "Công ty TNHH Phú Thủy",
+    "address": "Lô N1, Cụm Công nghiệp Tháp Chàm, Đường Bắc Ái, P. Đô Vinh, TP.PRTC tỉnh Ninh Thuận"
+  },
+  {
+    "mst": "4500599702",
+    "name": "Công Ty TNHH Việt Định Ninh Thuận",
+    "address": "668 Đường 21/8, phường Đô Vinh, Tp Phan Rang-Tháp Chàm tỉnh Ninh Thuận"
+  },
+  {
+    "mst": "4500605473",
+    "name": "Công Ty TNHH Trường Lợi Ninh Thuận",
+    "address": "57 Đào Duy Từ, P. Phước Mỹ, Tp. Phan Rang - Tháp Chàm, T. Ninh Thuận, VN"
+  },
+  {
+    "mst": "4800141328",
+    "name": "Doanh Nghiệp Tư Nhân Quân Tám",
+    "address": "SN132, Tổ 10, Phường Ngọc Xuân, TP.Cao Bằng"
+  },
+  {
+    "mst": "4800752655",
+    "name": "Công Ty TNHH Lương Thìn",
+    "address": "Tổ 11, Phường Đề Thám, Thành phố Cao Bằng, Cao Bằng"
+  },
+  {
+    "mst": "4800903960",
+    "name": "CôNG TY TNHH ĐầU Tư Và XUấT NHậP KHẩU MAI HươNG CAO BằNG",
+    "address": "Tổ 7 phường Duyệt Trung, thành phố Cao Bằng, Tỉnh Cao Bằng"
+  },
+  {
+    "mst": "5701739662",
+    "name": "Công Ty Trách Nhiệm Hữu Hạn Hải An Phúc",
+    "address": "Khu 3, Phường Hải Hòa, thành phố Móng Cái, tỉnh Quảng Ninh"
+  },
+  {
+    "mst": "5801186041",
+    "name": "Công Ty TNHH Chế Biến Điều Xuất Khẩu Lâm Đồng",
+    "address": "Tổ dân phố 2, Thị trấn MADAGUÔI Huyện Dạ Huai tỉnh Lâm Đồng"
+  },
+  {
+    "mst": "6001396718",
+    "name": "Công Ty TNHH Một Thành Viên Cà Phê An Thịnh Phát",
+    "address": "Thị trấn Eaknốp - Huyện Eakar - Tỉnh Đăk Lăk"
+  },
+  {
+    "mst": "6400004842",
+    "name": "Công Ty TNHH Hồng Đức",
+    "address": "Thôn 6, Xã Kiến Thành, Huyện Đắk Rlấp, Tỉnh Đăk Nông"
+  },
+  {
+    "mst": "6400246231",
+    "name": "Doanh Nghiệp TN Vân Hà Đắk Nông",
+    "address": "184-Thôn 9-Tâm Thắng-Cưjut-Đăknông"
+  },
+  {
+    "mst": "0101269511",
+    "name": "Công Ty Cổ Phần Tư Vấn Nhân Lực Nic",
+    "address": "số 7, ngách 53,ngõ 322, đường Lê Trọng Tấn, phường Khương Mai, Quận Thanh Xuân, Tp. Hà Nội"
+  },
+  {
+    "mst": "0101385740-004",
+    "name": "Công ty Chế biến Điều và Nông sản VEGETEXCO",
+    "address": "Quốc Lộ 13 Xã THành Tâm Huyện Chơn Thành Tỉnh Bình Phước"
+  },
+  {
+    "mst": "0301416636",
+    "name": "DNTN Sản Xuất Sản Phẩm Cao Su Long Thành",
+    "address": "84/24C Lý Chiêu Hoàng, Phường 10, Quận 6, TP. HCM"
+  },
+  {
+    "mst": "0301435068",
+    "name": "Công ty TNHH Nệm Vạn Thành",
+    "address": "Số 09 đường Bùi Cẩm Hổ, Phường Tân Thới Hòa, quận Tân Phú TP.HCM"
+  },
+  {
+    "mst": "0309613280",
+    "name": "Công ty Cổ phần Vạn Kim Phước",
+    "address": "50 Đường số 43, P.Tân Quy, Quận 7, TPHCM"
+  },
+  {
+    "mst": "0309724093",
+    "name": "Công ty TNHH 1TV Thiết bị Y tế Hà Cao",
+    "address": "38F  Nguyễn Giản Thanh, Phường 15, Quận 10, Thành Phố Hồ Chí Minh"
+  },
+  {
+    "mst": "0313720782",
+    "name": "Công Ty TNHH Một Thành Viên Nông Sản Vĩnh Lợi",
+    "address": "55, Pho Duc Chinh, phuong 1, Quan Binh Thanh, Tp. Ho Chi Minh"
+  },
+  {
+    "mst": "0314511661",
+    "name": "CôNG TY TNHH XUấT NHậP KHẩU P&T",
+    "address": "Tầng 1, tòa nhà Packsimex, 52 Đông Du, Bến Nghé, Quận 1, Tp.HCM"
+  },
+  {
+    "mst": "0304497601",
+    "name": "Công Ty TNHH Sản Xuất Thương Mại Duy Thảo",
+    "address": "21/2D Ấp Thới Tây 1, Xã Tân hiệp, Hóc Môn, TPHCM"
+  },
+  {
+    "mst": "4800870803",
+    "name": "Công ty TNHH Công Nghệ Sinh Học Ngân Hà",
+    "address": "Tổ 10 phường Ngọc Xuân, TP Cao Bằng"
+  },
+  {
+    "mst": "3600265827",
+    "name": "Công ty THNN Hảo",
+    "address": "xã Xuân Phú, huyện Xuân Lộc, tỉnh Đồng Nai"
+  },
+  {
+    "mst": "3600278732",
+    "name": "Công ty TNHH Minh Huy",
+    "address": "Quốc Lộ I, Phường Xuân Bình, Thị Xã Long Khánh, tỉnh Đồng Nai"
+  },
+  {
+    "mst": "3602893740",
+    "name": "Công ty TNHH MTV TM DV Hoàng An Khang",
+    "address": "Xã Xuân Hiệp, huyện Xuân Lộc, Đồng Nai"
+  },
+  {
+    "mst": "4400995406",
+    "name": "Công ty TNHH Chế biến Nông Sản Bình An",
+    "address": "KCN An Phú, xã An Phú, TP Tuy Hòa, Tỉnh Phú Yên"
+  },
+  {
+    "mst": "3800768283",
+    "name": "Công ty TNHH Quilon Speciality Foods Việt Nam",
+    "address": "KCN Bắc Đồng Phú, huyện Đồng Phú, Tỉnh Bình Phước"
+  },
+  {
+    "mst": "0100100199",
+    "name": "Công ty CP Ngân Sơn",
+    "address": "Số 1, đường TS1, KCN Tiên Sơn, Bắc Ninh"
+  },
+  {
+    "mst": "3801168313",
+    "name": "Công ty CP Sản Xuất Thương Mại Khải Thịnh",
+    "address": "xã Tân Bình, H. Phú Riêng, tỉnh Bình Phước"
+  },
+  {
+    "mst": "4500592792",
+    "name": "Công ty Cổ phần XNK Hưng Phát Ninh Thuận",
+    "address": "P Mỹ Bình, TP Phan Rang-Tháp Chàm, tỉnh Ninh Thuận"
+  },
+  {
+    "mst": "3701649609",
+    "name": "Công Ty TNHH Một Thành Viên Xuất Nhập Khẩu Khang Nguyên Đạt",
+    "address": "KHU PHỐ 2, MỸ PHƯỚC, BẾN CÁT, BÌNH DƯƠNG"
+  },
+  {
+    "mst": "0314831453",
+    "name": "Công ty TNHH Thực Phẩm An Khang",
+    "address": "Số 587, QL13, KP Nguyễn Trãi, P Lái Thiêu, TX Thuận An, Bình Dương"
+  },
+  {
+    "mst": "0310613327",
+    "name": "Công ty TNHH XNK Cao Thành Phát",
+    "address": "Thôn Bình Lập, TT Thuận Nam, huyện Hàm Thuận Nam, Bình Thuận"
+  },
+  {
+    "mst": "3700774903",
+    "name": "Công ty TNHH Thiên Ân Thịnh Phát",
+    "address": "Số 399A/14, Khu phố 1, P Tân Định, TX Bến Cát, Bình Dương"
+  },
+  {
+    "mst": "3603333188",
+    "name": "Cong ty TNHH MTV Hồ Thảo Nguyên",
+    "address": "Tổ 2, Ấp 3, xã Sông Ray, huyện Cẩm Mỹ, Đồng Nai"
+  },
+  {
+    "mst": "3800763616",
+    "name": "Công ty CP Sản Xuất Thương Mại XNK Sơn Thành",
+    "address": "So 292, D.Le Quy Don, KP.Phuoc Tan, P.Tan Thien, TX.Dong Xoai, T.Binh Phuoc"
+  },
+  {
+    "mst": "0311141042",
+    "name": "Công ty TNHH TM Quốc Tế Valency Việt Nam",
+    "address": "Lô số C9, đường số 14, KCN Hiệp Phước, huyện Nhà Bè, TP HCM"
+  },
+  {
+    "mst": "3900245375",
+    "name": "Công ty TNHH MTV Nhật Hào Tây Ninh",
+    "address": "Tổ 60, Ấp Ninh Hiệp, Xã Bầu Năng, Huyện Dương Minh Châu, Tây Ninh"
+  },
+  {
+    "mst": "0312666363",
+    "name": "Công Ty Trách Nhiệm Hữu Hạn Thương Mại Dịch Vụ Hạt Điều ấn Việt",
+    "address": "12A13 Mê Linh, P.19, Quận Bình Thạnh, Tp.HCM"
+  },
+  {
+    "mst": "3801051185",
+    "name": "Công ty TNHH MTV TM Sản Xuất Bách Lạc",
+    "address": "phươờng Phước Bình, TX Phước Long, Bình Phước"
+  },
+  {
+    "mst": "600435604",
+    "name": "Công ty TNHH Đức Thịnh",
+    "address": "Thị trấn Eaknốp - Huyện Eakar - Tỉnh Đăk Lăk"
+  },
+  {
+    "mst": "3801150411",
+    "name": "Công ty TNHH Xuất Nhập khẩu VINASU",
+    "address": "So 454, Thôn 3, Xã Thống Nhất, huyện Bù Đăng, tỉnh Bình Phước"
+  },
+  {
+    "mst": "3700147571-001",
+    "name": "Chi nhánh Công ty TNHH Thanh An",
+    "address": "LÔ L5-ĐƯỜNG SỐ 3-KCN QUẢNG PHÚ-PHƯỜNG QUẢNG PHÚ-TP QUẢNG NGÃI-TỈNH QUẢNG NGÃI-VIỆT NAM"
+  },
+  {
+    "mst": "0108041273",
+    "name": "CôNG TY TNHH ĐầU Tư THươNG MạI HươNG TRườNG GIANG",
+    "address": "Xóm 6 - Xã Khánh Nhạc - Huyện Yên Khánh - Ninh Bình"
+  },
+  {
+    "mst": "0314805559",
+    "name": "CôNG TY TNHH XUấT NHậP KHẩU THủY SảN ZHONGYU",
+    "address": "Lô 16 Cảng Cá Phan Thiết, P. Đức Thắng, TP.Phan Thiết, tỉnh Bình Thuận,VN"
+  },
+  {
+    "mst": "3801070477",
+    "name": "CôNG TY TNHH MộT THàNH VIêN THươNG MạI SảN XUấT XUấT NHậP KHẩU MAI Tư QUăN",
+    "address": "số 115, thôn phú cường, xã phú riềng, huyện phú riềng, tỉnh Bình Phước"
+  },
+  {
+    "mst": "0108052130",
+    "name": "CôNG TY TNHH SảN XUấT XUấT NHậP KHẩU ABP VIệT NAM",
+    "address": "Cụm công nghiệp Khánh Nhạc - Thị trấn Yên Ninh - Huyện Yên Khánh - Ninh Bình."
+  },
+  {
+    "mst": "4600379820",
+    "name": "CôNG TY TNHH KIM LOạI MàU VIệT BắC",
+    "address": "Cụm công nghiệp Điềm Thụy- Xã Điềm thụy -Huyện Phú Bình -Tỉnh Thái Nguyên"
+  },
+  {
+    "mst": "4601557240",
+    "name": "CôNG TY TNHH THươNG MạI I&E THáI NGUYêN",
+    "address": "Khách sạn Quang Đạt, đường Phù Liễn, tổ 18, Phường Hoàng Văn Thụ, Thành phố Thái Nguyên,TN"
+  },
+  {
+    "mst": "0106415290",
+    "name": "CôNG TY Cổ PHầN XUấT NHậP KHẩU ĐầU Tư AN BìNH",
+    "address": "Số 87, ngõ 99/110 Định Công Hạ, tổ 15, phường Định Công, Quận Hoàng Mai, TP Hà Nội"
+  },
+  {
+    "mst": "2001286323",
+    "name": "Công ty TNHH Thương mại - Chế biến - Xuất nhập khẩu Thủy sản Đại Bình",
+    "address": "Ấp Thị Tường A, xã Hưng Mỹ, huyện Cái Nước, tỉnh Cà Mau"
+  },
+  {
+    "mst": "5702018871",
+    "name": "CôNG TY TNHH CôNG TY TôI",
+    "address": "Khu 1, Phường Hải Yên, TP Móng cái, Quảng Ninh"
+  },
+  {
+    "mst": "6000639950",
+    "name": "Công Ty Cổ Phần Đầu Tư Và Phát Triển An Thái",
+    "address": "Lô B03-B04 Khu CN Hoà Phú, Thành phố Buôn Ma Thuột, tỉnh ĐắkLắk"
+  },
+  {
+    "mst": "4800815993",
+    "name": "Công ty TNHH XNK Thuận Hưng Phát",
+    "address": "Tổ dân phố Hưng Long, thị trấn Tà Lùng, huyện Quảng Hòa, tỉnh Cao Bằng"
+  },
+  {
+    "mst": "0801290163",
+    "name": "CôNG TY TNHH XUấT NHậP KHẩU THươNG MạI THàNH LộC",
+    "address": "Khu 8 - Phường Thạch Khôi - Thành phố Hải Dương - Tỉnh Hải Dương."
+  },
+  {
+    "mst": "3800641248",
+    "name": "Công ty TNHH Hoàng Nam",
+    "address": "Thôn Bình Đức 2, Xã Đức Hạnh, Huyện Bù Gia Mập, Bình Phước, Vietnam"
+  },
+  {
+    "mst": "5701572741",
+    "name": "Công ty TNHH Antimon Dương Huy Quảng Ninh Việt Nam",
+    "address": "Thôn 1 Xã Hạ Long,Huyện Vân Đồn,Quảng Ninh"
+  },
+  {
+    "mst": "3801099412",
+    "name": "CôNG TY TNHH LONG SơN INTER FOODS",
+    "address": "Lô A5, và một phần lô A3, đường D1, KCN Bắc Đồng Phú, TT Tân Phú, huyện Đồng Phú, tỉnh Bình Phước."
+  },
+  {
+    "mst": "4800822246",
+    "name": "CôNG TY TNHH MộT THàNH VIêN MáY Và DịCH Vụ NôNG NGHIệP SơN Hà",
+    "address": "Tổ dân phố Hưng Long, thị trấn Tà Lùng, huyện Quảng Hòa, tỉnh Cao Bằng"
+  },
+  {
+    "mst": "0108833800",
+    "name": "CôNG TY TNHH THươNG MạI DịCH Vụ Và SảN XUấT KHáNH SơN",
+    "address": "Khu T1, T2, Thôn Đồng Dầu - Xã Dục Tú - Huyện Đông Anh - Hà Nội."
+  },
+  {
+    "mst": "2400879766",
+    "name": "CôNG TY TNHH CôNG NGHệ CHíNH XáC FUYU",
+    "address": "Lô M1 và Lô F, Khu công nghiệp Quang Châu, xã Vân Trung, huyện Việt Yên, tỉnh Bắc Giang, Việt Nam"
+  },
+  {
+    "mst": "2500546489",
+    "name": "Công ty TNHH CDL PRECISION TECHNOLOGY (VIETNAM)",
+    "address": "Lô 14, khu công nghiệp Bình Xuyên, xã Sơn Lôi, huyện Bình Xuyên, tỉnh Vĩnh Phúc, Việt Nam"
+  },
+  {
+    "mst": "1001190919",
+    "name": "CôNG TY TNHH SảN XUấT XUấT NHậP KHẩU HIềN LươNG",
+    "address": "Xóm 3 Xã Đông Động , huyện Đông Hưng,tỉnh Thái Bình, Việt Nam"
+  },
+  {
+    "mst": "2700878770",
+    "name": "CôNG TY TNHH ĐầU Tư PHáT TRIểN TRườNG THàNH",
+    "address": "Số 1, Ngõ 7, Phố Phú Xuân, Phường Nam Bình, Thành Phố Ninh Bình, Tỉnh Ninh Bình."
+  },
+  {
+    "mst": "4601124536",
+    "name": "Công ty TNHH Samsung Electronics Việt Nam Thái Nguyên",
+    "address": "Khu Công nghiệp Yên Bình, phường Đồng Tiến, thị xã Phổ Yên, tỉnh Thái Nguyên"
+  },
+  {
+    "mst": "0107894416",
+    "name": "CôNG TY TNHH SảN XUấT Và KINH DOANH VINFAST",
+    "address": "Khu Kinh tế Đình Vũ- Cát Hải, đảo Cát Hải, Thị Trấn Cát Hải, Huyện Cát Hải, TP Hải Phòng, VN"
+  },
+  {
+    "mst": "5700686150",
+    "name": "Công ty TNHH kim loại màu Quảng Ninh",
+    "address": "Thôn Tân Tiến, Xã Dương Huy, Thành Phố Cẩm Phả, Tỉnh Quảng Ninh, Việt Nam"
+  },
+  {
+    "mst": "3901200793",
+    "name": "Công Ty TNHH Mtv Sản Xuất-Thương Mại - Xuất Nhập Khẩu Xuyến Hoa",
+    "address": "TỔ 4, ẤP THẠNH NAM, XÃ THẠNH TÂY, TÂN BIÊN, TÂY NINH"
+  },
+  {
+    "mst": "2301143012",
+    "name": "CôNG TY TNHH ROCOM ELECTRIC VIệT NAM",
+    "address": "Lô CN02-1, Khu công nghiệp Yên Phong (khu mở rộng), xã Yên Trung, huyện Yên Phong, tỉnh Bắc Ninh"
+  },
+  {
+    "mst": "0900914454",
+    "name": "CôNG TY TNHH BRILLIANT ENTERPRISES",
+    "address": "Thôn Ngọc Lãng, Xã Ngọc Lâm, Thị xã Mỹ Hào, Tỉnh Hưng Yên"
+  },
+  {
+    "mst": "0201884856",
+    "name": "CôNG TY Cổ PHầN PAISHING VIệT NAM",
+    "address": "Lô C5-2, KCN Tràng Duệ thuộc KKT Đình Vũ -Cát Hải, xã Hồng Phong, H. An Dương, Hải Phòng"
+  },
+  {
+    "mst": "4000790845",
+    "name": "Công Ty CP Phước Kỳ Nam",
+    "address": "KCN Thuận Yên - P. Hòa Thuận - TP. Tam Kỳ - Quảng Nam"
+  },
+  {
+    "mst": "2400904155",
+    "name": "CôNG TY TNHH JA SOLAR PV VIệT NAM",
+    "address": "Lô N,K Khu công nghiệp Quang Châu, xã Quang Châu, huyện Việt Yên, tỉnh Bắc Giang, Việt Nam"
+  },
+  {
+    "mst": "2700817464",
+    "name": "CôNG TY TRáCH NHIệM HữU HạN VIENERGY",
+    "address": "Khu công nghiệp Phúc Sơn,Xã Ninh Phúc, Thành phố Ninh Bình, Tỉnh Ninh Bình, Việt Nam"
+  },
+  {
+    "mst": "0801149298",
+    "name": "Công Ty TNHH Vietstar",
+    "address": "Lô CN4, CN5, CN7, CN8, CN10, CN11 của Cụm CN Đoàn Tùng - X. Đoàn Tùng-H.Thanh Miện-T.Hải Dương. VN"
+  },
+  {
+    "mst": "2400905342",
+    "name": "Công ty TNHH Mình Minh Xanh ViNa",
+    "address": "Thôn Vọng Giang, Xã Mai Đình, Huyện Hiệp Hòa, Tỉnh Bắc Giang, Việt Nam"
+  },
+  {
+    "mst": "0901053180",
+    "name": "CôNG TY TNHH ĐIệN Tử AOMAGA (VIệT NAM)",
+    "address": "LÔ TT, ĐƯỜNG TS5, KCN TIÊN SƠN, PHƯỜNG TÂN HỒNG, THÀNH PHỐ TỪ SƠN, TỈNH BẮC NINH"
+  },
+  {
+    "mst": "2400872062",
+    "name": "CôNG TY TNHH KHOA HọC Kỹ THUậT FOUSINE VIệT NAM",
+    "address": "Lô P (P2), Khu Công nghiệp Quang Châu, Xã Quang Châu, Huyện Việt Yên, Tỉnh Bắc Giang, Việt Nam"
+  },
+  {
+    "mst": "0601124095",
+    "name": "CôNG TY TNHH VIET POWER",
+    "address": "Thôn Nguyễn Đào , Xã Hải Tân, Huyện Hải Hậu, Tỉnh Nam Định , Việt Nam"
+  },
+  {
+    "mst": "0106772077",
+    "name": "CôNG TY TNHH DệT MAY Và THờI TRANG XUấT KHẩU KIMONO VIệT NAM",
+    "address": "Khu Đồng Vẻo - Tam Hiệp - Phúc Thọ - Hà Nội"
+  },
+  {
+    "mst": "2400760023",
+    "name": "CôNG TY TNHH NEW WING INTERCONNECT TECHNOLOGY(BắC GIANG)",
+    "address": "Khu Công Nghiệp Vân Trung, Xã Vân Trung, Huyện Việt Yên, Tỉnh Bắc Giang, Việt Nam"
+  },
+  {
+    "mst": "2400560803",
+    "name": "Công Ty TNHH In Bao Bì Sunny Việt Nam",
+    "address": "Lô FJ-04, KCN Song Khê - Nội Hoàng (phía Nam) - Xã Tiền Phong, huyện Yên Dũng, Tỉnh Bắc Giang"
+  },
+  {
+    "mst": "2802274030",
+    "name": "Công Ty Cổ Phần Đt & Pt Hoàng Sơn",
+    "address": "Đội 5 - Thanh Liêm - Hoàng Sơn - Nông Cống - Thanh Hóa."
+  },
+  {
+    "mst": "2400526986",
+    "name": "CôNG TY Cổ PHầN MAY YêN THế",
+    "address": "Phồn Xương-Yên Thế-Bắc Giang"
+  },
+  {
+    "mst": "0801283409",
+    "name": "CôNG TY TNHH MINH TUấN WOOD VINA",
+    "address": "KM 42. QUỐC LỘ 18A, PHƯỜNG HOÀNG TÂN, THÀNH PHỐ CHÍ LINH, TỈNH HẢI DƯƠNG, VIỆT NAM"
+  },
+  {
+    "mst": "2801586823",
+    "name": "Công ty TNHH IVORY Việt Nam - Thanh Hóa",
+    "address": "109, Nguyễn Chí Hiền, Thị trấn Hậu Lộc, Huyện Hậu Lộc, Tỉnh Thanh Hóa"
+  },
+  {
+    "mst": "2400351729",
+    "name": "CôNG TY TNHH UNICO GLOBAL VN",
+    "address": "Tổ dân phố Thượng- Thị trấn Tân An- Huyện Yên Dũng- Tỉnh Bắc Giang"
+  },
+  {
+    "mst": "0202030977",
+    "name": "CôNG TY TNHH NICE POWER",
+    "address": "Xóm 6, Thôn Quyết Tiến - Xã Giao Tiến - Huyện Giao Thủy - Nam Định"
+  },
+  {
+    "mst": "0801094592",
+    "name": "CôNG TY TNHH VIETORY",
+    "address": "Khu dân cư Lưu Thượng I ,Phường Hiệp An- Thị Xã Kinh Môn-Tỉnh Hải Dương , Việt Nam."
+  },
+  {
+    "mst": "0200804174",
+    "name": "CôNG TY TNHH CHế TạO MáY HONGYUAN HảI PHòNG VIệT NAM",
+    "address": "Lô đất L2.6 và L2.12, KCN Đồ Sơn Hải Phòng, P. Ngọc Xuyên, Q. Đồ Sơn, TP. Hải Phòng, VN."
+  },
+  {
+    "mst": "0202099739",
+    "name": "CôNG TY TNHH POLARIUM VIệT NAM",
+    "address": "Lô đất CN4D, KCN & DVHH (DEEP C 2B) , KKT Đình Vũ-Cát Hải, P. Đông Hải 2, Q.Hải An, Hải Phòng"
+  },
+  {
+    "mst": "2902020657",
+    "name": "CôNG TY TNHH VIET GLORY",
+    "address": "xóm 8, xã Diễn Trường, huyện Diễn Châu, tỉnh Nghệ An, Việt Nam"
+  },
+  {
+    "mst": "2301085762",
+    "name": "CôNG TY TNHH IN YAOLONG VIệT NAM",
+    "address": "Lô CN-C9+C10,CN-C9-1, cụm CN Châu Phong, thôn Châu Cầu, xã Châu Phong, Quế Võ, Bắc Ninh, Việt Nam"
+  },
+  {
+    "mst": "0200729600",
+    "name": "Công Ty Cổ Phần Văn Phòng Phẩm Hải Phòng",
+    "address": "Tổ 1,Khu dân cư Phương Lung,P. Hưng Đạo,Q.Dương Kinh,TP.Hải Phòng"
+  },
+  {
+    "mst": "3700663086",
+    "name": "CôNG TY TNHH GLORY OCEANIC (VIệT NAM)",
+    "address": "P. Hội Nghĩa, Thị xã Tân Uyên, Tỉnh Bình Dương, Việt Nam"
+  },
+  {
+    "mst": "0316692780",
+    "name": "CôNG TY TNHH GENBYTE TECHNOLOGY (VIệT NAM)",
+    "address": "Đường D12, Khu Công Nghệ Cao, P. Tăng Nhơn Phú B, Thành phố Thủ Đức"
+  },
+  {
+    "mst": "0201559366",
+    "name": "CôNG TY TNHH BLUECOM VINA",
+    "address": "KCN Tràng Duệ, KKT Đình Vũ- Cát Hải,X. Lê Lợi, H.An Dương,TP Hải Phòng,VN"
+  },
+  {
+    "mst": "4601286304",
+    "name": "Công Ty TNHH Npd Vina",
+    "address": "Lô CN9, KCN Điềm Thụy, Xã Hồng Tiến, Thị xã Phổ Yên, Thái Nguyên"
+  },
+  {
+    "mst": "0201591803",
+    "name": "Công Ty TNHH Xuất Nhập Khẩu Guang Hao",
+    "address": "Thôn 10 (nhà Ông Trần Xuân Lương), Xã Chính Mỹ, Huyện Thủy Nguyên, Thành phố Hải Phòng, Việt Nam"
+  },
+  {
+    "mst": "0901053198",
+    "name": "CôNG TY TNHH GOLD CABLE VIệT NAM",
+    "address": "Khu công nghiệp Phố Nối A, Xã Lạc Hồng, Huyện Văn Lâm, Tỉnh Hưng Yên, Việt Nam"
+  },
+  {
+    "mst": "0601214817",
+    "name": "CôNG TY TNHH CôNG NGHệ THể THAO VICTORY VIệT NAM",
+    "address": "Xã Hiển Khánh, Huyện Vụ Bản, Tỉnh Nam Định, Việt Nam"
+  },
+  {
+    "mst": "0801287259",
+    "name": "CôNG TY TNHH MAN WING SING VIệT NAM",
+    "address": "CCN Lương Điền, xã Lương Điền, huyện Cẩm Giàng, tỉnh Hải Dương"
+  },
+  {
+    "mst": "5801495096",
+    "name": "Công ty TNHH Thương mại dịch vụ XNK Hiếu Tuyền",
+    "address": "Số 168, thôn 2, xã Hoà Nam, huyện Di Linh, tỉnh Lâm Đồng"
+  },
+  {
+    "mst": "2500633533",
+    "name": "CôNG TY TNHH CHERNG WEI VIệT NAM",
+    "address": "Phường Khai Quang, Thành phố Vĩnh Yên, Tỉnh Vĩnh Phúc, Việt Nam"
+  },
+  {
+    "mst": "106036743",
+    "name": "Công ty TNHH RHEEGEND Việt Nam",
+    "address": "Lô 2, CN5, cụm công nghiệp tập trung vừa và nhỏ, P.Minh Khai, Q Bắc Từ Liêm, TP. Hà Nội, Việt Nam"
+  },
+  {
+    "mst": "101619639",
+    "name": "Công Ty Cổ Phần Đầu Tư Bắc Kỳ",
+    "address": "P.611, tòa nhà mặt trời sông hồng; 23 Phan Chu Trinh, Q. Hoàn Kiếm-Hà Nội"
+  },
+  {
+    "mst": "2301151133",
+    "name": "CôNG TY TNHH MTV TRườNG HữU ĐạT",
+    "address": "SỐ 1, LÊ VĂN THỊNH, PHƯỜNG SUỐI HOA, THÀNH PHỐ BẮC NINH, TỈNH BẮC NINH"
+  },
+  {
+    "mst": "0200246219",
+    "name": "CôNG TY TNHH CHâU GIANG",
+    "address": "142 Lê Lai Ngô Quyền Hải Phòng"
+  },
+  {
+    "mst": "2400874687",
+    "name": "CôNG TY TNHH RUNYANG TECHNOLOGY VIệT NAM",
+    "address": "Một phần lô K (K1-7), KCN Quang Châu , Thị Trấn Nếnh, Huyện Việt Yên, Tỉnh Bắc Giang"
+  },
+  {
+    "mst": "2400811503",
+    "name": "CôNG TY TNHH GIA CôNG CHíNH XáC KHUôN & KIM LOạI WOOSUNG BắC GIANG VIệT NAM",
+    "address": "Số 01 Ngõ 2 Khu Phố Hòa Yên, Phường Thọ Xương, Thành phố Bắc Giang, Bắc Giang, Việt Nam"
+  },
+  {
+    "mst": "0601165630",
+    "name": "CôNG TY TNHH KHOA HọC CôNG NGHệ VIệT NAM ĐạI Cự",
+    "address": "Số 15 Tuyến Tiền Phong (thuê nhà xưởng của CT NGHIA THANH)- P.Trần Quang Khải - TP Nam Định"
+  },
+  {
+    "mst": "2301111839",
+    "name": "CôNG TY TNHH KHUôN MẫU HUAXU VIệT NAM",
+    "address": "Thôn Hà Liễu, Xã Phương Liễu, Huyện Quế Võ, Tỉnh Bắc Ninh, Việt Nam"
+  },
+  {
+    "mst": "2400874493",
+    "name": "CôNG TY TNHH NAISE NEW MATERIALS VIệT NAM",
+    "address": "Một phần lô K (K1-5) KCN Quang Châu, Thị Trấn Nếnh, Huyện Việt Yên, Tỉnh Bắc Giang, Việt Nam"
+  },
+  {
+    "mst": "0201106599",
+    "name": "CôNG TY TNHH PHONG MậU",
+    "address": "Thôn Trung Sơn, Xã Ngũ Lão, Huyện Thủy Nguyên, Thành Phố Hải Phòng, Việt Nam"
+  },
+  {
+    "mst": "2400913745",
+    "name": "CôNG TY TNHH KTTV VINA",
+    "address": "Thôn Trung Phú, Xã Danh Thắng,Huyện Hiệp Hòa,Tỉnh Bắc Giang, Việt Nam"
+  },
+  {
+    "mst": "0109009554",
+    "name": "CôNG TY TNHH CôNG NGHệ TOPSTAR (VIệT NAM)",
+    "address": "Tầng 12, Tòa nhà Licogi 13, Số 164 Khuất Duy Tiến, P.Nhân Chính, Q.Thanh Xuân, TP Hà Nội, Việt Nam"
+  },
+  {
+    "mst": "2400870957",
+    "name": "CôNG TY TNHH LUXSHARE ICT VâN TRUNG",
+    "address": "Lô CNSG-01,CNSG-03,CNSG-05,CNSG-08,HCDV2,KCN Vân Trung,X.Vân Trung,H.Việt Yên,T.Bắc Giang,VN"
+  },
+  {
+    "mst": "1001197512",
+    "name": "CôNG TY TNHH HEADWAY APPAREL (VIệT NAM)",
+    "address": "Cụm công nghiệp Tây An,Thị trấn Tiền Hải, Huyện Tiền Hải, Tỉnh Thái Bình, Việt"
+  },
+  {
+    "mst": "1001099064",
+    "name": "Công Ty TNHH Long Hành Thiên Hạ",
+    "address": "CCN Vũ Quý, X. Vũ Quí, H. Kiến Xương, T. Thái Bình, Việt Nam"
+  },
+  {
+    "mst": "0801169914",
+    "name": "CôNG TY TNHH MộT THàNH VIêN SENYING",
+    "address": "Đường Khúc Thừa Dụ, xã Đồng Tâm, huyện Ninh Giang, tỉnh Hải Dương"
+  },
+  {
+    "mst": "0200655934",
+    "name": "Công ty trách nhiệm hữu hạn công nghiệp giầy AURORA Việt Nam",
+    "address": "Thôn 8, xã Thiên Hương, huyện Thủy Nguyên, thành phố Hải Phòng,Việt Nam."
+  },
+  {
+    "mst": "3600725684",
+    "name": "Công ty TNHH Quốc Tế Gold Long John Đồng Nai Việt Nam",
+    "address": "KCN Nhơn Trạch II, Huyện Nhơn Trạch, Tỉnh Đồng Nai"
+  },
+  {
+    "mst": "0201986336",
+    "name": "CôNG TY TNHH WINGSBURG VIệT NAM",
+    "address": "Thôn Linh Đông - Xã Tiền Phong - Huyện Vĩnh Bảo - Hải Phòng."
+  },
+  {
+    "mst": "1001094651",
+    "name": "Công Ty TNHH Creative Source Việt Nam",
+    "address": "Lô CN2 và CN3 diện tích71.744,3m2 ,CCN Minh Lãng,Xã Minh Lãng,Huyện Vũ Thư,TỉnhThái Bình, Việt Nam"
+  },
+  {
+    "mst": "3700346873",
+    "name": "Công ty TNHH Quốc tế Chutex",
+    "address": "18 Thong Nhat, KCNST II, Huyen Di An, Tinh Binh Duong"
+  },
+  {
+    "mst": "0302544944",
+    "name": "Cty TNHH Nobland Việt Nam",
+    "address": "1-8 khu A1,4-8 khu A4, 1-3 & 9-10, khu KB1,khu CN Tân Thới Hiệp, p Hiệp Thành, Q12, TPHCM"
+  },
+  {
+    "mst": "0201887536",
+    "name": "CôNG TY TNHH BH INC VIệT NAM",
+    "address": "SO 110 LÊ DUẨN, PHƯỜNG QUÁN TRỮ, QUẬN KIẾN AN, THÀNH PHỐ HẢI PHÒNG, VIỆT NAM"
+  },
+  {
+    "mst": "0500550795",
+    "name": "Công Ty TNHH Giầy Hồng Phúc",
+    "address": "Phường Biên Giang - Quận Hà Đông - Hà Nội"
+  },
+  {
+    "mst": "2500517382",
+    "name": "Công Ty TNHH Amo Vina",
+    "address": "Lô CN13, KCN Khai Quang, Phường Khai Quang, TP Vĩnh Yên, Tỉnh Vĩnh Phúc, Việt Nam"
+  },
+  {
+    "mst": "0801255698",
+    "name": "CôNG TY TNHH LEOTECH VIệT NAM",
+    "address": "Lô CN 09 của Cụm công nghiệp Đoàn Tùng, Xã Đoàn Tùng, Huyện Thanh Miện, Tỉnh Hải Dương, Việt Nam"
+  },
+  {
+    "mst": "0500415210",
+    "name": "Công Ty TNHH Hóa Dệt Hà Tây",
+    "address": "Xã Tân Lập, Huyện Đan Phượng, TP.Hà Nội"
+  },
+  {
+    "mst": "2600783532",
+    "name": "CôNG TY TNHH SảN PHẩM THể THAO BAI SHENG",
+    "address": "Khu 01, Xã Đồng Trung, Huyện Thanh Thuỷ, Tỉnh Phú Thọ,Việt Nam"
+  },
+  {
+    "mst": "0106036743",
+    "name": "Công ty TNHH RHEEGEND Việt Nam",
+    "address": "Lô 2,CN5, cụm công nghiệp tập trung vừa và nhỏ, P.Minh Khai, Q.Bắc Từ Liêm, TP.Hà Nội, Việt Nam"
+  },
+  {
+    "mst": "0100103873",
+    "name": "Công Ty Cổ Phần Giầy Thăng Long",
+    "address": "327 ,tổ 45, Phường Hoàng Văn Thụ ,Hoàng Mai,Hà Nội"
+  },
+  {
+    "mst": "2400861279",
+    "name": "CôNG TY TNHH U KWONG VIệT NAM",
+    "address": "Nhà xưởng CN-02-08, KCN Vân Trung, Xã Vân Trung, Huyện Việt Yên, Bắc Giang, Việt Nam."
+  },
+  {
+    "mst": "1001119930",
+    "name": "CôNG TY TNHH GIàY VICTORY VIệT NAM",
+    "address": "Lô C, Lô D Cụm công nghiệp, Thị Trấn Vũ Thư, Huyện Vũ Thư, Tỉnh Thái Bình, VN"
+  },
+  {
+    "mst": "2700884767",
+    "name": "CôNG TY TNHH CôNG NGHIệP DũNG THịNH VIệT NAM",
+    "address": "Lô C5, KCN Khánh Phú, Xã Khánh Phú, Huyện Yên Khánh, Tỉnh Ninh Bình"
+  },
+  {
+    "mst": "2801149968",
+    "name": "Công Ty TNHH Giầy Sun Jade Việt Nam",
+    "address": "Lô B-KCN Lễ Môn-Phường Quảng Hưng-TP Thanh Hóa-Tỉnh Thanh Hóa-Việt Nam"
+  },
+  {
+    "mst": "1001205668",
+    "name": "CôNG TY TNHH HàNG THể THAO QIS VIệT NAM",
+    "address": "Thôn Tống Vũ, xã Vũ Chính, TP Thái Bình, tỉnh Thái Bình, Việt Nam"
+  },
+  {
+    "mst": "1001151980",
+    "name": "CôNG TY TNHH GIầY DéP THáI THụY",
+    "address": "Thôn Đông Hưng-xã Sơn Hà-Huyện Thái Thụy-tỉnh Thái Bình"
+  },
+  {
+    "mst": "0601184048",
+    "name": "CôNG TY TNHH THươNG MạI Vĩ THịNH",
+    "address": "Thôn Đại Đê xã Đại An huyện Vụ Bản tỉnh Nam Định"
+  },
+  {
+    "mst": "0801301640",
+    "name": "CôNG TY Cổ PHầN SảN PHẩM THể THAO SHUN ZU",
+    "address": "Khu dân cư Đại Bộ, phường Hoàng Tân, thành phố Chí Linh, tỉnh Hải Dương"
+  },
+  {
+    "mst": "0800264442",
+    "name": "CôNG TY TNHH HợP LựC CảNG VIệT",
+    "address": "Xã Cẩm Phúc- Cẩm Giàng- Hải Dương"
+  },
+  {
+    "mst": "2700557199",
+    "name": "Công ty TNHH giầy Adora Việt Nam",
+    "address": "KHU CN TAM DIEP, XA QUANG SON, THANH PHO TAM DIEP, TINH NINH BINH, VIET NAM"
+  },
+  {
+    "mst": "0201344032-001",
+    "name": "Công Ty TNHH Sản Xuất Và Thương Mại Đạt Gia Chi Nhánh Tại Thái Bình",
+    "address": "thôn Đại Điền, xã An Vũ, huyện Quỳnh Phụ, tỉnh Thái Bình"
+  },
+  {
+    "mst": "5702080421",
+    "name": "CôNG TY TNHH CôNG NGHIệP JINKO SOLAR (VIệT NAM)",
+    "address": "CN-XL-06,11-KHU CÔNG NGHIÊP SÔNG KHOAI, XÃ SÔNG KHOAI,THỊ XÃ QUẢNG YÊN, TỈNH QUẢNG NINH, VIỆT NAM"
+  },
+  {
+    "mst": "4700267454",
+    "name": "CôNG TY TNHH HOàNG NAM BắC KạN",
+    "address": "Thôn Cốc Thử, xã Ngọc Phái, huyện Chợ Đồn, tỉnh Bắc Kạn"
+  },
+  {
+    "mst": "3801132356",
+    "name": "Công ty TNHH xuất nhập khẩu Tô Linh",
+    "address": "Tổ 3, ấp Thanh Sơn, Thị trấn Thanh Bình, huyện Bù Đốp, tỉnh Bình Phước"
+  },
+  {
+    "mst": "3700689599",
+    "name": "Công ty TNHH Điện Tử FOSTER (Việt Nam)",
+    "address": "Số 20 đường số 5, KCN VSIP II - Phường Hoà Phú - Thành phố Thủ Dầu Một - Bình Dương"
+  },
+  {
+    "mst": "3702731870",
+    "name": "CôNG TY TNHH KA HONG (VIETNAM)",
+    "address": "KCN VN - Singapore 2, Phường Hoà Phú - TP. Thủ Dầu Một , Bình Dương"
+  },
+  {
+    "mst": "2301080965",
+    "name": "CôNG TY TNHH KHOA HọC Kỹ THUậT HON YAO FU",
+    "address": "Khu công nghiệp Đại Đồng - Hoàn Sơn, Xã Đại Đồng, Huyện Tiên Du, Tỉnh Bắc Ninh, Việt Nam"
+  },
+  {
+    "mst": "3702954891",
+    "name": "CôNG TY TNHH GIGA ELECTRONICS (VIETNAM)",
+    "address": "Đường D4, Khu công nghiệp Nam Tân Uyên, Phường Khánh Bình, T.X Tân Uyên, Tỉnh BD"
+  },
+  {
+    "mst": "0801278053",
+    "name": "CôNG TY TNHH EASTECH VIệT NAM",
+    "address": "Phường Cộng Hòa, Thành phố Chí Linh, Tỉnh Hải Dương, Việt Nam"
+  },
+  {
+    "mst": "2300690887",
+    "name": "CôNG TY TRáCH NHIệM HữU HạN FUSHAN TECHNOLOGY (VIệT NAM)",
+    "address": "Số 8, Đường 6, Khu công nghiệp VSIP Bắc Ninh, Phường Phù Chẩn, Thành phố Từ Sơn, Bắc Ninh, Việt Nam"
+  },
+  {
+    "mst": "3702757188",
+    "name": "CôNG TY TNHH CôNG NGHệ CLICK (VIệT NAM)",
+    "address": "Nhà xưởng C-1B-C13 và C-1B-C10 Lô C-1B-CN,đường DE5,KCN Mỹ Phước 3,P.Thới Hòa,TX.Bến Cát, Bình Dương"
+  },
+  {
+    "mst": "2400373024",
+    "name": "Công ty TNHH FUHONG PRECISION  COMPONENT (BắC GIANG)",
+    "address": "Khu công nghiệp Đình Trám, thị trấn Nếnh, Huyện Việt Yên, tỉnh Bắc Giang, Việt Nam"
+  },
+  {
+    "mst": "0109363869",
+    "name": "CôNG TY Cổ PHầN THIếT Bị Và GIảI PHáP Cơ KHí AUTOMECH",
+    "address": "Số 285 đường Phúc Lợi, phường Phúc Lợi, Quận Long Biên, Thành Phố Hà Nội, Việt Nam"
+  },
+  {
+    "mst": "2601046612",
+    "name": "CôNG TY TNHH INNOVATION TươNG LAI VIệT NAM",
+    "address": "Lô đất CN-07B, Khu công nghiệp Phú Hà, Xã Hà Lộc, Thị xã Phú Thọ, Tỉnh Phú Thọ, Việt Nam"
+  },
+  {
+    "mst": "0108541389",
+    "name": "CôNG TY Cổ PHầN GIàY HồNG BảO",
+    "address": "176 Đào Cam Môc, Tổ 37, Thị Trấn Đông Anh, Huyện Đông Anh, Thành Phố Hà Nội"
+  },
+  {
+    "mst": "2400744222",
+    "name": "CôNG TY TNHH ĐIệN Tử BROAD VIệT NAM",
+    "address": "KCN Vân Trung, huyện Việt Yên, tỉnh Bắc Giang"
+  },
+  {
+    "mst": "0801242498",
+    "name": "CôNG TY TNHH SKY DRAGON VIệT NAM",
+    "address": "Thôn Quàn, Xã Minh Đức, Huyện Tứ Kỳ, Tỉnh Hải Dương, Việt Nam."
+  },
+  {
+    "mst": "0801002552",
+    "name": "Công ty TNHH GFT Việt Nam",
+    "address": "thôn Tất Thượng, xã Cộng Lạc, huyện Tứ Kỳ, tỉnh Hải Dương, Việt Nam"
+  },
+  {
+    "mst": "0201850938",
+    "name": "CôNG TY TNHH FOREVER TRUE VĩNH BảO VIệT NAM",
+    "address": "Lô CN 16, Cụm Công nghiệp Tân Liên, Xã Tân Liên, Huyện Vĩnh Bảo, TP Hải Phòng"
+  },
+  {
+    "mst": "0801204911",
+    "name": "CôNG TY TNHH GFT UNIQUE VIệT NAM",
+    "address": "Lo CN5, CN6, CN13, CN14, CN15- CCN Ngu Hung, Xa Thanh Giang, Huyen Thanh Mien, Tinh Hai Duong"
+  },
+  {
+    "mst": "2700934288",
+    "name": "CôNG TY TNHH SảN XUấT Và THươNG MạI DịCH Vụ NGHĩA KHANG",
+    "address": "Đội 7 - Xã Mai Sơn - Huyện Yên Mô - Ninh Bình."
+  },
+  {
+    "mst": "4601564745",
+    "name": "CôNG TY TNHH PHáT TRIểN NăNG LượNG TRINA SOLAR",
+    "address": "Lô CN-14 và lô CN15-2,Khu Công nghiệp Yên Bình,Xã Hồng Tiến,Thị xã Phổ Yên,TỉnhThái Nguyên,Việt Nam"
+  },
+  {
+    "mst": "2700789672",
+    "name": "Công Ty Trách Nhiệm Hữu Hạn Sản Xuất Giày Chung Jye Ninh Bình - Việt Nam",
+    "address": "CỤM CN KHÁNH NHẠC, XÃ KHÁNH NHẠC, HUYỆN YÊN KHÁNH, TỈNH NINH BÌNH"
+  },
+  {
+    "mst": "2400851305",
+    "name": "CôNG TY TNHH XUấT NHậP KHẩU Đồ TRANG SứC BôN PHáT VIệT NAM",
+    "address": "THÔN 7, XÃ VIỆT TIẾN, HUYỆN VIỆT YÊN, TỈNH BẮC GIANG, VIỆT NAM"
+  },
+  {
+    "mst": "0200288498",
+    "name": "CôNG TY TNHH SAO VàNG",
+    "address": "Số 1166 đường Nguyễn Bỉnh Khiêm, P.Đông Hải 2, Q.Hải An, TP.Hải Phòng"
+  },
+  {
+    "mst": "2700819528",
+    "name": "CôNG TY TNHH EVER GREAT INTERNATIONAL",
+    "address": "CCN GIA VÂN, X. GIA VÂN, H. GIA VIỄN, T. NINH BÌNH, VIỆT NAM"
+  },
+  {
+    "mst": "0108178888",
+    "name": "CôNG TY TNHH Kỹ THUậT KIM LOạI LIHAI",
+    "address": "Lô 38E, KCN Quang Minh, thị trấn Quang Minh, huyện Mê Linh, Hà Nội"
+  },
+  {
+    "mst": "0108265153",
+    "name": "CôNG TY Cổ PHầN THủY ĐIệN SôNG Lô 7",
+    "address": "Số nhà 234, ngõ 8, đường Chu Văn Thịnh, tổ 11, phường Chiềng Lề, thành phố Sơn La, tỉnh Sơn La"
+  },
+  {
+    "mst": "2300643291",
+    "name": "Công ty TNHH in ấn Việt Huy Việt Nam",
+    "address": "Khu công nghiệp Đại Đồng-Hoàn Sơn, Xã Đại Đồng, Huyện Tiên Du, Tỉnh Bắc Ninh, Việt Nam"
+  },
+  {
+    "mst": "0601176488",
+    "name": "CôNG TY TNHH DA Và PHụ KIệN AVANCE",
+    "address": "Thuê nhà xưởng của Công ty TNHH Đại Tần: Lô B2 (C5-7) khu CN-Phường Mỹ Xá - TP Nam Định - Nam Định"
+  },
+  {
+    "mst": "0102717029",
+    "name": "CôNG TY TNHH PHụ TùNG HảI Âu",
+    "address": "Thôn Tuấn Dị, Xã Trưng Trắc, Huyện Văn Lâm, Hưng Yên"
+  },
+  {
+    "mst": "0201719179",
+    "name": "Công Ty TNHH In Tín Nghĩa Việt Nam",
+    "address": "Km 16, đường 353, phường Minh Đức, quận Đồ Sơn, Hải Phòng"
+  },
+  {
+    "mst": "0109727530",
+    "name": "Coông ty CP GPNL VINES",
+    "address": "Khu Kinh tế Đình Vũ- Cát Hải, đảo Cát Hải, Thị Trấn Cát Hải, Huyện Cát Hải, TP Hải Phòng, VN"
+  },
+  {
+    "mst": "3801146856",
+    "name": "CôNG TY TNHH MộT THàNH VIêN SảN XUấT THươNG MạI DịCH Vụ AN HIểN",
+    "address": "THON 1, XA MINH HUNG, HUYEN BU DANG, TINH BINH PHUOC"
+  },
+  {
+    "mst": "0108037076",
+    "name": "CôNG TY TNHH MáY MóC Và THIếT Bị PT",
+    "address": "số 192/19 phố Thái Thịnh, P. Láng Hạ, Q. Đống Đa, Thành Phố Hà Nội, Việt Nam"
+  },
+  {
+    "mst": "4900884292",
+    "name": "CôNG TY TNHH THANH TâM 88",
+    "address": "Số 18, ngõ 93, đường Lê Lợi, Phường Vĩnh Trại, Thành phố Lạng Sơn, Tỉnh Lạng Sơn"
+  },
+  {
+    "mst": "3801187926",
+    "name": "CôNG TY TNHH MôÊT THANH VIêN XUâT NHâÊP KHâU KY DUYêN",
+    "address": "Tổ 2, KP Phước Vĩnh, p.Phước Bình, TX. Phước Long, Bình Phước"
+  },
+  {
+    "mst": "3800231114",
+    "name": "CÔng ty TNHH Song Hỷ",
+    "address": "Thon 7, xã Long AN, TX Phước Long, bình Phước"
+  },
+  {
+    "mst": "0200269921",
+    "name": "Công Ty Trách Nhiệm Hữu Hạn Đỉnh Vàng",
+    "address": "1166 Nguyễn Bỉnh Khiêm, Phường Đông Hải 2, Quận Hải An, Hải Phòng"
+  },
+  {
+    "mst": "0200145563",
+    "name": "Công Ty TNHH Thành Hưng",
+    "address": "22 Ly Tu Trong - Q. Hong Bang - Hai Phong"
+  },
+  {
+    "mst": "1001000780",
+    "name": "Công Ty TNHH May Xuất Nhập Khẩu Đạt Vinh",
+    "address": "Thửa đất số 1003, Thôn Lam Cầu 2, Xã An Hiệp,Huyện Quỳnh Phụ, Tỉnh Thái Bình"
+  },
+  {
+    "mst": "3800802343",
+    "name": "Công Ty TNHH Một Thành Viên Bách Hỷ",
+    "address": "Thôn Sơn Trung, Đức Hạnh, Bù Gia Mập, Bình Phước"
+  },
+  {
+    "mst": "3502336866",
+    "name": "CôNG TY TNHH VINH ĐạI PHáT",
+    "address": "Tổ 5, ấp 1, xã Bầu Lâm, huyện Xuyên Mộc, tỉnh Bà Rịa - Vũng Tàu"
+  },
+  {
+    "mst": "3801155956",
+    "name": "CôNG TY TNHH MộT THàNH VIêN SảN XUấT THươNG MạI ĐôNG NGHI",
+    "address": "Số 180, Khu phố Phước Vĩnh, Phường Phước Bình, Thị xã Phước Long, Tỉnh Bình Phước"
+  },
+  {
+    "mst": "4900216802",
+    "name": "Công Ty TNHH Sản Xuất Và Dịch Vụ Thương Mại Hùng Vương",
+    "address": "Cụm Công nghiệp địa phương số 2, Hợp Thành, Cao Lộc, Lạng Sơn"
+  },
+  {
+    "mst": "4900258175",
+    "name": "Công Ty TNHH Thành Trung",
+    "address": "SO 36A, DOC TINH TAM, TAN MY, VAN LANG, LANG SON"
+  },
+  {
+    "mst": "4900850180",
+    "name": "CôNG TY TNHH XNK THảO VâN",
+    "address": "Số nhà 24, Phố Lao Động, TT Lộc Bình, H Lộc Bình, T Lạng Sơn"
+  },
+  {
+    "mst": "4900253201",
+    "name": "Công Ty TNHH Mai Lâm",
+    "address": "Sô 412- Bà Triệu- Đông Kinh - Lạng Sơn"
+  },
+  {
+    "mst": "3801207322",
+    "name": "CôNG TY Cổ PHầN CôNG NGHệ CHế BIếN HạT ĐIềU VIệT NAM",
+    "address": "Đường Nguyễn Thái Học, Thôn Phước Tân, Xã Bình Tân, Huyện Phú Riềng, Tỉnh Bình Phước"
+  },
+  {
+    "mst": "3603728027",
+    "name": "CôNG TY TNHH XUấT NHậP KHẩU THủ NGâN",
+    "address": "Số 312, Tổ 3, ấp Bàu Cối, Xã Bảo Quang, Thành phố Long Khánh, Tỉnh Đồng Nai"
+  },
+  {
+    "mst": "1000455217",
+    "name": "CôNG TY TNHH KHAI THáC Và CHế BIếN THủY HảI SảN NAM THịNH",
+    "address": "Lô đất diện tích 2.989m2 - Cụm công nghiệp Cửa Lân - Xã Nam Thịnh - Huyện Tiền Hải - Tỉnh Thái Bình"
+  },
+  {
+    "mst": "0100512315",
+    "name": "Công Ty TNHH Ngọc Linh",
+    "address": "Số 381 Đường Giải Phóng, Phường Phương Liệt, Quận Thanh Xuân, Hà Nội"
+  },
+  {
+    "mst": "2700933862",
+    "name": "CôNG TY Cổ PHầN XUấT NHậP KHẩU THươNG MạI VMIT",
+    "address": "Thôn Tân An, Xã Gia Lập, Huyện Gia Viễn, Tỉnh Ninh Bình, Việt Nam"
+  },
+  {
+    "mst": "3800703014",
+    "name": "Công Ty TNHH Thu Nga",
+    "address": "Khu Bình giang 1, Sơn giang, Phước Long, Bình Phước"
+  },
+  {
+    "mst": "3801272152",
+    "name": "CôNG TY TNHH MộT THàNH VIêN THươNG MạI DịCH Vụ XUấT NHậP KHẩU HạT ĐIềU TOàN PHáT",
+    "address": "SỐ 29 LÊ VĂN DUYỆT, KHU PHỐ 4, PHƯỜNG LONG THỦY, THỊ XÃ PHƯỚC LONG, TỈNH BÌNH PHƯỚC, VIỆT NAM"
+  },
+  {
+    "mst": "3801078620",
+    "name": "CôNG TY TNHH SơN THàNH PHáT",
+    "address": "Số 551, Tổ 1, Thôn Tân Phước - Xã Bù Nho - Huyện Phú Riềng - Bình Phước - Việt Nam"
+  },
+  {
+    "mst": "3801212474",
+    "name": "CôNG TY TNHH SảN XUấT XUấT NHậP KHẩU VIệT KIêN BìNH PHướC",
+    "address": "DT 741, ấp Thuận Thành 2, Xã Thuận Lợi, Huyện Đồng Phú, Tỉnh Bình Phước"
+  },
+  {
+    "mst": "0201314574",
+    "name": "Công ty cổ phần chế biên xuất nhập khẩu Thủy sản Hải phòng",
+    "address": "101 đường Ngô Quyền, P. Máy Chai, Q. Ngô Quyền, TP. Hải Phòng"
+  },
+  {
+    "mst": "3801271430",
+    "name": "CôNG TY TNHH SảN XUấT XUấT NHậP KHẩU QUANG VINH",
+    "address": "Đội 1, thôn Phước Yên, Xã Phước Tín, Thị Xã Phước Long, Tỉnh Bình Phước, Việt Nam"
+  },
+  {
+    "mst": "3900877261",
+    "name": "Công Ty Trách Nhiệm Hữu Hạn Một Thành Viên Như Anh",
+    "address": "Tổ 29, ấp Ninh Hưng 2, Xã Chà Là, Huyện Dương Minh Châu, Tỉnh Tây Ninh"
+  },
+  {
+    "mst": "3801210068",
+    "name": "CôNG TY TNHH MộT THàNH VIêN SảN XUấT THươNG MạI XUấT NHậP KHẩU HạT ĐIềU Hà PHáT",
+    "address": "Số nhà 98, Thôn 1, Xã Phú Văn, Huyện Bù Gia Mập, Tỉnh Bình Phước, Việt Nam"
+  },
+  {
+    "mst": "5702031128",
+    "name": "CôNG TY TNHH CHế BIếN THựC PHẩM SạCH TRUNG HIếU",
+    "address": "CN-08, LÔ SỐ 1, CỤM CÔNG NGHIỆP CẨM THỊNH, PHƯỜNG CẨM THỊNH, THÀNH PHỐ CẨM PHẢ, TỈNH QUẢNG NINH"
+  },
+  {
+    "mst": "100512315",
+    "name": "Công Ty TNHH Ngọc Linh",
+    "address": "Số 381 Đường Giải Phóng, Phường Phương Liệt, Quận Thanh Xuân, Hà Nội"
+  },
+  {
+    "mst": "4900838289",
+    "name": "CôNG TY TNHH MTV THươNG MạI NôNG SảN HảI BìNH",
+    "address": "Thôn Kéo Lày, Xã Đề Thám, Huyện Tràng Định, Tỉnh Lạng Sơn"
+  },
+  {
+    "mst": "5701710776",
+    "name": "CôNG TY Cổ PHầN DịCH Vụ THươNG MạI PHươNG QUANG MINH",
+    "address": "Lô KP2-KT2, KCN Điềm Thụy, Xã Điềm Thụy, Huyện Phú Bình, Tỉnh Thái Nguyên, Việt Nam"
+  },
+  {
+    "mst": "0201136843",
+    "name": "Công Ty TNHH Dịch Vụ Và Xuất Nhập Khẩu Thành Long",
+    "address": "Số 125 Bạch Đằng, phường Hạ Lý, quận Hồng Bàng, TP Hải Phòng, Việt nam"
+  },
+  {
+    "mst": "4900890708",
+    "name": "CôNG TY TNHH XUấT NHậP KHẩU THịNH VượNG LạNG SơN",
+    "address": "Số 29 khu Nam Quan, thị trấn Đồng Đăng, huyện Cao Lộc, tỉnh Lạng Sơn"
+  },
+  {
+    "mst": "3801097158",
+    "name": "Công Ty TNHH Một Thành Viên Xuất Nhập Khẩu Danh Nghĩa",
+    "address": "thôn Phước Sơn, xã Đức Hạnh, huyện Bù Gia Mập, tỉnh Bình Phước"
+  },
+  {
+    "mst": "3901201878",
+    "name": "Công Ty Trách Nhiệm Hữu Hạn Một Thành Viên Chế Biến Hạt Điều Ngọc Tùng",
+    "address": "Số 26, Hẻm 4, Quốc Lộ 22B, Kp3, P1, Tp.Tây Ninh, Tây Ninh"
+  },
+  {
+    "mst": "3800740111",
+    "name": "Công Ty TNHH Một Thành Viên Thái Mỹ",
+    "address": "Đội 1, thôn Phước Yên, Xã Phước Tín, Thị xã Phước Long, Bình Phước"
+  },
+  {
+    "mst": "314950228",
+    "name": "CôNG TY TNHH DINH DưỡNG BELTA",
+    "address": "25 Võ Văn Vân, Khu phố 1, Phường Tân Tạo, Quận Bình Tân, Thành phố Hồ Chí Minh."
+  },
+  {
+    "mst": "8696749555-001",
+    "name": "Hà Thị Bích Ngọc",
+    "address": "Số 166, đường Hoàng Văn Thụ, Khu 1 - Thị trấn Thất Khê - Huyện Tràng Định - Lạng Sơn"
+  },
+  {
+    "mst": "1900661477",
+    "name": "Thầu phụ Gói thầu thi công XD nền móng lắp đặt tuabin gió DA Nhà máy điện gió Bạc Liêu giai đoạn III",
+    "address": "Khách sạn Dream Palace, số 9, ấp Cái Dầy, Thị trấn Châu Hưng - Huyện Vĩnh Lợi - Bạc Liêu"
+  },
+  {
+    "mst": "2700933936",
+    "name": "CôNG TY Cổ PHầN XUấT NHậP KHẩU THươNG MạI VF",
+    "address": "Thôn Tân An, Xã Gia Lập, Huyện Gia Viễn, Tỉnh Ninh Bình, Việt Nam"
+  },
+  {
+    "mst": "3800321350",
+    "name": "Công Ty Cổ Phần Hà Mỵ",
+    "address": "ẤP 4, XÃ TÂN LẬP, HUYỆN ĐỒNG PHÚ, TỈNH BÌNH PHƯỚC"
+  },
+  {
+    "mst": "3603161210",
+    "name": "CôNG TY TNHH NôNG SảN NGUYêN HồNG",
+    "address": "Số 621, Ấp Suối Tre, Xã Suối Tre, TP. Long Khánh, T.Đồng Nai, Việt Nam"
+  },
+  {
+    "mst": "4900808527",
+    "name": "CôNG TY Cổ PHầN XUấT NHậP KHẩU âN PHú ĐạT",
+    "address": "Số 261, đường Ngô Quyền, Phường Vĩnh Trại, T.P Lạng Sơn, tỉnh Lạng Sơn, Việt Nam"
+  },
+  {
+    "mst": "2700948957",
+    "name": "CôNG TY Cổ PHầN XUấT NHậP KHẩU THựC PHẩM ABF",
+    "address": "Xóm Chợ Xanh, Xã Khánh Thiện, Huyện Yên Khánh, Tỉnh Ninh Bình, Việt Nam"
+  },
+  {
+    "mst": "380187926",
+    "name": "Công y TNHH MTV Xuất nhập khẩu Kỳ Duyên",
+    "address": "Tổ 2, KP Phước Vĩnh, p.Phước Bình, TX. Phước Long, Bình Phước"
+  },
+  {
+    "mst": "3800100739",
+    "name": "Công Ty TNHH Nam Sơn",
+    "address": "QL13. XA THANH TAM, CHON THANH , BINH PHUOC"
+  },
+  {
+    "mst": "4601301150",
+    "name": "CôNG TY Cổ PHầN XUấT NHậP KHẩU LâM LâM",
+    "address": "Số nhà 200, đường Tôn Đức Thắng, xóm Thành Lập, xã Hồng Tiến, Thị xã Phổ Yên, Tỉnh Thái Nguyên"
+  },
+  {
+    "mst": "3801268702",
+    "name": "CôNG TY TNHH MộT THàNH VIêN SảN XUấT THươNG MạI DịCH Vụ XUấT KHẩU TíN PHú",
+    "address": "Tổ 5, Khu Phố 3, phường Long Phước, thị xã Phước Long, tỉnh Bình Phước"
+  },
+  {
+    "mst": "3500449303",
+    "name": "CôNG TY TNHH THảO NGUYêN",
+    "address": "Khu phố Thị Vải, phường Mỹ Xuân, thị xã Phú Mỹ, tỉnh Bà rịa Vũng tàu"
+  },
+  {
+    "mst": "0107867500",
+    "name": "CôNG TY Cổ PHầN TIếP VậN SRV",
+    "address": "Lô F4, khu công nghiệp Đông Phố Mới, Phường Lào Cai , Thành Phố Lào Cai, tỉnh Lào Cai"
+  },
+  {
+    "mst": "3800769181",
+    "name": "Công Ty TNHH Một Thành Viên Hưng Hằng",
+    "address": "KP TÂN AN - TT TÂN PHÚ - H. ĐỒNG PHÚ - T. BÌNH PHƯỚC"
+  },
+  {
+    "mst": "0100104563",
+    "name": "CôNG TY Cổ PHầN ô Tô TMT",
+    "address": "Tầng 9+10 Tòa nhà Coninco, Số 4 Tôn Thất Tùng, Phường Trung Tự, Quận Đống Đa, Thành Phố Hà Nội"
+  },
+  {
+    "mst": "3502299389",
+    "name": "Công Ty TNHH Nông Sản Trung Hiếu",
+    "address": "ấp Tân Thành, Xã Quảng Thành, Huyện Châu Đức, Tỉnh Bà Rịa - Vũng Tàu"
+  },
+  {
+    "mst": "3800982110",
+    "name": "CôNG TY TNHH MộT THàNH VIêN SảN XUấT THươNG MạI PHú SơN",
+    "address": "Thôn 3, Xã Nghĩa Trung, Huyện Bù Đăng, Tỉnh Bình Phước, Việt Nam"
+  },
+  {
+    "mst": "3600265927",
+    "name": "Công ty TNHH Hảo",
+    "address": "Tập đoàn 3, Ấp Bình Tân, xã Xuân Phú, huyện Xuân Lộc, Tỉnh Đồng Nai"
+  },
+  {
+    "mst": "2400106558",
+    "name": "CôNG TY TNHH SảN XUấT LOHA GROUP",
+    "address": "23 Quang Trung, P.Trần Phú, TP Bắc Giang, T. Bắc Giang"
+  },
+  {
+    "mst": "4100933159",
+    "name": "Công Ty TNHH Tâm Đào",
+    "address": "110 Phạm Văn Đồng,Phường Nhơn Thành,Thị Xã An Nhơn,Tỉnh Bình Định,Việt Nam"
+  },
+  {
+    "mst": "3801142851",
+    "name": "CôNG TY TNHH MộT THàNH VIêN NAM HùNG CườNG",
+    "address": "Thôn 3, Xã Minh Hưng, Huyện Bù Đăng, Tỉnh Bình Phước"
+  },
+  {
+    "mst": "3800266607",
+    "name": "CôNG TY TNHH MộT THàNH VIêN HảI PHượNG",
+    "address": "THÔN TÂN HÒA, XÃ BÙ NHO, HUYỆN PHÚ RIỀNG, T. BÌNH PHƯỚC, VIỆT NAM"
+  },
+  {
+    "mst": "3800302238",
+    "name": "Công Ty TNHH Kiều Loan",
+    "address": "ĐT741, khu phố Phước Trung, P Phước Bình, TX Phước Long, tỉnh Bình Phước"
+  },
+  {
+    "mst": "4400434489",
+    "name": "CôNG TY TNHH NGUYêN THôNG",
+    "address": "LÔ B7-4 KCN AN PHÚ, XÃ AN PHÚ, TP TUY HÒA, TỈNH PHÚ YÊN, VIỆT NAM"
+  },
+  {
+    "mst": "0109954692",
+    "name": "CôNG TY TNHH CôNG NGHệ CAO VIệT QUANG",
+    "address": "Số 8, Thôn Liên Tân, Xã Phương Trung, Huyện Thanh Oai, Thành phố Hà Nội, Việt Nam"
+  },
+  {
+    "mst": "3603134841",
+    "name": "Công Ty TNHH Một Thành Viên Nông Sản Tam Thắng",
+    "address": "To 6 - Ap 2 - Xa Song Ray - huyen Cam My - Dong Nai"
+  },
+  {
+    "mst": "3702968460",
+    "name": "Công ty CP XNK SX và Chế Biến Hạt Điều TTH",
+    "address": "TP Tân Uyên, tỉnh Bình Dương, Việt Nam"
+  },
+  {
+    "mst": "3801078250",
+    "name": "Công ty TNHH một thành viên thương mại dịch vụ XNK Tân Phú",
+    "address": "Tổ 40, KP Thắng Lợi, thị trấn Tân Phú, huyện Đồng Phú, tỉnh Bình Phước"
+  },
+  {
+    "mst": "1100485409",
+    "name": "Công Ty TNHH Thương Mại Và Chế Biến Hàng Xuất Khẩu An Phú",
+    "address": "Đường Châu Thị Kim - ấp Hòa Ngãi - xã An Vĩnh Ngãi - tp Tân An - Long An"
+  },
+  {
+    "mst": "3801182974",
+    "name": "CôNG TY TNHH CHế BIếN NôNG SảN BảO PHáT",
+    "address": "Khu phố Bình Giang 2, Phường Sơn Giang, Thị xã Phước Long, Tỉnh Bình Phước"
+  },
+  {
+    "mst": "3900421567",
+    "name": "CôNG TY TNHH MTV TRUNG NAM TâY NINH",
+    "address": "63C1,Khu Phố 3,Phường 1, TP.Tây Ninh,Tỉnh Tây Ninh"
+  },
+  {
+    "mst": "3800733266",
+    "name": "Công ty TNHH một thành viên Thế Vinh",
+    "address": "ấp 6, xã Đức Liễu, huyện Bù Đăng, tỉnh Bình Phước"
+  },
+  {
+    "mst": "3801287487",
+    "name": "Công ty TNHH Diệp an Hy Foods",
+    "address": "Tổ 3, ấp 1, xã Phước Sơn, huyện Bù Đăng, tỉnh Bình Phước"
+  },
+  {
+    "mst": "3801060221",
+    "name": "Công ty TNHH MTV SXTM Minh Phước",
+    "address": "Tổ 4, khu phướng sơn, Phước bình,phước long, bình phước"
+  },
+  {
+    "mst": "0305938601",
+    "name": "Công Ty Cổ Phần Môi Giới Thương Mại Xuất Nhập Khẩu Nam Việt",
+    "address": "29/17 Đường D2, Phường 25, Quận Bình Thạnh, Tp.HCM"
+  },
+  {
+    "mst": "1200551119",
+    "name": "Cty TNHH Đạt Thành",
+    "address": "Ấp Tân Phú, Xã Tân Lý Tây, Huyện Châu Thành, Tiền Giang"
+  },
+  {
+    "mst": "3602727283",
+    "name": "Công ty cổ phần thương mại XNK Lộc Việt Cường",
+    "address": "Tổ 6, Suối Cát 1, xã Suối Cát, huyện Xuân Lộc, tỉnh Đồng Nai"
+  },
+  {
+    "mst": "3801290514",
+    "name": "Công ty cổ phần NNK Á Thông",
+    "address": "Thôn Tân Hoà, xã Bù Nho, huyện Phú Riềng, tỉnh Bình Phước"
+  },
+  {
+    "mst": "3800339622",
+    "name": "Công ty TNHH sản xuất thương mại Thành Được",
+    "address": "Thôn Đồng Tiến, xã Phướng Tân, huyện Phú Riềng, tỉnh Bình Phước, Việt Nam"
+  },
+  {
+    "mst": "3801294371",
+    "name": "Công ty cổ phần XNK LILI",
+    "address": "Tổ 1, thôn 4, Xã Minh Hưng, huyện Bù Đăng, tỉnh Bình Phước"
+  },
+  {
+    "mst": "38001210068",
+    "name": "Công ty TNHH một thành viên sản xuất thương mại xuất nhập khẩu Hạt điều Hà Phát",
+    "address": "Số nhà 98, Thôn 1, Xã Phú Văn, Huyện Bù Gia Mập, Tỉnh Bình Phước, Việt Nam"
+  },
+  {
+    "mst": "3800628857",
+    "name": "CôNG TY TNHH HOàNG LIêN",
+    "address": "Thôn Tân Bình, Xã Bù Nho, Huyện Phú Riềng, Tỉnh Bình Phước, Việt Nam"
+  },
+  {
+    "mst": "4700149595",
+    "name": "CôNG TY CP KHOáNG SảN BắC KạN",
+    "address": "Tổ 4, Phường Đức Xuân, tp Bắc Kạn, Tỉnh Bắc Kan, Việt Nam"
+  },
+  {
+    "mst": "3801258398",
+    "name": "Công ty TNHH Pompous Sơn Thành Phát Việt Nam",
+    "address": "Số 150, thôn Tân Hiệp 1, xã Bù Nho, huyện Phú Riềng, tỉnh Bình Phước"
+  },
+  {
+    "mst": "3800362068",
+    "name": "Công ty TNHH một thành viên xuất nhập khẩu Ngọc Khang",
+    "address": "KP 9, LONG PHƯỚC, PHƯỚC LONG, BÌNH PHƯỚC"
+  },
+  {
+    "mst": "3800932092",
+    "name": "CôNG TY TNHH SảN XUấT THươNG MạI XUấT NHậP KHẩU KHáNH VY",
+    "address": "Thôn 4, Xã Long Tân, Huyện Phú Riềng, Tỉnh Bình Phước, Việt Nam"
+  },
+  {
+    "mst": "3801104038",
+    "name": "Công Ty TNHH MTV XNK Đại Lộc Phát",
+    "address": "Ấp 9, xã Đức Liễu, huyện Bù Đăng, tỉnh Bình Phước, Việt Nam"
+  },
+  {
+    "mst": "3603705929",
+    "name": "Công ty TNHH XNK Huy Hiếu",
+    "address": "Tổ 6, ấp 2, xã Sông Ray, tỉnh Đồng Nai"
+  },
+  {
+    "mst": "3900381681",
+    "name": "CôNG TY TRáCH NHIệM HữU HạN SảN XUấT XUấT KHẩU HạT ĐIềU TUấN TàI",
+    "address": "Thửa đất số 152, Tờ bản đồ số 10, Khu phố Trường Thiện, Phường Long Hoa, Tỉnh Tây Ninh"
+  },
+  {
+    "mst": "3801055006",
+    "name": "Công Ty TNHH Một Thành Viên Xuất Nhập Khẩu Thương Mại Trụ Lành",
+    "address": "Ấp Hiệp Tâm, Xã Lộc Quang, Tỉnh Đồng Nai, Việt Nam"
+  },
+  {
+    "mst": "0317636683",
+    "name": "Công ty cổ phần XNK Nông sản NEWWAY",
+    "address": "42 đường số 2, khu phố 4, phường Hiệp Bình, Tp Hồ Chí Minh, Việt Nam"
+  },
+  {
+    "mst": "3601044085",
+    "name": "Công ty TNHH MTV Long Gia Trang",
+    "address": "Số 2643, Quốc lộ 1A, tổ 22, ấp Suối Cát, xã Xuân Lộc, tỉnh Đồng Nai, Việt Nam"
+  },
+  {
+    "mst": "3801265275",
+    "name": "Công ty TNHH MTV XNK Minh Hoàng BP",
+    "address": "Tổ 2, thôn 7,xã Thiện Hưng, Huyện Bù Đốp, Tỉnh Bình Phước"
+  },
+  {
+    "mst": "3801254259",
+    "name": "CôNG TY TNHH SENTAI INDUSTRY",
+    "address": "Đường ĐT 741, Ấp Thuận Hòa 1, Xã Thuận Lợi, Huyện Đồng Phú, Tỉnh Bình Phước, Việt Nam"
+  },
+  {
+    "mst": "3800742623",
+    "name": "Công ty TNHH MTV Phước Thịnh",
+    "address": "269 tổ 2 khu 7, Phước Bình, Đồng Nai, Việt Nam"
+  },
+  {
+    "mst": "3801233964",
+    "name": "Công ty TNHH XNK Lộc Tiến Phát",
+    "address": "741, Đội 3, thôn Bù Xìa, Xã Đắc ơ, Tỉnh Đồng Nai"
+  },
+  {
+    "mst": "0310524155",
+    "name": "Công ty CP KD TH Thương Mại SX XNK Nam Kinh",
+    "address": "72 Lê Thánh Tông, P Sài Gòn, TP Hồ Chí Minh"
+  },
+  {
+    "mst": "3801283228",
+    "name": "Công ty TNHH XNK Điều Minh Đức",
+    "address": "Quốc lộ 14, Thôn Hưng Tân, xã Bù Đằng, tỉnh Đồng Nai, Việt Nam"
+  },
+  {
+    "mst": "3801199304-",
+    "name": "Công ty TNHH Sản xuất Dịch vụ Thương Mại Thái Bình",
+    "address": "Số 25, Quốc Lộ 14, Thôn 1, Xã Bù Đằng, Tỉnh Đồng Nai, Việt Nam"
+  },
+  {
+    "mst": "3801292670",
+    "name": "Công ty TNHH MTV SX XNK Hoàng Liên",
+    "address": "Tổ 3, Thôn Tân Bình, Xã phú riềng, Tỉnh đồng Nai, Việt Nam"
+  },
+  {
+    "mst": "0304421306002",
+    "name": "Chi Nhánh Công Ty Cổ Phần Tập Đoàn Intimex Tại Buôn Ma Thuột",
+    "address": "Lô CN 3, Cụm CN Tân An 2, KM 8, Tỉnh lộ 8, P.Tân An, Daklak"
+  },
+  {
+    "mst": "3801210276",
+    "name": "CôNG TY TRáCH NHIệM HữU HạN MộT THàNH VIêN SảN XUấT THươNG MạI PHú THủY",
+    "address": "Đường ĐT.741, tổ 1, ấp Thuận Hòa 1, xã Thuận Lợi, tỉnh Đồng Nai, Việt Nam"
+  },
+  {
+    "mst": "3801297358",
+    "name": "CôNG TY TNHH MộT THàNH VIêN THươNG MạI SảN XUấT XUấT NHậP KHẩU GIA BảO BP",
+    "address": "Số nhà 63, thôn Minh Hưng, Xã Bù Đăng, Thành phố Đồng Nai, Việt Nam"
+  },
+  {
+    "mst": "3801299563",
+    "name": "CôNG TY Cổ PHầN DC FOOD",
+    "address": "Đường Liên thôn Phước Hòa Phước Tân, Xã Bình Tân, Tỉnh Đồng Nai, Việt Nam"
+  },
+  {
+    "mst": "3800822131",
+    "name": "Công Ty TNHH Sản Xuất Thương Mại Dịch Vụ Việt á",
+    "address": "Khu phố Bình Giang 1, Phường Phước Long, TP Đồng Nai, Việt Nam"
+  },
+  {
+    "mst": "3801046442",
+    "name": "Công ty TNHH XNK Hoài Châu",
+    "address": "Khu Phố 9, Phường Phước Bình, TP Đồng Nai"
+  },
+  {
+    "mst": "1001245981",
+    "name": "Công ty TNHH XNK Thực phẩm HMT Việt Nam",
+    "address": "14/ngõ 69/tổ 11-12 tiền phong,Thái bình, hưng yên, việt nam"
+  },
+  {
+    "mst": "3801179435",
+    "name": "CôNG TY TNHH MộT THàNH VIêN SảN XUấT THươNG MạI XUấT NHậP KHẩU SâM ĐạT",
+    "address": "Đường ĐT 741, ấp Thuận Hòa 1 - Xã Thuận Lợi - Huyện Đồng Phú - Bình Phước"
+  },
+  {
+    "mst": "3801040151",
+    "name": "Công Ty TNHH Một Thành Viên Xuất Nhập Khẩu Thọ Quyên",
+    "address": "Số 122, Khu phố 2, Phường Phước Bình, Thành phố Đồng Nai"
   }
 ]

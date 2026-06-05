@@ -3,17 +3,17 @@
    CHỨC NĂNG: Cấu hình danh sách và vị trí đổ dữ liệu vào QR
    ============================================================ */
 
-// Danh sách Loại hình tự động đổ vào Dropdown trên giao diện
+// Danh sách Loại hình tự động đổ vào Dropdown trên giao diện (Đã chuyển thành Object Code - Name)
 const LOAI_HINH_OPTIONS = [
-    "Vận chuyển độc lập quá cảnh",
-    "Vận chuyển độc lập kho ngoại quan",
-    "Xuất nhập khẩu cửa khẩu quốc tế Tà Lùng",
-    "Chuyển cửa khẩu – Xuất khẩu",
-    "Chuyển cửa khẩu – Nhập khẩu"
+    { code: "VCDLQC",  displayName: "Vận chuyển độc lập quá cảnh" },
+    { code: "VCDLKNQ", displayName: "Vận chuyển độc lập kho ngoại quan" },
+    { code: "XNKTL",   displayName: "Xuất nhập khẩu cửa khẩu quốc tế Tà Lùng" },
+    { code: "CCKXK",   displayName: "Chuyển cửa khẩu – Xuất khẩu" },
+    { code: "CCKNK",   displayName: "Chuyển cửa khẩu – Nhập khẩu" }
 ];
 
 // ============================================================
-// CẤU HÌNH 1: QR PTVT (Giữ nguyên theo chuẩn cũ)
+// CẤU HÌNH 1: QR PTVT (Cố định, không phụ thuộc Loại hình)
 // ============================================================
 const qrPTVTConfig = {
     "bks": 0,       // Cột E
@@ -22,16 +22,17 @@ const qrPTVTConfig = {
     "diadiem": 5,   // Cột D
     "mathang": 6,   // Cột G
     "laixe": 8,     // Cột I
+    "sdtlaixe": 9,  // MỚI BỔ SUNG: SĐT Lái xe (Tạm gán vào Index 9, bạn có thể đổi)
     "nguoikhai": 11 // Cột H
 };
 
 // ============================================================
 // CẤU HÌNH 2: QR HỒ SƠ ĐỘNG (Thay đổi theo Loại hình)
-// Lưu ý: Đã xóa các trường (ngaytokhai, luong, banke, nghiepvu)
+// Lưu ý: Key bây giờ là các "code" (VCDLQC, XNKTL...) thay vì tên dài
 // ============================================================
 const MAPPING_QR_HOSO = {
     
-    "Vận chuyển độc lập quá cảnh": {
+    "VCDLQC": {
         "loaihinh": 0, 
         "mst": 1, 
         "tencty": 2, 
@@ -39,8 +40,7 @@ const MAPPING_QR_HOSO = {
         "nguoikhai": 4
     },
     
-    "Vận chuyển độc lập kho ngoại quan": {
-        // Có thể đảo vị trí tùy ý
+    "VCDLKNQ": {
         "loaihinh": 0, 
         "sotokhai": 1, 
         "mst": 2, 
@@ -48,7 +48,7 @@ const MAPPING_QR_HOSO = {
         "diadiem": 4
     },
     
-    "Xuất nhập khẩu cửa khẩu quốc tế Tà Lùng": {
+    "XNKTL": {
         "sotokhai": 0, 
         "loaihinh": 1, 
         "mst": 2,
@@ -56,7 +56,7 @@ const MAPPING_QR_HOSO = {
         "mathang": 4
     },
     
-    "Chuyển cửa khẩu – Xuất khẩu": {
+    "CCKXK": {
         "loaihinh": 0, 
         "sotokhai": 1, 
         "mst": 2,
@@ -64,7 +64,7 @@ const MAPPING_QR_HOSO = {
         "socont": 4
     },
     
-    "Chuyển cửa khẩu – Nhập khẩu": {
+    "CCKNK": {
         "loaihinh": 0, 
         "sotokhai": 1, 
         "mst": 2,
