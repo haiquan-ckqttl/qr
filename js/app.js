@@ -25,7 +25,6 @@ var QRGenInline = (function(){
 var phieus = [];
 var nextId = 1;
 
-// Mảng REQUIRED gốc (Trường 'luong' sẽ được kiểm tra động trong hàm isReady)
 var REQUIRED_BASE = ['loaihinh', 'mst', 'tencty', 'diachicty', 'sotokhai', 'diadiem', 'bks', 'socont', 'mathang', 'cccd', 'laixe', 'sdtlaixe', 'nguoikhai'];
 
 window.addEventListener('DOMContentLoaded', function(){
@@ -96,8 +95,9 @@ function addPhieu(){
     var p = {
         id: id, 
         loaihinh: (typeof LOAI_HINH_OPTIONS !== 'undefined' && LOAI_HINH_OPTIONS.length > 0) ? LOAI_HINH_OPTIONS[0].code : '', 
-        mst: '', tencty: '', diachicty: '', sotokhai: '', ngaytokhai: '', luong: '', diadiem: '', 
-        bks: '', socont: '', mathang: '', cccd: '', laixe: '', sdtlaixe: '', nguoikhai: ''
+        mst: '', tencty: '', diachicty: '', sotokhai: '', 
+        ngaytokhai: '', ngaytokhai_raw: '', 
+        luong: '', diadiem: '', bks: '', socont: '', mathang: '', cccd: '', laixe: '', sdtlaixe: '', nguoikhai: ''
     };
     phieus.push(p);
     renderCard(p);
@@ -191,24 +191,25 @@ function renderCard(p){
                     </select>
                 </div>
                 
-                <div class="fg">
+                <div class="fg col-span-3" style="grid-column: span 3;">
                     <label>Mã số thuế <span class="req">*</span></label>
-                    <div class="fi-wrap">
-                        <input class="fi" id="f${p.id}mst" list="mst-suggestions" placeholder="Nhập đúng 10 số" maxlength="10" 
-                               oninput="var val=this.value.replace(/\\D/g,''); setField(${p.id},'mst',val); if(typeof handleAutocompleteMST === 'function') handleAutocompleteMST(${p.id}, val);">
-                        <span class="fi-check" id="mstchk${p.id}"></span>
+                    <div style="display: flex; gap: 8px;">
+                        <div class="fi-wrap" style="flex: 1;">
+                            <input class="fi" id="f${p.id}mst" list="mst-suggestions" placeholder="Nhập 10 hoặc 14 số" maxlength="14" 
+                                   oninput="var val=this.value.replace(/\\D/g,''); setField(${p.id},'mst',val); if(typeof handleAutocompleteMST === 'function') handleAutocompleteMST(${p.id}, val);">
+                            <span class="fi-check" id="mstchk${p.id}"></span>
+                        </div>
+                        <button class="btn btn-primary" style="flex-shrink: 0; padding: 0 16px; display: flex; align-items: center; gap: 6px; font-weight: 600;" onclick="fetchMST(${p.id})" id="fbtn${p.id}" title="Tra cứu Tên & Địa chỉ DN qua Internet">
+                            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                            Tra cứu
+                        </button>
                     </div>
-                    <div class="field-err" id="msterr${p.id}">MST phải đúng 10 chữ số!</div>
+                    <div class="field-err" id="msterr${p.id}">MST phải đúng 10 hoặc 14 chữ số!</div>
                 </div>
 
                 <div class="fg col-span-2">
                     <label>Tên đơn vị (DN) <span class="req">*</span></label>
-                    <div class="fi-row">
-                        <input class="fi" id="f${p.id}tencty" placeholder="Nhập tên doanh nghiệp..." oninput="setField(${p.id},'tencty',this.value)">
-                        <button class="btn btn-ghost btn-sm" style="flex-shrink:0" onclick="fetchMST(${p.id})" id="fbtn${p.id}" title="Tra cứu Tên & Địa chỉ DN qua Internet">
-                            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-                        </button>
-                    </div>
+                    <input class="fi" id="f${p.id}tencty" placeholder="Nhập tên doanh nghiệp..." oninput="setField(${p.id},'tencty',this.value)">
                 </div>
 
                 <div class="fg col-span-3">
@@ -230,7 +231,7 @@ function renderCard(p){
 
                 <div class="fg">
                     <label>Ngày tờ khai <span class="opt-tag">Tùy chọn</span></label>
-                    <input class="fi" id="f${p.id}ngaytokhai" placeholder="VD: 15/06/2026" oninput="setField(${p.id},'ngaytokhai',this.value)">
+                    <input type="date" class="fi" id="f${p.id}ngaytokhai" onchange="handleDateSelect(${p.id}, this.value)">
                 </div>
 
                 <div class="fg">
@@ -316,16 +317,34 @@ function renderCard(p){
     `;
     list.appendChild(card);
     
-    // Gọi trigger lần đầu để setup nhãn Luồng đúng với Loại hình mặc định
     toggleLuongRequired(p.id, p.loaihinh);
 }
 
+function handleDateSelect(id, val) {
+    var p = phieus.find(function(x){return x.id === id;});
+    if(!p) return;
+    
+    p.ngaytokhai_raw = val; 
+    
+    if (val) {
+        var parts = val.split('-');
+        p.ngaytokhai = parts[2] + '/' + parts[1] + '/' + parts[0]; 
+    } else {
+        p.ngaytokhai = '';
+    }
+    refreshStatus(p);
+}
+
 function fillCard(p){
-    var fields = ['loaihinh', 'mst', 'tencty', 'diachicty', 'sotokhai', 'ngaytokhai', 'luong', 'diadiem', 'bks', 'socont', 'mathang', 'cccd', 'nguoikhai', 'laixe', 'sdtlaixe'];
+    var fields = ['loaihinh', 'mst', 'tencty', 'diachicty', 'sotokhai', 'luong', 'diadiem', 'bks', 'socont', 'mathang', 'cccd', 'nguoikhai', 'laixe', 'sdtlaixe'];
     fields.forEach(function(k){
         var el = document.getElementById('f'+p.id+k);
         if(el) el.value = p[k] || '';
     });
+    
+    var dateEl = document.getElementById('f'+p.id+'ngaytokhai');
+    if(dateEl) dateEl.value = p.ngaytokhai_raw || '';
+    
     toggleLuongRequired(p.id, p.loaihinh);
 }
 
@@ -337,7 +356,6 @@ function toggleCard(id){
     }
 }
 
-// Logic động: Chuyển đổi trạng thái Bắt buộc của ô Luồng
 function toggleLuongRequired(id, loaihinhCode) {
     var reqTag = document.getElementById('req-luong-' + id);
     if(reqTag) {
@@ -351,13 +369,12 @@ function toggleLuongRequired(id, loaihinhCode) {
     }
 }
 
-// BỘ KIỂM TRA ĐIỀU KIỆN (VALIDATION RULES)
 function isValidField(key, val) {
     if (!val) return false;
     val = val.trim();
     switch(key) {
         case 'sotokhai': return val.length === 12;
-        case 'mst': return val.length === 10;
+        case 'mst': return val.length === 10 || val.length === 14; // Hỗ trợ MST 14 số
         case 'bks': return val.length >= 4 && !(/[^A-Z0-9]/.test(val));
         case 'socont': return val === '/' || /^[A-Z]{4}[0-9]{7}$/.test(val);
         case 'cccd': return val === '/' || val.length >= 9;
@@ -376,12 +393,10 @@ function setField(id, key, value){
     var el = document.getElementById('f'+id+key);
     if(el && el.value !== value) el.value = value;
 
-    // Trigger thay đổi giao diện Luồng nếu người dùng đổi Loại Hình
     if(key === 'loaihinh') {
         toggleLuongRequired(id, value);
     }
 
-    // Xử lý Giao diện Validation
     var validateKeys = ['sotokhai', 'mst', 'bks', 'socont', 'cccd', 'laixe', 'sdtlaixe', 'diachicty'];
     if (validateKeys.includes(key)) {
         var err = document.getElementById(key + 'err' + id);
@@ -408,7 +423,6 @@ function setField(id, key, value){
 }
 
 function isReady(p){
-    // Xây dựng mảng Required Động cho phiếu hiện tại
     var currentReq = [...REQUIRED_BASE];
     if (p.loaihinh === 'XNKTL') {
         currentReq.push('luong');
@@ -439,26 +453,10 @@ function refreshStatus(p){
     updateUI();
 }
 
-function updateUI(){
-    var n  = phieus.length;
-    var nr = phieus.filter(isReady).length;
-    document.getElementById('cnt').textContent = n;
-    var ca = document.getElementById('btn-clearall');
-    if(ca) ca.style.display = n > 0 ? '' : 'none';
-    var pb = document.getElementById('print-bar');
-    if(pb) pb.style.display = n > 0 ? '' : 'none';
-    var pt = document.getElementById('pb-title');
-    var ps = document.getElementById('pb-sub');
-    if(pt) pt.textContent = nr + '/' + n + ' phiếu sẵn sàng in';
-    if(ps) ps.textContent = (nr < n)
-        ? '⚠ ' + (n - nr) + ' phiếu chưa đủ thông tin sẽ bị bỏ qua khi in'
-        : (n > 0 ? '✓ Tất cả phiếu đã đủ thông tin' : '');
-}
-
-// Gọi API Cổng Quốc Gia, lấy cả Tên và Địa chỉ
+// Cập nhật logic khôi phục UI Nút Tra cứu
 function fetchMST(id){
     var p = phieus.find(function(x){return x.id===id;});
-    if(!p || !p.mst || p.mst.length !== 10){ toast('MST phải đúng 10 số trước khi tra cứu','error'); return; }
+    if(!p || (p.mst.length !== 10 && p.mst.length !== 14)){ toast('MST phải là 10 hoặc 14 số','error'); return; }
     var btn = document.getElementById('fbtn'+id);
     btn.innerHTML='<span class="spin">↻</span>';
     btn.disabled=true;
@@ -466,13 +464,11 @@ function fetchMST(id){
         .then(function(r){return r.json();})
         .then(function(d){
             if(d.code==='00' && d.data){
-                // Điền tên công ty
                 if(d.data.name) {
                     var elName = document.getElementById('f'+id+'tencty');
                     if(elName) elName.value = d.data.name;
                     setField(id, 'tencty', d.data.name);
                 }
-                // Điền địa chỉ công ty
                 if(d.data.address) {
                     var elAddr = document.getElementById('f'+id+'diachicty');
                     if(elAddr) elAddr.value = d.data.address;
@@ -483,12 +479,12 @@ function fetchMST(id){
         })
         .catch(function(){ toast('Lỗi kết nối tra cứu internet','error'); })
         .finally(function(){
-            btn.innerHTML='<svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>';
+            // Khôi phục lại HTML của nút Tra cứu mới
+            btn.innerHTML='<svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg> Tra cứu';
             btn.disabled=false;
         });
 }
 
-// Hàm UI Helper
 function closeModal(){ document.getElementById('modal-preview').classList.remove('open'); }
 document.getElementById('modal-preview').addEventListener('click',function(e){if(e.target===this)closeModal();});
 var modalInstruction = document.getElementById('modal-instruction');

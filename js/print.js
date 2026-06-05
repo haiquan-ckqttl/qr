@@ -127,10 +127,16 @@ function buildPrintHTML(item) {
                         7. SĐT lái xe: <b>${p.sdtlaixe || '..................................'}</b>
                     </td>
                     <td style="padding: 6px 10px; vertical-align: top;">
-                        <div style="margin-bottom:6px;"><b>1. Ngày xuất cảnh:</b><br><div style="text-align: right; border-bottom:1px dotted #000; height:14px;"><i>...... / ${currentMonth} / ${currentYear}</i></div></div>
-                        <div style="margin-bottom:6px;"><b>2. Ngày nhập cảnh:</b><br><div style="text-align: right; border-bottom:1px dotted #000; height:14px;"><i>...... / ${currentMonth} / ${currentYear}</i></div></div>
+                        <div style="display: flex; margin-bottom: 8px; align-items: flex-end;">
+                            <b style="white-space: nowrap;">1. Ngày xuất cảnh:</b>
+                            <span style="flex: 1; border-bottom: 1px #000; text-align: right; margin-left: 5px;"><i>...... / ${currentMonth} / ${currentYear}</i></span>
+                        </div>
+                        <div style="display: flex; margin-bottom: 8px; align-items: flex-end;">
+                            <b style="white-space: nowrap;">2. Ngày nhập cảnh:</b>
+                            <span style="flex: 1; border-bottom: 1px #000; text-align: right; margin-left: 5px;"><i>...... / ${currentMonth} / ${currentYear}</i></span>
+                        </div>
                         
-                        <div style="text-align: center; margin-top: 4px;">
+                        <div style="text-align: center; margin-top: 10px;">
                             ${item.urlPTVT ? `<img src="${item.urlPTVT}" style="width:23mm; height:23mm; display:block; margin: 0 auto;"/>` : `<div style="width:23mm;height:23mm;border:1px solid #000;margin:0 auto;"></div>`}
                         </div>
                     </td>

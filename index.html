@@ -16,10 +16,10 @@
     </div>
   </div>
   <div class="header-info">
-    <h1>Hệ Thống Tạo Phiếu Đăng Ký Hồ Sơ Hải Quan & Phiếu ĐK PTVT</h1>
-    <p>Chi Cục Hải Quan Khu Vực XVI · Hải Quan Cửa Khẩu Tà Lùng</p>
+    <h1>Hệ Thống Tạo Phiếu Đăng ký hồ sơ Hải quan & Đăng ký phương tiện vận tải</h1>
+    <p>Chi Cục Hải Quan Khu Vực XVI · Hải Quan Cửa Khẩu Quốc Tế Tà Lùng</p>
     <div>
-      <span class="lib-badge" id="lib-badge">
+      <span class="lib-badge" id="lib-badge" style="display: none;">
         <span class="dot"></span>
         <span id="lib-text">Đang kiểm tra...</span>
       </span>
@@ -105,27 +105,39 @@
 
 <div class="modal-bg" id="modal-instruction">
   <div class="modal modal-lg">
-    <h3>📖 Quy trình & Hướng dẫn tạo phiếu QR</h3>
-    <div class="modal-body instruction-content">
-      <div class="highlight-box">
-        ⚠ <strong>Nhiệm vụ của Doanh nghiệp:</strong> Đại diện doanh nghiệp chỉ thực hiện nhập thông tin, in phiếu và kẹp cùng hồ sơ tờ khai nộp cho Hải quan. Việc quét mã QR kiểm soát sẽ do cơ quan Hải quan thực hiện.
-      </div>
+    <h3 style="text-align: center; color: var(--primary);">THÔNG BÁO<br><span style="font-size: 14px; font-weight: normal; color: var(--text);">V/v Triển khai thử nghiệm Hệ thống tạo phiếu đăng ký PTVT QR</span></h3>
+    <div class="modal-body instruction-content" style="font-size: 14px; line-height: 1.6;">
+      <p><b>Kính gửi:</b> Quý Doanh nghiệp hoạt động xuất nhập khẩu tại địa bàn.</p>
+      <p>Nhằm hiện đại hóa công tác kiểm tra, giám sát, tối ưu hóa thời gian thông quan và hỗ trợ tối đa cho các doanh nghiệp, Hải quan cửa khẩu Quốc tế Tà Lùng trân trọng giới thiệu đến quý doanh nghiệp: <b>HỆ THỐNG TẠO PHIẾU ĐĂNG KÝ PTVT CHỞ HÀNG HÓA XUẤT NHẬP KHẨU QR (BẢN THỬ NGHIỆM)</b></p>
       
-      <h4>1. Quy trình khai báo & Nộp hồ sơ</h4>
+      <ul style="list-style: none; padding-left: 0; background-color: var(--bg); padding: 10px; border-radius: 6px;">
+        <li>🌐 <b>Địa chỉ truy cập:</b> <a href="https://haiquan-ckqttl.github.io/qr/" target="_blank">https://haiquan-ckqttl.github.io/qr/</a></li>
+        <li>⏱ <b>Thời gian chạy thử nghiệm:</b> Từ ngày 05/6/2026 đến ngày 10/6/2026.</li>
+      </ul>
+      
+      <p>Để việc triển khai thử nghiệm đạt hiệu quả cao, Hải quan cửa khẩu đề nghị Quý doanh nghiệp lưu ý và thực hiện đúng các nội dung hướng dẫn sau:</p>
+      
+      <h4>1. Nhiệm vụ của Doanh nghiệp</h4>
       <ul>
-        <li><strong>Nhập liệu:</strong> Điền đầy đủ và chính xác các thông tin lô hàng vào hệ thống bên dưới.</li>
-        <li><strong>In phiếu:</strong> Hệ thống đã cấu hình cố định in trên khổ giấy <strong>A4 dọc</strong>. Mỗi tờ khai sẽ được in ra 2 trang.</li>
-        <li><strong>Nộp hồ sơ:</strong> Kẹp phiếu vừa in kèm theo hồ sơ của tờ khai đó và gửi cho cơ quan Hải quan để vào sổ và thực hiện kiểm soát.</li>
+        <li>Đại diện doanh nghiệp chủ động thực hiện nhập thông tin, in phiếu để gửi thông tin cho cơ quan Hải quan.</li>
+        <li>Việc quét mã QR kiểm soát sẽ do công chức cơ quan Hải quan thực hiện trong quá trình tiếp nhận.</li>
       </ul>
 
-      <h4>2. Quy định nhập liệu chuẩn</h4>
+      <h4>2. Quy trình khai báo & Nộp hồ sơ</h4>
       <ul>
-        <li><strong>Mã số thuế:</strong> Nhập chính xác mã số thuế (10 chữ số). Bấm nút <strong>↻ (Tra cứu)</strong> để tự động điền Tên công ty.</li>
-        <li><strong>Số tờ khai (STK):</strong> Bắt buộc phải nhập đúng <strong>12 chữ số</strong> (Hệ thống sẽ báo đỏ nếu nhập sai).</li>
-        <li><strong>Biển kiểm soát (BKS):</strong> Viết liền, không khoảng trắng, không ký tự đặc biệt (Ví dụ: <code>34H121212</code>).</li>
-        <li><strong>Số container:</strong> Viết liền (Ví dụ: <code>CICU5999091</code>). Nếu là xe tải bạt không có số cont, có thể điền <code>Không</code>.</li>
-        <li><strong>Thông tin Lái xe:</strong> Bắt buộc nhập đầy đủ <strong>CCCD/GPLX</strong>, <strong>Họ tên</strong> và <strong>Số điện thoại</strong> để đảm bảo công tác quản lý phương tiện.</li>
+        <li><b>Bước 1 - Nhập liệu:</b> Doanh nghiệp truy cập đường link trên, điền đầy đủ và chính xác các thông tin của lô hàng vào hệ thống (Mã số thuế, Tên công ty, Số tờ khai, Địa điểm tập kết, Biển kiểm soát, Số container, Mặt hàng, Người khai hải quan, Họ tên lái xe...).</li>
+        <li><b>Bước 2 - In phiếu:</b> Chọn khổ giấy in phù hợp (hệ thống hỗ trợ in khổ A4 - 2 phiếu ngang/trang, ưu tiên sử dụng khổ giấy A5) và thực hiện in phiếu trực tiếp từ hệ thống.</li>
+        <li><b>Bước 3 - Nộp hồ sơ:</b> In phiếu gửi kèm theo bộ hồ sơ của tờ khai và gửi cho cơ quan Hải quan.</li>
       </ul>
+
+      <h4>3. Quy định nhập liệu chuẩn</h4>
+      <ul>
+        <li><b>Mã số thuế:</b> Nhập chính xác mã số thuế (10 hoặc 14 số) và ấn <b>Tra cứu</b> để hệ thống hỗ trợ tự động điền các thông tin liên quan (nếu có).</li>
+        <li>Đảm bảo điền đầy đủ các trường thông tin có đánh dấu sao đỏ (<span class="req">*</span>) bắt buộc để hệ thống đủ điều kiện tạo mã QR hợp lệ.</li>
+      </ul>
+      
+      <p style="margin-top: 15px; font-style: italic;">Hải quan cửa khẩu Quốc tế Tà Lùng rất mong nhận được sự phối hợp, đồng hành và các ý kiến đóng góp của Quý doanh nghiệp trong quá trình sử dụng bản thử nghiệm này để hệ thống ngày càng hoàn thiện và nâng cấp hơn.</p>
+      <p style="text-align: right; font-weight: bold;">Xin trân trọng thông báo và cảm ơn!</p>
     </div>
     <div class="modal-foot">
       <button class="btn btn-primary" onclick="document.getElementById('modal-instruction').classList.remove('open')">Đã hiểu</button>
