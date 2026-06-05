@@ -25,8 +25,8 @@ var QRGenInline = (function(){
 var phieus = [];
 var nextId = 1;
 
-// Mảng các trường bắt buộc
-var REQUIRED = ['loaihinh', 'mst', 'tencty', 'sotokhai', 'diadiem', 'bks', 'socont', 'mathang', 'cccd', 'laixe', 'sdtlaixe', 'nguoikhai'];
+// Mảng REQUIRED gốc (Trường 'luong' sẽ được kiểm tra động trong hàm isReady)
+var REQUIRED_BASE = ['loaihinh', 'mst', 'tencty', 'diachicty', 'sotokhai', 'diadiem', 'bks', 'socont', 'mathang', 'cccd', 'laixe', 'sdtlaixe', 'nguoikhai'];
 
 window.addEventListener('DOMContentLoaded', function(){
     detectLib();
@@ -96,8 +96,8 @@ function addPhieu(){
     var p = {
         id: id, 
         loaihinh: (typeof LOAI_HINH_OPTIONS !== 'undefined' && LOAI_HINH_OPTIONS.length > 0) ? LOAI_HINH_OPTIONS[0].code : '', 
-        mst: '', tencty: '', sotokhai: '', diadiem: '', bks: '', socont: '', 
-        mathang: '', cccd: '', laixe: '', sdtlaixe: '', nguoikhai: ''
+        mst: '', tencty: '', diachicty: '', sotokhai: '', ngaytokhai: '', luong: '', diadiem: '', 
+        bks: '', socont: '', mathang: '', cccd: '', laixe: '', sdtlaixe: '', nguoikhai: ''
     };
     phieus.push(p);
     renderCard(p);
@@ -173,7 +173,6 @@ function renderCard(p){
     card.className = 'phieu-card';
     card.id = 'card-' + p.id;
     
-    // Giao diện đã được nâng cấp với các thẻ Validate (fi-wrap, fi-check, field-err)
     card.innerHTML = `
         <div class="card-head" onclick="toggleCard(${p.id})">
             <div class="phieu-num">${p.id}</div>
@@ -206,9 +205,17 @@ function renderCard(p){
                     <label>Tên đơn vị (DN) <span class="req">*</span></label>
                     <div class="fi-row">
                         <input class="fi" id="f${p.id}tencty" placeholder="Nhập tên doanh nghiệp..." oninput="setField(${p.id},'tencty',this.value)">
-                        <button class="btn btn-ghost btn-sm" style="flex-shrink:0" onclick="fetchMST(${p.id})" id="fbtn${p.id}" title="Tra cứu Tên DN qua Internet">
+                        <button class="btn btn-ghost btn-sm" style="flex-shrink:0" onclick="fetchMST(${p.id})" id="fbtn${p.id}" title="Tra cứu Tên & Địa chỉ DN qua Internet">
                             <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
                         </button>
+                    </div>
+                </div>
+
+                <div class="fg col-span-3">
+                    <label>Địa chỉ doanh nghiệp <span class="req">*</span></label>
+                    <div class="fi-wrap">
+                        <input class="fi" id="f${p.id}diachicty" placeholder="Nhập địa chỉ hoặc gõ / nếu chưa rõ" oninput="setField(${p.id},'diachicty',this.value)">
+                        <span class="fi-check" id="diachictychk${p.id}"></span>
                     </div>
                 </div>
                 
@@ -222,11 +229,26 @@ function renderCard(p){
                 </div>
 
                 <div class="fg">
+                    <label>Ngày tờ khai <span class="opt-tag">Tùy chọn</span></label>
+                    <input class="fi" id="f${p.id}ngaytokhai" placeholder="VD: 15/06/2026" oninput="setField(${p.id},'ngaytokhai',this.value)">
+                </div>
+
+                <div class="fg">
+                    <label id="lbl-luong-${p.id}">Luồng <span class="opt-tag" id="req-luong-${p.id}">Tùy chọn</span></label>
+                    <select class="fi" id="f${p.id}luong" onchange="setField(${p.id},'luong',this.value)">
+                        <option value="">-- Chọn Luồng --</option>
+                        <option value="Xanh">Xanh</option>
+                        <option value="Vàng">Vàng</option>
+                        <option value="Đỏ">Đỏ</option>
+                    </select>
+                </div>
+
+                <div class="fg">
                     <label>Địa điểm tập kết <span class="req">*</span></label>
                     <input class="fi" id="f${p.id}diadiem" list="location-suggestions" placeholder="Chọn hoặc nhập địa điểm..." oninput="setField(${p.id},'diadiem',this.value)">
                 </div>
 
-                <div class="fg">
+                <div class="fg col-span-2">
                     <label>Người khai Hải quan <span class="req">*</span></label>
                     <input class="fi" id="f${p.id}nguoikhai" placeholder="Họ và tên..." oninput="setField(${p.id},'nguoikhai',this.value)">
                 </div>
@@ -293,14 +315,18 @@ function renderCard(p){
         </div>
     `;
     list.appendChild(card);
+    
+    // Gọi trigger lần đầu để setup nhãn Luồng đúng với Loại hình mặc định
+    toggleLuongRequired(p.id, p.loaihinh);
 }
 
 function fillCard(p){
-    var fields = ['loaihinh', 'mst', 'tencty', 'sotokhai', 'diadiem', 'bks', 'socont', 'mathang', 'cccd', 'nguoikhai', 'laixe', 'sdtlaixe'];
+    var fields = ['loaihinh', 'mst', 'tencty', 'diachicty', 'sotokhai', 'ngaytokhai', 'luong', 'diadiem', 'bks', 'socont', 'mathang', 'cccd', 'nguoikhai', 'laixe', 'sdtlaixe'];
     fields.forEach(function(k){
         var el = document.getElementById('f'+p.id+k);
         if(el) el.value = p[k] || '';
     });
+    toggleLuongRequired(p.id, p.loaihinh);
 }
 
 function toggleCard(id){
@@ -311,6 +337,20 @@ function toggleCard(id){
     }
 }
 
+// Logic động: Chuyển đổi trạng thái Bắt buộc của ô Luồng
+function toggleLuongRequired(id, loaihinhCode) {
+    var reqTag = document.getElementById('req-luong-' + id);
+    if(reqTag) {
+        if(loaihinhCode === 'XNKTL') {
+            reqTag.className = 'req';
+            reqTag.textContent = '*';
+        } else {
+            reqTag.className = 'opt-tag';
+            reqTag.textContent = 'Tùy chọn';
+        }
+    }
+}
+
 // BỘ KIỂM TRA ĐIỀU KIỆN (VALIDATION RULES)
 function isValidField(key, val) {
     if (!val) return false;
@@ -318,11 +358,12 @@ function isValidField(key, val) {
     switch(key) {
         case 'sotokhai': return val.length === 12;
         case 'mst': return val.length === 10;
-        case 'bks': return val.length >= 4 && !(/[^A-Z0-9]/.test(val)); // Cấm ký tự lạ, độ dài >= 4
-        case 'socont': return val === '/' || /^[A-Z]{4}[0-9]{7}$/.test(val); // / hoặc chuẩn 4 chữ 7 số
-        case 'cccd': return val === '/' || val.length >= 9; // CMND 9 số, CCCD 12 số
+        case 'bks': return val.length >= 4 && !(/[^A-Z0-9]/.test(val));
+        case 'socont': return val === '/' || /^[A-Z]{4}[0-9]{7}$/.test(val);
+        case 'cccd': return val === '/' || val.length >= 9;
         case 'laixe': return val === '/' || val.length >= 2;
         case 'sdtlaixe': return val === '/' || (val.length >= 10 && val.length <= 11);
+        case 'diachicty': return val.length > 0;
         default: return val.length > 0;
     }
 }
@@ -335,8 +376,13 @@ function setField(id, key, value){
     var el = document.getElementById('f'+id+key);
     if(el && el.value !== value) el.value = value;
 
-    // Xử lý Giao diện Validation thông minh (Chớp viền, hiện ✓, báo lỗi)
-    var validateKeys = ['sotokhai', 'mst', 'bks', 'socont', 'cccd', 'laixe', 'sdtlaixe'];
+    // Trigger thay đổi giao diện Luồng nếu người dùng đổi Loại Hình
+    if(key === 'loaihinh') {
+        toggleLuongRequired(id, value);
+    }
+
+    // Xử lý Giao diện Validation
+    var validateKeys = ['sotokhai', 'mst', 'bks', 'socont', 'cccd', 'laixe', 'sdtlaixe', 'diachicty'];
     if (validateKeys.includes(key)) {
         var err = document.getElementById(key + 'err' + id);
         var chk = document.getElementById(key + 'chk' + id);
@@ -362,10 +408,15 @@ function setField(id, key, value){
 }
 
 function isReady(p){
-    // Kiểm tra tất cả các trường trong mảng REQUIRED
-    return REQUIRED.every(function(k){ 
+    // Xây dựng mảng Required Động cho phiếu hiện tại
+    var currentReq = [...REQUIRED_BASE];
+    if (p.loaihinh === 'XNKTL') {
+        currentReq.push('luong');
+    }
+
+    return currentReq.every(function(k){ 
         var val = p[k];
-        if (['sotokhai', 'mst', 'bks', 'socont', 'cccd', 'laixe', 'sdtlaixe'].includes(k)) {
+        if (['sotokhai', 'mst', 'bks', 'socont', 'cccd', 'laixe', 'sdtlaixe', 'diachicty'].includes(k)) {
             return isValidField(k, val);
         }
         return val && val.trim().length > 0;
@@ -379,7 +430,6 @@ function refreshStatus(p){
 
     var ok = isReady(p);
     
-    // Nếu tổng thể chưa xong nhưng có lỗi định dạng riêng lẻ thì báo viền cam/đỏ
     if(card) card.className = 'phieu-card' + (ok ? ' ready' : (!ok && p.mst ? ' errored' : ''));
     if(spill){ spill.textContent = ok?'Sẵn sàng ✓':'Chưa đủ'; spill.className='status-pill '+(ok?'sp-ready':'sp-pending'); }
 
@@ -405,6 +455,7 @@ function updateUI(){
         : (n > 0 ? '✓ Tất cả phiếu đã đủ thông tin' : '');
 }
 
+// Gọi API Cổng Quốc Gia, lấy cả Tên và Địa chỉ
 function fetchMST(id){
     var p = phieus.find(function(x){return x.id===id;});
     if(!p || !p.mst || p.mst.length !== 10){ toast('MST phải đúng 10 số trước khi tra cứu','error'); return; }
@@ -414,11 +465,20 @@ function fetchMST(id){
     fetch('https://api.vietqr.io/v2/business/'+p.mst)
         .then(function(r){return r.json();})
         .then(function(d){
-            if(d.code==='00' && d.data && d.data.name){
-                var el=document.getElementById('f'+id+'tencty');
-                if(el) el.value=d.data.name;
-                setField(id,'tencty',d.data.name);
-                toast('Tìm thấy từ Cổng QG: '+d.data.name,'success');
+            if(d.code==='00' && d.data){
+                // Điền tên công ty
+                if(d.data.name) {
+                    var elName = document.getElementById('f'+id+'tencty');
+                    if(elName) elName.value = d.data.name;
+                    setField(id, 'tencty', d.data.name);
+                }
+                // Điền địa chỉ công ty
+                if(d.data.address) {
+                    var elAddr = document.getElementById('f'+id+'diachicty');
+                    if(elAddr) elAddr.value = d.data.address;
+                    setField(id, 'diachicty', d.data.address);
+                }
+                toast('Tìm thấy: '+d.data.name,'success');
             } else { toast('Không tìm thấy DN này trên mạng','error'); }
         })
         .catch(function(){ toast('Lỗi kết nối tra cứu internet','error'); })
@@ -454,6 +514,7 @@ function openPreview(){
                     +'<div><b>MST:</b> '+p.mst+'</div>'
                     +'<div><b>Cont:</b> '+p.socont+'</div>'
                     +'<div style="grid-column:1/-1"><b>DN:</b> '+p.tencty+'</div>'
+                    +'<div style="grid-column:1/-1"><b>Địa chỉ:</b> '+p.diachicty+'</div>'
                     +'<div style="grid-column:1/-1"><b>Hàng:</b> '+p.mathang+'</div>'
                     +'<div><b>Lái xe:</b> '+p.laixe+'</div>'
                     +'<div><b>SĐT:</b> '+p.sdtlaixe+'</div>'

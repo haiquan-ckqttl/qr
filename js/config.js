@@ -22,13 +22,16 @@ const qrPTVTConfig = {
     "diadiem": 5,   // Cột D
     "mathang": 6,   // Cột G
     "laixe": 8,     // Cột I
-    "sdtlaixe": 9,  // MỚI BỔ SUNG: SĐT Lái xe (Tạm gán vào Index 9, bạn có thể đổi)
-    "nguoikhai": 11 // Cột H
+    "sdtlaixe": 9,  // Cột J (Tạm gán)
+    "nguoikhai": 11,// Cột H
+    "tencty": 12,   // MỚI: Tên doanh nghiệp (Tạm gán)
+    "diachicty": 13 // MỚI: Địa chỉ doanh nghiệp (Tạm gán)
 };
 
 // ============================================================
 // CẤU HÌNH 2: QR HỒ SƠ ĐỘNG (Thay đổi theo Loại hình)
 // Lưu ý: Key bây giờ là các "code" (VCDLQC, XNKTL...) thay vì tên dài
+// Đã khai báo sẵn các trường mới (diachicty, ngaytokhai, luong)
 // ============================================================
 const MAPPING_QR_HOSO = {
     
@@ -37,7 +40,9 @@ const MAPPING_QR_HOSO = {
         "mst": 1, 
         "tencty": 2, 
         "sotokhai": 3, 
-        "nguoikhai": 4
+        "nguoikhai": 4,
+        "diachicty": 5,
+        "ngaytokhai": 6
     },
     
     "VCDLKNQ": {
@@ -45,7 +50,9 @@ const MAPPING_QR_HOSO = {
         "sotokhai": 1, 
         "mst": 2, 
         "tencty": 3,
-        "diadiem": 4
+        "diadiem": 4,
+        "diachicty": 5,
+        "ngaytokhai": 6
     },
     
     "XNKTL": {
@@ -53,7 +60,10 @@ const MAPPING_QR_HOSO = {
         "loaihinh": 1, 
         "mst": 2,
         "tencty": 3,
-        "mathang": 4
+        "mathang": 4,
+        "luong": 5,       // MỚI: Luồng (Bắt buộc với XNKTL)
+        "diachicty": 6,   
+        "ngaytokhai": 7   
     },
     
     "CCKXK": {
@@ -61,7 +71,10 @@ const MAPPING_QR_HOSO = {
         "sotokhai": 1, 
         "mst": 2,
         "bks": 3,
-        "socont": 4
+        "socont": 4,
+        "tencty": 5,
+        "diachicty": 6,
+        "ngaytokhai": 7
     },
     
     "CCKNK": {
@@ -69,7 +82,10 @@ const MAPPING_QR_HOSO = {
         "sotokhai": 1, 
         "mst": 2,
         "bks": 3,
-        "socont": 4
+        "socont": 4,
+        "tencty": 5,
+        "diachicty": 6,
+        "ngaytokhai": 7
     }
 
 };

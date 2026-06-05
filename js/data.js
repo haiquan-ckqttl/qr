@@ -1,6 +1,6 @@
 /* ============================================================
    FILE: js/data.js
-   FUNCTION: Xử lý dữ liệu từ CSDL (JSON) và cung cấp hàm hỗ trợ điền thông tin tự động
+   CHỨC NĂNG: Nạp dữ liệu tĩnh (Công ty, Địa điểm) để gợi ý
    ============================================================ */
 
 var companyDatabase = [];
@@ -54,16 +54,27 @@ function buildLocationDatalist() {
     document.body.appendChild(datalist);
 }
 
-// Xử lý tự động điền Tên Công ty khi MST khớp
+// Xử lý tự động điền Tên & Địa chỉ Công ty khi MST khớp với companies.json
 function handleAutocompleteMST(id, inputMst) {
     // Chỉ lấy số, giữ nguyên số 0 ở đầu
     var cleanMst = inputMst.replace(/\D/g, ''); 
     var company = companyDatabase.find(c => c.mst === cleanMst);
     
     if (company) {
-        setField(id, 'tencty', company.name);
-        var nameInput = document.getElementById('f' + id + 'tencty');
-        if(nameInput) nameInput.value = company.name;
-        toast('Đã tự động điền: ' + company.name, 'success');
+        // 1. Tự động điền Tên Công Ty
+        if(company.name) {
+            setField(id, 'tencty', company.name);
+            var nameInput = document.getElementById('f' + id + 'tencty');
+            if(nameInput) nameInput.value = company.name;
+        }
+
+        // 2. Tự động điền Địa Chỉ (Nếu trong file companies.json bạn có khai báo trường "address")
+        if(company.address) {
+            setField(id, 'diachicty', company.address);
+            var addrInput = document.getElementById('f' + id + 'diachicty');
+            if(addrInput) addrInput.value = company.address;
+        }
+
+        toast('Đã tự điền từ CSDL nội bộ: ' + company.name, 'success');
     }
 }

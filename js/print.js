@@ -58,7 +58,7 @@ function buildPrintHTML(item) {
             </div>
             <div style="display:flex; margin-bottom:2px; align-items: flex-end;">
                 <span>Số, ngày tờ khai: </span><span style="border-bottom:1px dotted #000; width: 140px; text-align:center;"><b>${p.sotokhai}</b></span>
-                <span> /....../11B1 ngày </span><span style="border-bottom:1px none #000; width: 100px; text-align:center;"><b>${p.ngaytokhai || '...../...../2026'}</b></span>
+                <span> /....../11B1 ngày </span><span style="border-bottom:1px none #000; width: 100px; text-align:center;"><b>${p.ngaytokhai || `...../${currentMonth}/${currentYear}`}</b></span>
                 <span>; Luồng: </span><span style="flex:1; border-bottom:1px dotted #000; text-align:center;"><b>${p.luong || ''}</b></span>
             </div>
             <div style="display:flex; margin-bottom:3mm; align-items: flex-end;">
@@ -68,13 +68,13 @@ function buildPrintHTML(item) {
 
             <div style="display: flex; justify-content: space-around; text-align: center; margin-bottom: 3mm;">
                 <div>
-                    <i>Ngày ..... tháng ..... năm ........</i><br>
+                    <i>Ngày ..... tháng ${currentMonth} năm ${currentYear}</i><br>
                     <b>Công chức đối chiếu thu phí cơ sở hạ tầng</b><br>
                     <i>(Ký tên hoặc đóng dấu)</i>
                     <div style="height: 18mm;"></div>
                 </div>
                 <div>
-                    <i>Ngày ..... tháng ..... năm ........</i><br>
+                    <i>Ngày ..... tháng ${currentMonth} năm ${currentYear}</i><br>
                     <b>Người khai hải quan</b><br>
                     <i>(Ký, ghi rõ họ tên)</i>
                     <div style="height: 18mm;"></div>
@@ -127,8 +127,8 @@ function buildPrintHTML(item) {
                         7. SĐT lái xe: <b>${p.sdtlaixe || '..................................'}</b>
                     </td>
                     <td style="padding: 6px 10px; vertical-align: top;">
-                        <div style="margin-bottom:6px;"><b>1. Ngày xuất cảnh:</b><br><div style="border-bottom:1px dotted #000; height:10px;"></div></div>
-                        <div style="margin-bottom:6px;"><b>2. Ngày nhập cảnh:</b><br><div style="border-bottom:1px dotted #000; height:10px;"></div></div>
+                        <div style="margin-bottom:6px;"><b>1. Ngày xuất cảnh:</b><br><div style="text-align: right; border-bottom:1px dotted #000; height:14px;"><i>...... / ${currentMonth} / ${currentYear}</i></div></div>
+                        <div style="margin-bottom:6px;"><b>2. Ngày nhập cảnh:</b><br><div style="text-align: right; border-bottom:1px dotted #000; height:14px;"><i>...... / ${currentMonth} / ${currentYear}</i></div></div>
                         
                         <div style="text-align: center; margin-top: 4px;">
                             ${item.urlPTVT ? `<img src="${item.urlPTVT}" style="width:23mm; height:23mm; display:block; margin: 0 auto;"/>` : `<div style="width:23mm;height:23mm;border:1px solid #000;margin:0 auto;"></div>`}
@@ -177,10 +177,12 @@ function buildPrintHTML(item) {
                 <tr><td style="height: 18mm;"></td><td></td><td></td><td></td></tr>
             </table>
             
-            <div style="text-align: right; padding-right: 15mm; margin-top: 15mm;">
-                <b style="font-size: 12pt;">Người khai hải quan</b><br>
-                <i style="font-size: 11pt;">(Ký, ghi rõ họ tên)</i><br><br><br><br><br>
-                <b>${p.nguoikhai}</b>
+            <div style="display: flex; justify-content: flex-end; margin-top: 15mm; padding-right: 15mm;">
+                <div style="text-align: center; min-width: 60mm;">
+                    <b style="font-size: 12pt;">Người khai hải quan</b><br>
+                    <i style="font-size: 11pt;">(Ký, ghi rõ họ tên)</i><br><br><br><br><br>
+                    <b>${p.nguoikhai}</b>
+                </div>
             </div>
         </div>
 
