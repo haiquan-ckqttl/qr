@@ -146,8 +146,8 @@ function buildPrintHTML(item) {
             <div style="display: flex; justify-content: space-between; margin-top: 5mm; padding: 0 15mm;">
                 <div style="text-align: center; width: 45%;">
                     <b>CCGSHQ tại địa điểm tập kết</b><br>
-                    Đ/c ..............................
-                    <div style="height: 14mm;"></div>
+                    <div style="height: 20mm;"></div>
+                    <p>Đ/c .......................................</bp>
                 </div>
                 <div style="text-align: center; width: 45%;">
                     <b>CC giám sát</b><br>
