@@ -231,7 +231,7 @@ function buildPrintHTML(item) {
                 <tr>
                     <td style="width: 45%; text-align: center; vertical-align: top;">
                         <div style="font-weight: bold; font-size: 11pt;">
-                            BỘ CHỈ HUY BĐBP TỈNH CAO BẰNG<br>
+                            BẠN CHỈ HUY BĐBP TỈNH CAO BẰNG<br>
                             ĐỒN BP CKQT TÀ LÙNG
                         </div>
                         <hr style="width: 50%; border: 0.5px solid #000; margin: 5px auto;">
