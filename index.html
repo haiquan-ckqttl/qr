@@ -1,9 +1,10 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="vi">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Hệ thống Đăng ký Hồ sơ & PTVT Tà Lùng</title>
+<title>Hệ thống Đăng ký Hồ sơ & PTVT Tà Lùng V2</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,11 +18,15 @@
   </div>
   <div class="header-info">
     <h1>Hệ thống tạo phiếu đăng ký hồ sơ hải quan và phương tiện vận tải chờ hàng hoá XNK QR</h1>
-    <p>CHI CỤC HẢI QUAN KHU VỤC XVI<br>HẢI QUAN CỬA KHẨU QUỐC TẾ TÀ LÙNG</p>
+    <p>CHI CỤC HẢI QUAN KHU VỰC XVI<br>HẢI QUAN CỬA KHẨU QUỐC TẾ TÀ LÙNG</p>
     <div>
       <span class="lib-badge" id="lib-badge" style="display: none;">
         <span class="dot"></span>
         <span id="lib-text">Đang kiểm tra...</span>
+      </span>
+      <!-- Hiển thị trạng thái Auto-Save -->
+      <span class="lib-badge" id="save-badge" style="background: var(--bg); color: var(--muted); border-color: var(--border2); margin-left: 5px;">
+        ✓ Đã lưu tự động
       </span>
     </div>
   </div>
@@ -40,6 +45,23 @@
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 15l7-7 7 7"/></svg>
         Thu gọn
       </button>
+      
+      <!-- CỤM NÚT EXCEL ĐÃ ĐƯỢC CẬP NHẬT -->
+      <!-- <button class="btn btn-ghost btn-sm" onclick="downloadTemplate()" title="Tải file Excel mẫu">
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        File mẫu
+      </button>
+      <button class="btn btn-ghost btn-sm" onclick="exportToExcel()" title="Tải dữ liệu ra file Excel">
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+        Xuất Excel
+      </button>
+      <button class="btn btn-ghost btn-sm" onclick="document.getElementById('excel-upload').click()" title="Nhập dữ liệu từ file Excel">
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+        Nhập Excel
+      </button> -->
+      <!-- Input ẩn để chọn file Excel -->
+      <!-- <input type="file" id="excel-upload" accept=".xlsx, .xls" style="display: none;" onchange="importFromExcel(event)"> -->
+
       <button class="btn btn-ghost btn-sm" id="btn-clearall" style="display:none" onclick="clearAll()">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
         Xóa tất cả
@@ -105,40 +127,31 @@
 
 <div class="modal-bg" id="modal-instruction">
   <div class="modal modal-lg">
-    <h3 style="text-align: center; color: var(--primary);">THÔNG BÁO<br><span style="font-size: 14px; font-weight: normal; color: var(--text);">V/v Triển khai thử nghiệm Hệ thống tạo phiếu đăng ký PTVT QR</span></h3>
+    <h3 style="text-align: center; color: var(--primary);">THÔNG BÁO<br><span style="font-size: 14px; font-weight: normal; color: var(--text);">V/v Triển khai Hệ thống tạo phiếu đăng ký PTVT QR (Phiên bản V2)</span></h3>
     <div class="modal-body instruction-content" style="font-size: 14px; line-height: 1.6;">
       <p><b>Kính gửi:</b> Quý Doanh nghiệp hoạt động xuất nhập khẩu tại địa bàn.</p>
-      <p>Nhằm hiện đại hóa công tác kiểm tra, giám sát, tối ưu hóa thời gian thông quan và hỗ trợ tối đa cho các doanh nghiệp, Hải quan cửa khẩu Quốc tế Tà Lùng trân trọng giới thiệu đến quý doanh nghiệp: <b>HỆ THỐNG TẠO PHIẾU ĐĂNG KÝ PTVT CHỞ HÀNG HÓA XUẤT NHẬP KHẨU QR (BẢN THỬ NGHIỆM)</b></p>
+      <p>Nhằm tối ưu hóa thời gian thông quan, Hệ thống tạo phiếu QR chính thức nâng cấp phiên bản V2: <b>Tích hợp dùng chung "1 chạm" cho cả lực lượng Hải quan và Đồn Biên phòng cửa khẩu Tà Lùng.</b></p>
       
       <ul style="list-style: none; padding-left: 0; background-color: var(--bg); padding: 10px; border-radius: 6px;">
         <li>🌐 <b>Địa chỉ truy cập:</b> <a href="https://haiquan-ckqttl.github.io/qr/" target="_blank">https://haiquan-ckqttl.github.io/qr/</a></li>
-        <li>⏱ <b>Thời gian chạy thử nghiệm:</b> Từ ngày 05/6/2026 đến ngày 10/6/2026.</li>
+        <li>💡 <b>Tính năng mới:</b> Tự động lưu dữ liệu đang gõ, Cho phép Xuất/Nhập file Excel để gửi từ bãi xe về văn phòng in.</li>
       </ul>
       
-      <p>Để việc triển khai thử nghiệm đạt hiệu quả cao, Hải quan cửa khẩu Quốc tế Tà Lùng đề nghị Quý doanh nghiệp lưu ý và thực hiện đúng các nội dung hướng dẫn sau:</p>
-      
-      <h4>1. Nhiệm vụ của Doanh nghiệp</h4>
+      <h4>1. Hướng dẫn sử dụng Excel (Import/Export)</h4>
       <ul>
-        <li>Đại diện doanh nghiệp chủ động thực hiện nhập thông tin, in phiếu để gửi thông tin cho cơ quan Hải quan.</li>
-        <li>Việc quét mã QR kiểm soát sẽ do công chức cơ quan Hải quan thực hiện trong quá trình tiếp nhận.</li>
+        <li>Tải <b>File mẫu</b> trên thanh công cụ để lấy định dạng chuẩn nhất (các cột đã được ép kiểu Text).</li>
+        <li>Bắt buộc nhập dữ liệu vào Sheet có tên là <b><code>main</code></b>. Nếu đổi tên Sheet, hệ thống sẽ không đọc được.</li>
+        <li>Dữ liệu nhập từ Excel sẽ <b>xóa và ghi đè</b> các phiếu hiện tại đang có trên màn hình.</li>
       </ul>
 
-      <h4>2. Quy trình khai báo & Nộp hồ sơ</h4>
+      <h4>2. Quy định nhập liệu chuẩn</h4>
       <ul>
-        <li><b>Bước 1 - Nhập liệu:</b> Doanh nghiệp truy cập đường link trên, điền đầy đủ và chính xác các thông tin của lô hàng vào hệ thống (Mã số thuế, Tên công ty, Số tờ khai, Địa điểm tập kết, Biển kiểm soát, Số container, Mặt hàng, Người khai hải quan, Họ tên lái xe...).</li>
-        <li><b>Bước 2 - In phiếu:</b> Hệ thống đã được cấu hình cố định in trên khổ <b>A4 dọc</b> (mỗi bộ hồ sơ in ra gồm 2 trang). Doanh nghiệp thực hiện in phiếu trực tiếp từ hệ thống.</li>
-        <li><b>Bước 3 - Nộp hồ sơ:</b> In phiếu gửi kèm theo bộ hồ sơ của tờ khai và gửi cho cơ quan Hải quan.</li>
-      </ul>
-
-      <h4>3. Quy định nhập liệu chuẩn</h4>
-      <ul>
-        <li><b>Mã số thuế:</b> Nhập chính xác mã số thuế (10 hoặc 14 số) và ấn nút <b>Tra cứu</b> để hệ thống hỗ trợ tự động điền các thông tin liên quan (nếu có).</li>
-        <li>Đảm bảo điền đầy đủ các trường thông tin có đánh dấu sao đỏ (<span class="req">*</span>) bắt buộc để hệ thống đủ điều kiện tạo mã QR hợp lệ.</li>
-        <li><i>*Lưu ý: Đối với các trường hợp xe tải bạt không có số container hoặc chưa chốt thông tin lái xe (CCCD, SĐT, Tên), doanh nghiệp nhập duy nhất ký tự <b><code>/</code></b> (dấu gạch chéo) vào ô nhập liệu để hệ thống ghi nhận tính hợp lệ.</i></li>
+        <li><b>Mã số thuế:</b> Nhập (10 hoặc 14 số) và ấn nút <b>Tra cứu</b> để hệ thống tự động điền Tên và Địa chỉ Công ty.</li>
+        <li><b>Số Container:</b> Bắt buộc đúng chuẩn Quốc tế (Ví dụ: <code>MSKU1234567</code> gồm 4 chữ và 7 số).</li>
+        <li><b>Trường Tùy chọn:</b> Trọng lượng hàng hóa (Tấn) có thể để trống. Nếu xe không có số Container/Moóc, hoặc chưa chốt thông tin lái xe, vui lòng gõ phím <b><code>/</code></b> (dấu gạch chéo) để hệ thống ghi nhận.</li>
       </ul>
       
-      <p style="margin-top: 15px; font-style: italic;">Hải quan cửa khẩu Quốc tế Tà Lùng rất mong nhận được sự phối hợp, đồng hành và các ý kiến đóng góp của Quý doanh nghiệp trong quá trình sử dụng bản thử nghiệm này để hệ thống ngày càng hoàn thiện và nâng cấp hơn.</p>
-      <p style="text-align: right; font-weight: bold;">Xin trân trọng thông báo và cảm ơn!</p>
+      <p style="margin-top: 15px; font-style: italic;">Hải quan và Biên phòng cửa khẩu Quốc tế Tà Lùng rất mong nhận được sự phối hợp của Quý doanh nghiệp. Xin trân trọng cảm ơn!</p>
     </div>
     <div class="modal-foot">
       <button class="btn btn-primary" onclick="document.getElementById('modal-instruction').classList.remove('open')">Đã hiểu</button>
@@ -149,12 +162,15 @@
 <div class="modal-bg" id="print-loading" style="z-index: 9999;">
   <div class="loading-print">
     <span class="spin" style="font-size: 20px; color: var(--accent);">↻</span>
-    <span>Đang tạo mã QR và chuẩn bị dữ liệu in, vui lòng đợi...</span>
+    <span>Đang tạo mã QR đa cơ quan và chuẩn bị dữ liệu in...</span>
   </div>
 </div>
 
 <div id="print-output" class="print-only"></div>
 <div class="toaster" id="toaster"></div>
+
+<!-- Thư viện SheetJS để xử lý xuất/nhập Excel (Chạy hoàn toàn trên trình duyệt) -->
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 
 <script src="js/qrcode.min.js"></script> 
 <script src="js/config.js"></script> 

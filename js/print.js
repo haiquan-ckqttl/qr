@@ -1,6 +1,6 @@
 /* ============================================================
    FILE: js/print.js
-   THUẬT TOÁN VẼ GIAO DIỆN BẢN IN (CHUẨN FORM HẢI QUAN)
+   THUẬT TOÁN VẼ GIAO DIỆN BẢN IN ĐA CƠ QUAN (HQ & BP)
    ============================================================ */
 
 function buildPrintHTML(item) {
@@ -21,10 +21,15 @@ function buildPrintHTML(item) {
         if (found) loaiHinhName = found.displayName;
     }
 
+    // Xử lý hiển thị các trường Tùy chọn
+    var moocStr = p.somooc ? p.somooc : '/';
+    var tlStr = p.trongluong ? p.trongluong + ' Tấn' : '/';
+
     return `
+    <!-- ================== TRANG 1: HẢI QUAN (HỒ SƠ & PTVT) ================== -->
     <div class="print-page" style="position: relative; width: 100%; font-family: 'Times New Roman', Times, serif; padding: 8mm 15mm; box-sizing: border-box; font-size: 11pt; line-height: 1.35; color: #000; background: #fff; height: 297mm; overflow: hidden;">
         
-        <img src="./images/logo-hq.png" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.1; width: 140mm; z-index: 0; pointer-events: none;"/>
+        <img src="./images/logo-hq.png" onerror="this.style.display='none'" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.1; width: 140mm; z-index: 0; pointer-events: none;"/>
 
         <div style="position: relative; z-index: 1;">
             
@@ -128,12 +133,12 @@ function buildPrintHTML(item) {
                 <tr>
                     <td style="padding: 6px 10px; vertical-align: top; line-height: 1.35;">
                         1. Biển kiểm soát: <b>${p.bks}</b><br>
-                        2. Số hiệu Container: <b>${p.socont}</b><br>
-                        3. Mặt hàng: <b>${p.mathang}</b><br>
+                        2. Số Cont / Rơ-moóc: <b>${p.socont}</b> / <b>${moocStr}</b><br>
+                        3. Trọng lượng: <b>${tlStr}</b> &nbsp;&nbsp;&nbsp;&nbsp; Mặt hàng: <b>${p.mathang}</b><br>
                         4. Mã số thuế: <b>${p.mst}</b><br>
-                        5. Số CCCD/GPLX của người ĐKPTVT: <b>${p.cccd || '..........................'}</b><br>
-                        6. Tên lái xe: <b>${p.laixe || '........................................................................'}</b><br>
-                        7. SĐT lái xe: <b>${p.sdtlaixe || '..................................'}</b>
+                        5. Số CCCD/GPLX: <b>${p.cccd || '..........................'}</b><br>
+                        6. Tên lái xe: <b>${p.laixe || '........................'}</b> &nbsp;&nbsp;&nbsp; SĐT: <b>${p.sdtlaixe || '..................'}</b><br>
+                        7. Địa chỉ lái xe: <b>${p.diachilaixe || '..................................................................'}</b>
                     </td>
                     <td style="padding: 6px 10px; vertical-align: top;">
                         <div style="display: flex; margin-bottom: 8px; align-items: flex-end;">
@@ -156,7 +161,7 @@ function buildPrintHTML(item) {
                 <div style="text-align: center; width: 45%;">
                     <b>CCGSHQ tại địa điểm tập kết</b><br>
                     <div style="height: 20mm;"></div>
-                    <p>Đ/c .......................................</bp>
+                    <p>Đ/c .......................................</p>
                 </div>
                 <div style="text-align: center; width: 45%;">
                     <b>CC giám sát</b><br>
@@ -172,9 +177,10 @@ function buildPrintHTML(item) {
         </div>
     </div>
     
+    <!-- ================== TRANG 2: HẢI QUAN (BỔ SUNG) ================== -->
     <div class="print-page" style="position: relative; width: 100%; font-family: 'Times New Roman', Times, serif; padding: 15mm; box-sizing: border-box; font-size: 11pt; line-height: 1.4; color: #000; background: #fff; height: 297mm; overflow: hidden;">
         
-        <img src="./images/logo-hq.png" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.1; width: 150mm; z-index: 0; pointer-events: none;"/>
+        <img src="./images/logo-hq.png" onerror="this.style.display='none'" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.1; width: 150mm; z-index: 0; pointer-events: none;"/>
 
         <div style="position: relative; z-index: 1;">
             <div style="text-align: center; font-weight: bold; font-size: 12pt; margin-bottom: 8mm;">
@@ -213,11 +219,99 @@ function buildPrintHTML(item) {
             <span>Thời gian in: ${ts}</span>
         </div>
     </div>
+
+    <!-- ================== TRANG 3: BIÊN PHÒNG (ĐĂNG KÝ PTVT) ================== -->
+    <div class="print-page" style="position: relative; width: 100%; font-family: 'Times New Roman', Times, serif; padding: 15mm; box-sizing: border-box; font-size: 12pt; line-height: 1.5; color: #000; background: #fff; height: 297mm; overflow: hidden;">
+        
+        <img src="./images/logo-bp.png" onerror="this.style.display='none'" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.08; width: 140mm; z-index: 0; pointer-events: none;"/>
+
+        <div style="position: relative; z-index: 1;">
+            
+            <table style="width:100%; border:none; margin-bottom: 5mm;">
+                <tr>
+                    <td style="width: 45%; text-align: center; vertical-align: top;">
+                        <div style="font-weight: bold; font-size: 11pt;">
+                            BỘ CHỈ HUY BĐBP TỈNH CAO BẰNG<br>
+                            ĐỒN BP CKQT TÀ LÙNG
+                        </div>
+                        <hr style="width: 50%; border: 0.5px solid #000; margin: 5px auto;">
+                    </td>
+                    <td style="width: 55%; text-align: right; vertical-align: top;">
+                        <div style="display: inline-block; border: 1px solid #333; padding: 2px;">
+                            ${item.urlBienPhong ? `<img src="${item.urlBienPhong}" style="width:32mm; height:32mm; display:block;"/>` : `<div style="width:32mm;height:32mm;background:#f0f0f0;"></div>`}
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <div style="text-align: center; margin-bottom: 12mm; margin-top: 5mm;">
+                <h2 style="font-size: 16pt; margin: 0; font-weight: bold;">ĐĂNG KÝ THÔNG TIN PTVT</h2>
+                <div style="font-size: 13pt; font-weight: bold; margin-top: 4px;">CHỞ HÀNG HÓA XUẤT KHẨU/NHẬP KHẨU</div>
+            </div>
+
+            <div style="padding-left: 10mm; padding-right: 5mm;">
+                <table style="width: 100%; font-size: 12pt; line-height: 2;">
+                    <tr>
+                        <td colspan="2">1. Tên doanh nghiệp: <b>${p.tencty}</b></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">2. Địa chỉ doanh nghiệp: <b>${p.diachicty}</b></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">3. Mã số thuế: <b>${p.mst}</b></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%;">4. Biển kiểm soát: <b>${p.bks}</b></td>
+                        <td style="width: 50%;">5. Số Rơ-moóc: <b>${moocStr}</b></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%;">6. Số Container: <b>${p.socont || '/'}</b></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">7. Mặt hàng: <b>${p.mathang}</b></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%;">8. Tên lái xe: <b>${p.laixe}</b></td>
+                        <td style="width: 50%;">9. Số điện thoại: <b>${p.sdtlaixe}</b></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">10. Số CCCD/GPLX: <b>${p.cccd}</b></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">11. Địa chỉ lái xe: <b>${p.diachilaixe}</b></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">12. Người làm thủ tục: <b>${p.nguoikhai}</b></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; margin-top: 25mm; padding: 0 10mm;">
+                <div style="text-align: center; width: 45%;">
+                    <b style="font-size: 12pt;">Trạm Kiểm soát Biên phòng</b><br>
+                    <i>(Ký, đóng dấu)</i>
+                    <div style="height: 25mm;"></div>
+                </div>
+                <div style="text-align: center; width: 45%;">
+                    <i>Ngày ${currentDay} tháng ${currentMonth} năm ${currentYear}</i><br>
+                    <b style="font-size: 12pt;">Đại diện Doanh nghiệp</b><br>
+                    <i>(Ký, ghi rõ họ tên)</i>
+                    <div style="height: 25mm;"></div>
+                    <b>${p.nguoikhai}</b>
+                </div>
+            </div>
+        </div>
+
+        <div style="position: absolute; bottom: 6mm; left: 15mm; right: 15mm; border-top: 0.5px solid #bbb; padding-top: 1mm; font-size: 9pt; color: #444; font-style: italic; display: flex; justify-content: space-between; font-family: sans-serif; z-index: 10; pointer-events: none;">
+            <span>Đồn Biên phòng Cửa khẩu Quốc tế Tà Lùng</span>
+            <span>Thời gian in: ${ts}</span>
+        </div>
+    </div>
     `;
 }
 
 /* ============================================================
-   XỬ LÝ IN & TẠO 2 MÃ QR ĐỒNG THỜI
+   XỬ LÝ IN & TẠO 3 MÃ QR ĐỒNG THỜI (HẢI QUAN + BIÊN PHÒNG)
    ============================================================ */
 function doPrint(){
     var list = phieus.filter(isReady);
@@ -228,19 +322,29 @@ function doPrint(){
     if(typeof closeModal === 'function') closeModal();
 
     Promise.all(list.map(function(p){
-        // 1. Lấy cấu hình ĐỘNG cho Hồ Sơ
+        // 1. Lấy cấu hình ĐỘNG cho Hồ Sơ HQ
         var configHoSo = MAPPING_QR_HOSO[p.loaihinh] || MAPPING_QR_HOSO[LOAI_HINH_OPTIONS[0].code];
         var strHoSo = buildQRStr(p, configHoSo);
         
-        // 2. Lấy cấu hình CỐ ĐỊNH cho PTVT
+        // 2. Lấy cấu hình CỐ ĐỊNH cho PTVT HQ
         var strPTVT = buildQRStr(p, qrPTVTConfig);
+
+        // 3. Lấy cấu hình CỐ ĐỊNH cho BIÊN PHÒNG
+        // Tạo bản sao dữ liệu, nếu ngày khai rỗng thì điền ngày hôm nay vào mã QR
+        var pBP = Object.assign({}, p);
+        if (!pBP.ngaytokhai) {
+            var now = new Date();
+            pBP.ngaytokhai = String(now.getDate()).padStart(2, '0') + '/' + String(now.getMonth() + 1).padStart(2, '0') + '/' + now.getFullYear();
+        }
+        var strBienPhong = buildQRStr(pBP, qrBienPhongConfig);
         
-        // 3. Render ra ảnh
+        // 4. Render ra 3 ảnh mã QR song song
         return Promise.all([
             getQRDataURL(strHoSo, 120),
-            getQRDataURL(strPTVT, 120)
+            getQRDataURL(strPTVT, 120),
+            getQRDataURL(strBienPhong, 130) // QR BP nét hơn xíu
         ]).then(function(urls){
-            return { p: p, urlHoSo: urls[0], urlPTVT: urls[1] };
+            return { p: p, urlHoSo: urls[0], urlPTVT: urls[1], urlBienPhong: urls[2] };
         });
 
     })).then(function(items){
@@ -288,8 +392,9 @@ function doPrint(){
             if(loadingModal) loadingModal.classList.remove('open');
             window.print();
         }, 500); 
-    }).catch(function(){
+    }).catch(function(e){
+        console.error(e);
         if(loadingModal) loadingModal.classList.remove('open');
-        toast('Lỗi tạo QR. Vui lòng thử lại.','error');
+        toast('Lỗi tạo QR đa cơ quan. Vui lòng thử lại.','error');
     });
 }

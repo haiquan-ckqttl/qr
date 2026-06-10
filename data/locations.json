@@ -1,11 +1,11 @@
 [
   {
     "code": "11B1G06",
-    "name": "Phú Anh"
+    "name": "PA"
   },
   {
     "code": "11B1G12",
-    "name": "Sơn Cảng"
+    "name": "SC"
   },
   {
     "code": "11B1G01",
@@ -13,11 +13,11 @@
   },
   {
     "code": "11B1G09",
-    "name": "Bình An"
+    "name": "BA"
   },
   {
     "code": "11B1GB1",
-    "name": "ĐNVTL"
+    "name": "ĐNV"
   },
   {
     "code": "11B1W01",
@@ -25,15 +25,15 @@
   },
   {
     "code": "11B1W03",
-    "name": "KNQ Song toàn"
+    "name": "KNQ ST"
   },
   {
     "code": "11B1C10",
-    "name": "Sơn Hà"
+    "name": "SH"
   },
   {
     "code": "11B1C12",
-    "name": "Thuận Hưng Phát"
+    "name": "THP"
   },
   {
     "code": "11B1C15",
@@ -41,7 +41,7 @@
   },
   {
     "code": "11B1C11",
-    "name": "Sài Gòn CP"
+    "name": "SG CP"
   },
   {
     "code": "11B1D01",

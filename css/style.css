@@ -35,6 +35,11 @@ body {
     line-height: 1.5;
 }
 
+/* TIỆN ÍCH CHỮ VIẾT HOA (Dùng cho BKS, Cont, Moóc, Tên DN) */
+.uppercase {
+    text-transform: uppercase !important;
+}
+
 /* ============================================================
    2. TIỆN ÍCH IN ẤN (PRINT MEDIA)
    ============================================================ */
@@ -56,7 +61,7 @@ body {
 }
 
 /* ============================================================
-   3. HEADER APP
+   3. HEADER APP & AUTO-SAVE BADGE
    ============================================================ */
 .app-header {
     background: #fff;
@@ -132,12 +137,22 @@ body {
     background: var(--green-bg);
     color: var(--green);
     border: 1px solid var(--green-bd);
+    transition: all 0.3s ease;
 }
 
 .lib-badge.warn {
     background: var(--orange-bg);
     color: var(--orange);
     border-color: #fcd34d;
+}
+
+/* Hiệu ứng chớp xanh khi Auto-Save hoạt động */
+@keyframes saveFlash {
+    0% { background: var(--green-bg); color: var(--green); border-color: var(--green-bd); }
+    100% { background: var(--bg); color: var(--muted); border-color: var(--border2); }
+}
+.flash-save {
+    animation: saveFlash 1.5s ease-out;
 }
 
 .dot {
@@ -389,7 +404,7 @@ body {
 .field-err { font-size: 10px; color: var(--red); display: none; }
 .field-err.show { display: block; }
 
-/* ĐÃ NÂNG CẤP: KHỐI MST + TRA CỨU LUÔN NẰM TRÊN 1 DÒNG */
+/* KHỐI MST + TRA CỨU LUÔN NẰM TRÊN 1 DÒNG */
 .mst-flex { 
     display: flex; 
     flex-direction: row !important; /* Ép cứng dàn ngang */
