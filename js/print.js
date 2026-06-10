@@ -232,7 +232,7 @@ function buildPrintHTML(item) {
                     <td style="width: 45%; text-align: center; vertical-align: top;">
                         <div style="font-weight: bold; font-size: 11pt;">
                             BẠN CHỈ HUY BĐBP TỈNH CAO BẰNG<br>
-                            ĐỒN BIÊN PHÒNG CKQT TÀ LÙNG
+                            ĐỒN BIÊN PHÒNG CKQTTÀ LÙNG
                         </div>
                         <hr style="width: 50%; border: 0.5px solid #000; margin: 5px auto;">
                     </td>
@@ -309,6 +309,7 @@ function buildPrintHTML(item) {
     </div>
     `;
 }
+
 
 /* ============================================================
    XỬ LÝ IN & TẠO 3 MÃ QR ĐỒNG THỜI (HẢI QUAN + BIÊN PHÒNG)
