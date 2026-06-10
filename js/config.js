@@ -26,6 +26,8 @@ const LOAI_HINH_OPTIONS = [
 //     "tencty": 12,   // MỚI: Tên doanh nghiệp (Tạm gán)
 //     "diachicty": 13 // MỚI: Địa chỉ doanh nghiệp (Tạm gán)
 // };
+// ten cty, dia chi, somoc, hanghoa, tk hq, người khai hq
+// mst, tencty, 
 // ============================================================
 const qrPTVTConfig = {
     "bks": 0,       // Cột E
