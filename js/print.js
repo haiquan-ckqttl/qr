@@ -238,7 +238,7 @@ function buildPrintHTML(item) {
                     </td>
                     <td style="width: 55%; text-align: right; vertical-align: top;">
                         <div style="display: inline-block; border: 1px solid #333; padding: 2px;">
-                            ${item.urlBienPhong ? `<img src="${item.urlBienPhong}" style="width:32mm; height:32mm; display:block;"/>` : `<div style="width:32mm;height:32mm;background:#f0f0f0;"></div>`}
+                            ${item.urlBienPhong ? `<img src="${item.urlBienPhong}" style="width:42mm; height:42mm; display:block;"/>` : `<div style="width:42mm;height:42mm;background:#f0f0f0;"></div>`}
                         </div>
                     </td>
                 </tr>
@@ -342,7 +342,7 @@ function doPrint(){
         return Promise.all([
             getQRDataURL(strHoSo, 120),
             getQRDataURL(strPTVT, 120),
-            getQRDataURL(strBienPhong, 130) // QR BP nét hơn xíu
+            getQRDataURL(strBienPhong, 180) // QR BP nét hơn xíu
         ]).then(function(urls){
             return { p: p, urlHoSo: urls[0], urlPTVT: urls[1], urlBienPhong: urls[2] };
         });

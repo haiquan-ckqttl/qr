@@ -189,25 +189,43 @@ function buildQRStr(p, config){
 function getQRDataURL(text, sizePx){
     return new Promise(function(resolve){
         if(!text){ resolve(''); return; }
+        
+        // 1. Nếu dùng thư viện soldair (toDataURL)
         if(typeof QRCode !== 'undefined' && typeof QRCode.toDataURL === 'function'){
             QRCode.toDataURL(text,{
-                width:sizePx, margin:1, errorCorrectionLevel:'H', color:{dark:'#000',light:'#fff'}
-            }).then(resolve).catch(function(){ resolve(QRGenInline.toFallbackURL(text,sizePx)); }); return;
+                width: sizePx, 
+                margin: 1, 
+                errorCorrectionLevel: 'M', // ĐỔI TỪ 'H' XUỐNG 'M' (Medium)
+                color: {dark:'#000', light:'#fff'}
+            }).then(resolve).catch(function(){ 
+                resolve('https://api.qrserver.com/v1/create-qr-code/?size='+sizePx+'x'+sizePx+'&charset-source=UTF-8&ecc=M&data='+encodeURIComponent(text)); 
+            }); 
+            return;
         }
+        
+        // 2. Nếu dùng thư viện qrcodejs (toCanvas)
         if(typeof QRCode !== 'undefined'){
             try{
                 var div = document.createElement('div');
                 div.style.cssText='position:fixed;left:-9999px;top:-9999px;width:'+sizePx+'px;height:'+sizePx+'px';
                 document.body.appendChild(div);
-                new QRCode(div,{text:text,width:sizePx,height:sizePx,colorDark:'#000000',colorLight:'#ffffff',correctLevel:3});
+                new QRCode(div,{
+                    text: text,
+                    width: sizePx,
+                    height: sizePx,
+                    colorDark: '#000000',
+                    colorLight: '#ffffff',
+                    correctLevel: 1 // ĐỔI TỪ 3 (H) XUỐNG 1 (M)
+                });
                 setTimeout(function(){
                     var cv = div.querySelector('canvas');
-                    var url = cv ? cv.toDataURL('image/png') : QRGenInline.toFallbackURL(text,sizePx);
+                    var url = cv ? cv.toDataURL('image/png') : 'https://api.qrserver.com/v1/create-qr-code/?size='+sizePx+'x'+sizePx+'&charset-source=UTF-8&ecc=M&data='+encodeURIComponent(text);
                     document.body.removeChild(div); resolve(url);
-                }, 80); return;
+                }, 80); 
+                return;
             }catch(e){ }
         }
-        resolve(QRGenInline.toFallbackURL(text,sizePx));
+        resolve('https://api.qrserver.com/v1/create-qr-code/?size='+sizePx+'x'+sizePx+'&charset-source=UTF-8&ecc=M&data='+encodeURIComponent(text));
     });
 }
 
