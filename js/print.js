@@ -266,9 +266,7 @@ function buildPrintHTML(item) {
                     </tr>
                     <tr>
                         <td style="width: 50%;">6. Số Container: <b>${p.socont || '/'}</b></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">7. Mặt hàng: <b>${p.mathang}</b></td>
+                        <td style="width: 50%;">7. Mặt hàng: <b>${p.mathang}</b></td>
                     </tr>
                     <tr>
                         <td style="width: 50%;">8. Tên lái xe: <b>${p.laixe}</b></td>
