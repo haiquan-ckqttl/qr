@@ -97,7 +97,7 @@ function buildPrintHTML(item) {
             </div>
 
             <div style="font-weight: bold; margin-bottom: 2mm;">II. PHẦN DÀNH CHO CÔNG CHỨC HẢI QUAN:</div>
-            <table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 3mm;">
+            <table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 3mm; border: 0.2px solid #000;">
                 <tr>
                     <td style="width: 33.33%; padding: 4px; height: 35mm; vertical-align: top;">
                         <b>CC kiểm tra hồ sơ (Bước 2)</b><br>2)..............................<br><i>(ký đóng dấu)</i>
@@ -111,7 +111,7 @@ function buildPrintHTML(item) {
                 </tr>
             </table>
 
-            <table border="1" style="width: 100%; border-collapse: collapse;">
+            <table border="1" style="width: 100%; border-collapse: collapse; border: 0.2px solid #000;">
                 <tr>
                     <td style="width: 60%; padding: 6px 10px; vertical-align: top;">
                         <div style="font-weight: bold; text-align: center; margin-bottom: 5px; font-size: 11pt;">
@@ -188,7 +188,7 @@ function buildPrintHTML(item) {
                 <span style="font-size: 11pt; font-weight: bold; text-decoration: underline;">(Sử dụng trong trường hợp cần bổ sung thông tin)</span>
             </div>
             
-            <table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 5mm; font-weight: bold;">
+            <table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 5mm; font-weight: bold; border: 0.2px solid #000;">
                 <tr>
                     <th style="padding: 12px 8px; width: 8%;">STT</th>
                     <th style="padding: 12px 8px; width: 32%;">Thông tin bổ sung</th>
@@ -232,7 +232,7 @@ function buildPrintHTML(item) {
                     <td style="width: 45%; text-align: center; vertical-align: top;">
                         <div style="font-weight: bold; font-size: 11pt;">
                             BẠN CHỈ HUY BĐBP TỈNH CAO BẰNG<br>
-                            ĐỒN BIÊN PHÒNG CKQTTÀ LÙNG
+                            ĐỒN BIÊN PHÒNG CKQT TÀ LÙNG
                         </div>
                         <hr style="width: 50%; border: 0.5px solid #000; margin: 5px auto;">
                     </td>
@@ -286,8 +286,9 @@ function buildPrintHTML(item) {
                 </table>
             </div>
             
-            <div style="display: flex; justify-content: space-between; margin-top: 25mm; padding: 0 10mm;">
+            <div style="display: flex; justify-content: space-between; margin-top: 10mm; padding: 0 10mm;">
                 <div style="text-align: center; width: 45%;">
+                    <i style="display: none;">Ngày ${currentDay} tháng ${currentMonth} năm ${currentYear}</i><br>
                     <b style="font-size: 12pt;">Trạm Kiểm soát Biên phòng</b><br>
                     <i>(Ký, đóng dấu)</i>
                     <div style="height: 25mm;"></div>

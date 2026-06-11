@@ -48,7 +48,8 @@ const qrPTVTConfig = {
 // ============================================================
 const MAPPING_QR_HOSO = {
     "VCDLQC": {
-        "sotokhai": 0
+        "sotokhai": 0,
+        "bks": 7,
     },
     "VCDLKNQ": {
         "sotokhai": 0
