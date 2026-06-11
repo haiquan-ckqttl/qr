@@ -231,14 +231,14 @@ function buildPrintHTML(item) {
                 <tr>
                     <td style="width: 45%; text-align: center; vertical-align: top;">
                         <div style="font-weight: bold; font-size: 11pt;">
-                            BẠN CHỈ HUY BĐBP TỈNH CAO BẰNG<br>
+                            BAN CHỈ HUY BĐBP TỈNH CAO BẰNG<br>
                             ĐỒN BIÊN PHÒNG CKQT TÀ LÙNG
                         </div>
                         <hr style="width: 50%; border: 0.5px solid #000; margin: 5px auto;">
                     </td>
                     <td style="width: 55%; text-align: right; vertical-align: top;">
                         <div style="display: inline-block; border: 1px solid #333; padding: 2px;">
-                            ${item.urlBienPhong ? `<img src="${item.urlBienPhong}" style="width:42mm; height:42mm; display:block;"/>` : `<div style="width:42mm;height:42mm;background:#f0f0f0;"></div>`}
+                            ${item.urlBienPhong ? `<img src="${item.urlBienPhong}" style="width:34mm; height:34mm; display:block;"/>` : `<div style="width:34mm;height:34mm;background:#f0f0f0;"></div>`}
                         </div>
                     </td>
                 </tr>
